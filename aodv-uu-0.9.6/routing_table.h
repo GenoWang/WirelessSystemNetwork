@@ -101,7 +101,7 @@ struct routing_table rt_tbl;
 void rt_table_init();
 void rt_table_destroy();
 /*  add   */
-void rt_calc_neighbor();
+int rt_calc_neighbor(int index);
 
 
 rt_table_t *rt_table_insert(struct in_addr dest, struct in_addr next,

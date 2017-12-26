@@ -16,15 +16,19 @@
  * along with this program; if not, write to the Free Software
  * Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
  *
- * Authors: Erik Nordstr�m, <erik.nordstrom@it.uu.se>
+ * Authors: Erik Nordström, <erik.nordstrom@it.uu.se>
  *          
  *
  *****************************************************************************/
 
 #ifdef NS_PORT
 #include "ns-2/aodv-uu.h"
+
+
+
 #else
 #include <netinet/in.h>
+#include <string.h>
 #include "aodv_hello.h"
 #include "aodv_timeout.h"
 #include "aodv_rrep.h"
@@ -41,7 +45,81 @@ static struct timer hello_timer;
 
 #endif
 
+
 /* #define DEBUG_HELLO */
+
+
+// 根据ip地址在结构体中找到结构体的下标，返回下标
+int NS_CLASS find_node(char* addr){
+	int i;
+	for(i=0;i<10;i++){
+		if(strcmp(n_info[i].c_n, addr) == 0){
+			return(i);
+		}
+	}
+	// this node does not exist
+	return(-2);
+}
+// 在结构体中新分配一个来存储这个节点的信息
+int NS_CLASS give_node(char* addr){
+	int i;
+	for(i=0;i<10;i++){
+		if(n_info[i].c_n == '\0'){
+			strcpy(n_info[i].c_n, addr);
+			return(i);
+		}
+	}
+	// space not enough
+	return(-3);
+}
+// ni_1是之前时刻
+float NS_CLASS calc_1(){
+	int i=0, j=0, num_1=0, num_2=0, minus=0;
+	float result=0.0;
+	for(i=0;i<10;i++){
+		if((n_info[i].ni_1)[i] != '\0'){
+			num_1++;
+		}
+	}
+	for(i=0;i<10;i++){
+		if((n_info[i].ni_2)[i] != '\0'){
+			num_2++;
+		}
+	}
+	for(i=0;i<num_1;i++){
+		for(j=0;j<num_2;j++){
+			if(strcmp((n_info[i].ni_1)[i], (n_info[i].ni_2)[j]) == 0){
+				minus++;
+			}
+		}
+	}
+	result = 1-(num_1-minus)/num_1;
+	return(result);
+}
+// ni_2是之前时刻
+float NS_CLASS calc_2(){
+	int i=0, j=0, num_1=0, num_2=0, minus=0;
+	float result=0.0;
+	for(i=0;i<10;i++){
+		if(n_info[i].ni_1[i] != '\0'){
+			num_1++;
+		}
+	}
+	for(i=0;i<10;i++){
+		if(n_info[i].ni_2[i] != '\0'){
+			num_2++;
+		}
+	}
+	for(j=0;j<num_2;j++){
+		for(i=0;i<num_1;i++){
+			if(strcmp((n_info[i].ni_1)[i], (n_info[i].ni_2)[j]) == 0){
+				minus++;
+			}
+		}
+	}
+	result = 1-(num_2-minus)/num_2;
+	return(result);
+}
 
 
 long NS_CLASS hello_jitter()
@@ -64,6 +142,7 @@ void NS_CLASS hello_start()
 
     gettimeofday(&this_host.fwd_time, NULL);
     DEBUG(LOG_DEBUG, 0, "Starting to send HELLOs!");
+	//fprintf(stderr, "-> *** hello start!\n");
     timer_init(&hello_timer, &NS_CLASS hello_send, NULL);
 
     hello_send(NULL);
@@ -78,7 +157,7 @@ void NS_CLASS hello_stop()
 
 void NS_CLASS hello_send(void *arg)
 {
-    fprintf(stderr, "-> hello send!\n");
+    fprintf(stderr, "-> *** hello send!\n");
     RREP *rrep;
     AODV_ext *ext = NULL;
     u_int8_t flags = 0;
@@ -87,6 +166,12 @@ void NS_CLASS hello_send(void *arg)
     struct timeval now;
     int msg_size = RREP_SIZE;
     int i;
+
+    int index;
+	int past_num;
+	int prst_num;
+	float change;
+
 
     gettimeofday(&now, NULL);
 
@@ -109,6 +194,17 @@ void NS_CLASS hello_send(void *arg)
 #ifdef DEBUG_HELLO
 	    DEBUG(LOG_DEBUG, 0, "sending Hello to 255.255.255.255");
 #endif
+
+
+	    /*   neighbor change rate   */
+	
+		fprintf(stderr,"     -> current node:%s\n",DEV_NR(i).ipaddr);			
+		find_node(ip_to_str(DEV_NR(i).ipaddr)) == -2 ? (index = give_node(ip_to_str(DEV_NR(i).ipaddr))) : (index = find_node(ip_to_str(DEV_NR(i).ipaddr)));		
+		rt_calc_neighbor(index);
+		n_info[index].past == 1 ? (change = calc_1()) : (change = calc_2());	
+		n_info[index].past == 1 ? (n_info[index].past = 2) : (n_info[index].past = 1);// n_info[index].past = 3 - n_info[index].past
+
+
 	    rrep = rrep_create(flags, 0, 0, DEV_NR(i).ipaddr,
 			       this_host.seqno,
 			       DEV_NR(i).ipaddr,
@@ -167,6 +263,7 @@ void NS_CLASS hello_send(void *arg)
 /* Process a hello message */
 void NS_CLASS hello_process(RREP * hello, int rreplen, unsigned int ifindex)
 {
+    fprintf(stderr, "- Processing Hello message.\n");
     u_int32_t hello_seqno, timeout, hello_interval = HELLO_INTERVAL;
     u_int8_t state, flags = 0;
     struct in_addr ext_neighbor, hello_dest;
@@ -230,6 +327,7 @@ void NS_CLASS hello_process(RREP * hello, int rreplen, unsigned int ifindex)
 	rreplen -= AODV_EXT_SIZE(ext);
 	ext = AODV_EXT_NEXT(ext);
     }
+    fprintf(stderr, "*** Received HELLO from %s, seqno %lu\n", ip_to_str(hello_dest), hello_seqno);
 
 #ifdef DEBUG_HELLO
     DEBUG(LOG_DEBUG, 0, "rcvd HELLO from %s, seqno %lu",

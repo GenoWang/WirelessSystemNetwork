@@ -35,8 +35,7 @@
 extern int llfeedback;
 #endif				/* NS_PORT */
 
-int l_nn = 0; // last number of neighbors
-int n_nn = 0; // now number of neighbors
+
 
 
 /* Add/Update neighbor from a non HELLO AODV control message... */
@@ -55,9 +54,8 @@ void NS_CLASS neighbor_add(AODV_msg * aodv_msg, struct in_addr source,
 	DEBUG(LOG_DEBUG, 0, "%s new NEIGHBOR!", ip_to_str(source));
 	rt = rt_table_insert(source, source, 1, 0,
 			     ACTIVE_ROUTE_TIMEOUT, VALID, 0, ifindex);
-	/*   add   */
-	fprintf(stderr,"debug-> begin to calc neighbor!\n");	
-	rt_calc_neighbor();
+	
+		
 
     } else {
 	/* Don't update anything if this is a uni-directional link... */

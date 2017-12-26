@@ -5,7 +5,7 @@ NS_DIR=ns-2
 SRC =	main.c list.c debug.c timer_queue.c aodv_socket.c aodv_hello.c \
 	aodv_neighbor.c aodv_timeout.c routing_table.c seek_list.c \
 	aodv_rreq.c aodv_rrep.c aodv_rerr.c nl.c
-
+# if add c file, add here, if c++ use .cc
 SRC_NS = 	debug.c list.c timer_queue.c aodv_socket.c aodv_hello.c \
 		aodv_neighbor.c aodv_timeout.c routing_table.c seek_list.c \
 		aodv_rreq.c aodv_rrep.c aodv_rerr.c

@@ -217,6 +217,7 @@ void NS_CLASS aodv_socket_process_packet(AODV_msg * aodv_msg, int len,
     /* If this was a HELLO message... Process as HELLO. */
     if ((aodv_msg->type == AODV_RREP && ttl == 1 &&
             dst.s_addr == AODV_BROADCAST)) {
+	fprintf(stderr, "-> here is a hello message(in socket process).\n");
         hello_process((RREP *) aodv_msg, len, ifindex);
         return;
     }
@@ -227,20 +228,25 @@ void NS_CLASS aodv_socket_process_packet(AODV_msg * aodv_msg, int len,
     /* Check what type of msg we received and call the corresponding
        function to handle the msg... */
     switch (aodv_msg->type) {
-
+    
     case AODV_RREQ:
+	fprintf(stderr, "- Received RREQ\n");
         rreq_process((RREQ *) aodv_msg, len, src, dst, ttl, ifindex);
         break;
+    
     case AODV_RREP:
         DEBUG(LOG_DEBUG, 0, "Received RREP");
+	fprintf(stderr, "- Received RREP\n");
         rrep_process((RREP *) aodv_msg, len, src, dst, ttl, ifindex);
         break;
     case AODV_RERR:
         DEBUG(LOG_DEBUG, 0, "Received RERR");
+	fprintf(stderr, "- Received RRER\n");
         rerr_process((RERR *) aodv_msg, len, src, dst);
         break;
     case AODV_RREP_ACK:
         DEBUG(LOG_DEBUG, 0, "Received RREP_ACK");
+	fprintf(stderr, "- Received RREP-ACK\n");
         rrep_ack_process((RREP_ack *) aodv_msg, len, src, dst);
         break;
     default:

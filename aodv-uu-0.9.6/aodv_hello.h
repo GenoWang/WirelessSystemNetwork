@@ -16,7 +16,7 @@
  * along with this program; if not, write to the Free Software
  * Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
  *
- * Authors: Erik Nordström, <erik.nordstrom@it.uu.se>
+ * Authors: Erik NordstrÃ¶m, <erik.nordstrom@it.uu.se>
  *          
  *
  *****************************************************************************/
@@ -34,6 +34,16 @@
 #define ROUTE_TIMEOUT_SLACK 100
 #define JITTER_INTERVAL 100
 
+
+struct neighbor_inform{
+	char c_n[10];
+	char ni_1[10][10];
+	char ni_2[10][10];
+	int past;
+};
+
+struct neighbor_inform n_info[10];
+
 void hello_start();
 void hello_stop();
 void hello_send(void *arg);
@@ -42,6 +52,12 @@ void hello_process_non_hello(AODV_msg * aodv_msg, struct in_addr source,
 			     unsigned int ifindex);
 NS_INLINE void hello_update_timeout(rt_table_t * rt, struct timeval *now,
 				    long time);
+
+int find_node(char* addr);
+int give_node(char* addr);
+float calc_1();
+float calc_2();
+
 
 #ifdef NS_PORT
 long hello_jitter();

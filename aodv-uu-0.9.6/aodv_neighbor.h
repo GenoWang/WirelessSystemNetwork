@@ -34,8 +34,7 @@ void neighbor_add(AODV_msg * aodv_msg, struct in_addr source,
 		  unsigned int ifindex);
 void neighbor_link_break(rt_table_t * rt);
 
-int l_nn; // last number of neighbors
-int n_nn; // now number of neighbors
+
 
 #endif				/* NS_NO_DECLARATIONS */
 

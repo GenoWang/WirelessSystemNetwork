@@ -42,27 +42,29 @@
 static unsigned int hashing(struct in_addr *addr, hash_value * hash);
 
 extern int llfeedback;
+extern struct neighbor_inform n_info[10];
 
-/*=====================
-     add by guannan
-=====================*/
+/* clac neighbor info which node's index is index */
 
-void NS_CLASS rt_calc_neighbor()
+int NS_CLASS rt_calc_neighbor(int index)
 {
-	int nc = 0; // counts of neighbor
 	int i;
+	int t=0;
 	for (i = 0; i < RT_TABLESIZE; i++) {
 		list_t *pos;
 		list_foreach(pos, &rt_tbl.tbl[i]) {
 			rt_table_t *rt = (rt_table_t *) pos;
 			// distance = 1, and should be valid
-			if (rt->hcnt == 1 && rt->state == VALID) {	
-				fprintf(stderr,"     -> neighbor: %d\n",rt->dest_seqno);				
-				nc++;
+			if (rt->hcnt == 1 && rt->state == VALID) {				
+				if(n_info[index].past == 1){
+					strcmp(n_info[index].ni_2[t++], ip_to_str(rt->dest_addr));
+				}else{
+					strcmp(n_info[index].ni_1[t++], ip_to_str(rt->dest_addr));
+				}				
+
 			}
 		}
 	}
-	fprintf(stderr,"     -> number of neighbors: %d\n",nc);
 }
 
 
