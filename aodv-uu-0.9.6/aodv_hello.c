@@ -53,71 +53,93 @@ static struct timer hello_timer;
 int NS_CLASS find_node(char* addr){
 	int i;
 	for(i=0;i<10;i++){
+		fprintf(stderr, "find: n_info[%d] = %s\n",i,n_info[i].c_n);
 		if(strcmp(n_info[i].c_n, addr) == 0){
+			fprintf(stderr, "	* find node result: %d\n",i);
 			return(i);
 		}
 	}
 	// this node does not exist
+	fprintf(stderr, "	* find node not exist (-2)\n");
 	return(-2);
 }
 // 在结构体中新分配一个来存储这个节点的信息
 int NS_CLASS give_node(char* addr){
 	int i;
 	for(i=0;i<10;i++){
-		if(n_info[i].c_n == '\0'){
+		fprintf(stderr, "give: n_info[%d] = %s\n",i,n_info[i].c_n);
+		if(strlen(n_info[i].c_n) == 0){
+			fprintf(stderr, "	* give node result:%d\n",i);
 			strcpy(n_info[i].c_n, addr);
 			return(i);
 		}
 	}
 	// space not enough
+	fprintf(stderr, "	* give node no space (-3)\n");
 	return(-3);
 }
 // ni_1是之前时刻
-float NS_CLASS calc_1(){
+float NS_CLASS calc_1(int index){
 	int i=0, j=0, num_1=0, num_2=0, minus=0;
 	float result=0.0;
+	fprintf(stderr, "***** in ni_1:\n");
 	for(i=0;i<10;i++){
-		if((n_info[i].ni_1)[i] != '\0'){
+		if(strlen((n_info[index].ni_1)[i]) != 0){
+			fprintf(stderr, "	(n_info[%d].ni_1)[%d]=%s\n", index, i, (n_info[index].ni_1)[i]);
 			num_1++;
 		}
 	}
+	fprintf(stderr, "***** in ni_2:\n");
 	for(i=0;i<10;i++){
-		if((n_info[i].ni_2)[i] != '\0'){
+		if(strlen((n_info[index].ni_2)[i]) != 0){
+			fprintf(stderr, "	(n_info[%d].ni_2)[%d]=%s\n", index, i, (n_info[index].ni_2)[i]);
 			num_2++;
 		}
 	}
 	for(i=0;i<num_1;i++){
 		for(j=0;j<num_2;j++){
-			if(strcmp((n_info[i].ni_1)[i], (n_info[i].ni_2)[j]) == 0){
+			if(strcmp((n_info[index].ni_1)[i], (n_info[index].ni_2)[j]) == 0){
+				fprintf(stderr, "	SAME: %s\n",(n_info[index].ni_1)[i]);
 				minus++;
 			}
 		}
 	}
-	result = 1-(num_1-minus)/num_1;
+	num_1 == 0 ? (result = -2) : (result = 1-minus/num_1);
+	fprintf(stderr, "	* num_1 = %d\n",num_1);
+	fprintf(stderr, "	* num_2 = %d\n",num_2);
+	fprintf(stderr, "	* minus = %d\n",minus);
 	return(result);
 }
 // ni_2是之前时刻
-float NS_CLASS calc_2(){
+float NS_CLASS calc_2(int index){
 	int i=0, j=0, num_1=0, num_2=0, minus=0;
 	float result=0.0;
+	fprintf(stderr, "***** in ni_1:\n");
 	for(i=0;i<10;i++){
-		if(n_info[i].ni_1[i] != '\0'){
+		if(strlen(n_info[index].ni_1[i]) != 0){
+			fprintf(stderr, "	(n_info[%d].ni_1)[%d]=%s\n", index, i, (n_info[index].ni_1)[i]);
 			num_1++;
 		}
 	}
+	fprintf(stderr, "***** in ni_2:\n");
 	for(i=0;i<10;i++){
-		if(n_info[i].ni_2[i] != '\0'){
+		if(strlen(n_info[index].ni_2[i]) != 0){
+			fprintf(stderr, "	(n_info[%d].ni_2)[%d]=%s\n", index, i, (n_info[index].ni_2)[i]);
 			num_2++;
 		}
 	}
 	for(j=0;j<num_2;j++){
 		for(i=0;i<num_1;i++){
-			if(strcmp((n_info[i].ni_1)[i], (n_info[i].ni_2)[j]) == 0){
+			if(strcmp((n_info[index].ni_1)[i], (n_info[index].ni_2)[j]) == 0){
+				fprintf(stderr, "	SAME: %s\n",(n_info[index].ni_2)[i]);
 				minus++;
 			}
 		}
 	}
-	result = 1-(num_2-minus)/num_2;
+	num_2 == 0 ? (result = -2) : (result = 1-minus/num_2);
+	fprintf(stderr, "	* num_1 = %d\n",num_1);
+	fprintf(stderr, "	* num_2 = %d\n",num_2);
+	fprintf(stderr, "	* minus = %d\n",minus);
 	return(result);
 }
 
@@ -168,9 +190,9 @@ void NS_CLASS hello_send(void *arg)
     int i;
 
     int index;
-	int past_num;
-	int prst_num;
-	float change;
+    int past_num;
+    int prst_num;
+    float change;
 
 
     gettimeofday(&now, NULL);
@@ -197,13 +219,17 @@ void NS_CLASS hello_send(void *arg)
 
 
 	    /*   neighbor change rate   */
-	
-		fprintf(stderr,"     -> current node:%s\n",DEV_NR(i).ipaddr);			
+		fprintf(stderr, "*****************************************************************************\n");
+		fprintf(stderr, "	-> current node:%s\n",ip_to_str(DEV_NR(i).ipaddr));			
 		find_node(ip_to_str(DEV_NR(i).ipaddr)) == -2 ? (index = give_node(ip_to_str(DEV_NR(i).ipaddr))) : (index = find_node(ip_to_str(DEV_NR(i).ipaddr)));		
+		fprintf(stderr, "	-> index = %d\n", index);
 		rt_calc_neighbor(index);
-		n_info[index].past == 1 ? (change = calc_1()) : (change = calc_2());	
-		n_info[index].past == 1 ? (n_info[index].past = 2) : (n_info[index].past = 1);// n_info[index].past = 3 - n_info[index].past
-
+		fprintf(stderr, "	-> past = %d\n", n_info[index].past);
+		n_info[index].past == 1 ? (change = calc_1(index)) : (change = calc_2(index));	
+		n_info[index].past = 3 - n_info[index].past;
+		fprintf(stderr, "	-> past(new) = %d\n", n_info[index].past);
+		fprintf(stderr, "	-> neighbor change = %lf\n", change);
+		fprintf(stderr, "*****************************************************************************\n");
 
 	    rrep = rrep_create(flags, 0, 0, DEV_NR(i).ipaddr,
 			       this_host.seqno,

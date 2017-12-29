@@ -55,8 +55,8 @@ NS_INLINE void hello_update_timeout(rt_table_t * rt, struct timeval *now,
 
 int find_node(char* addr);
 int give_node(char* addr);
-float calc_1();
-float calc_2();
+float calc_1(int index);
+float calc_2(int index);
 
 
 #ifdef NS_PORT

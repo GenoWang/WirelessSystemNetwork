@@ -49,22 +49,29 @@ extern struct neighbor_inform n_info[10];
 int NS_CLASS rt_calc_neighbor(int index)
 {
 	int i;
-	int t=0;
+	int t=-1;
+	int num=0;
 	for (i = 0; i < RT_TABLESIZE; i++) {
 		list_t *pos;
 		list_foreach(pos, &rt_tbl.tbl[i]) {
 			rt_table_t *rt = (rt_table_t *) pos;
 			// distance = 1, and should be valid
-			if (rt->hcnt == 1 && rt->state == VALID) {				
+			if (rt->hcnt == 1 && rt->state == VALID) {	
+				num++;			
 				if(n_info[index].past == 1){
-					strcmp(n_info[index].ni_2[t++], ip_to_str(rt->dest_addr));
+					strcpy((n_info[index].ni_2)[++t], ip_to_str(rt->dest_addr));
+					//fprintf(stderr, "	calc: past is 1, (n_info[%d].ni_2)[%d] is %s\n",index,t,ip_to_str(rt->dest_addr));
+					//fprintf(stderr, "	calcR: (n_info[%d].ni_2)[%d]=%s\n",index,t,(n_info[index].ni_2)[t]);
 				}else{
-					strcmp(n_info[index].ni_1[t++], ip_to_str(rt->dest_addr));
+					strcpy((n_info[index].ni_1)[++t], ip_to_str(rt->dest_addr));
+					//fprintf(stderr, "	calc: past is 2, (n_info[%d].ni_1)[%d] is %s\n",index,t,ip_to_str(rt->dest_addr));
+					//fprintf(stderr, "	calcR: (n_info[%d].ni_1)[%d]=%s\n",index,t,(n_info[index].ni_1)[t]);
 				}				
 
 			}
 		}
 	}
+	return num;
 }
 
 
@@ -79,6 +86,11 @@ void NS_CLASS rt_table_init()
 	for (i = 0; i < RT_TABLESIZE; i++) {
 		INIT_LIST_HEAD(&rt_tbl.tbl[i]);
 	}
+	// add: init the n_info.
+	for(i = 0; i < 10; i++){
+		n_info[i].past = 2;
+	}
+
 }
 
 void NS_CLASS rt_table_destroy()
