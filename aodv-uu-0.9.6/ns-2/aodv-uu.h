@@ -111,6 +111,7 @@ protected:
 /* The AODV-UU routing agent class */
 class AODVUU : public Agent {
 
+
 	friend class TimerQueueTimer;
 
 	unsigned int ifindex; /* Always use ns interface */

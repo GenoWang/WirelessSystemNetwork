@@ -16,7 +16,7 @@
  * along with this program; if not, write to the Free Software
  * Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
  *
- * Authors: Erik Nordström, <erik.nordstrom@it.uu.se>
+ * Authors: Erik NordstrÃ¶m, <erik.nordstrom@it.uu.se>
  *
  *****************************************************************************/
 
@@ -217,10 +217,11 @@ void NS_CLASS aodv_socket_process_packet(AODV_msg * aodv_msg, int len,
     /* If this was a HELLO message... Process as HELLO. */
     if ((aodv_msg->type == AODV_RREP && ttl == 1 &&
             dst.s_addr == AODV_BROADCAST)) {
-	fprintf(stderr, "-> here is a hello message(in socket process).\n");
+	//fprintf(stderr, "-> here is a hello message(in socket process).\n");
         hello_process((RREP *) aodv_msg, len, ifindex);
         return;
     }
+
 
     /* Make sure we add/update neighbors */
     neighbor_add(aodv_msg, src, ifindex);
@@ -229,19 +230,19 @@ void NS_CLASS aodv_socket_process_packet(AODV_msg * aodv_msg, int len,
        function to handle the msg... */
     switch (aodv_msg->type) {
     
+    case AODV_HELLO_ACK:
+	fprintf(stderr, "*** Received a hello_ack\n");
+	hello_ack_process((HELLO_ack *) aodv_msg, ifindex);
+	break;
     case AODV_RREQ:
-	fprintf(stderr, "- Received RREQ\n");
         rreq_process((RREQ *) aodv_msg, len, src, dst, ttl, ifindex);
         break;
-    
     case AODV_RREP:
         DEBUG(LOG_DEBUG, 0, "Received RREP");
-	fprintf(stderr, "- Received RREP\n");
         rrep_process((RREP *) aodv_msg, len, src, dst, ttl, ifindex);
         break;
     case AODV_RERR:
         DEBUG(LOG_DEBUG, 0, "Received RERR");
-	fprintf(stderr, "- Received RRER\n");
         rerr_process((RERR *) aodv_msg, len, src, dst);
         break;
     case AODV_RREP_ACK:

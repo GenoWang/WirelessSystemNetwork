@@ -35,14 +35,22 @@
 #define JITTER_INTERVAL 100
 
 
-struct neighbor_inform{
-	char c_n[10];
-	char ni_1[10][10];
-	char ni_2[10][10];
-	int past;
-};
 
-struct neighbor_inform n_info[10];
+struct neighbor_inform{
+	char cnip[20];// 当前节点的ip
+	char nbip[20];// 邻居节点的ip
+	int  cn;      // 信道
+	struct timeval time; // 计时器的时间
+	int  state;   // 状态
+};
+// state=0 没有变化，只需要更新时间
+// state=1 新加的，之前没有，现在有了
+// state=2 删除了，原来有，现在没有了，下次访问时需要删除这一项
+struct neighbor_inform n_info[20];
+
+int n_index;
+int nn_index;
+int nn[20];
 
 void hello_start();
 void hello_stop();
@@ -53,10 +61,11 @@ void hello_process_non_hello(AODV_msg * aodv_msg, struct in_addr source,
 NS_INLINE void hello_update_timeout(rt_table_t * rt, struct timeval *now,
 				    long time);
 
-int find_node(char* addr);
-int give_node(char* addr);
-float calc_1(int index);
-float calc_2(int index);
+
+void p_n(int i);
+int insert_n(char* cip, char* nip, int c, struct timeval t, int s);
+int find_n(char* cip, char* nip, int c);
+int update_n(int i);
 
 
 #ifdef NS_PORT

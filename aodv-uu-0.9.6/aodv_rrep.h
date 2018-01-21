@@ -16,7 +16,7 @@
  * along with this program; if not, write to the Free Software
  * Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
  *
- * Authors: Erik Nordstr�m, <erik.nordstrom@it.uu.se>
+ * Authors: Erik Nordström, <erik.nordstrom@it.uu.se>
  *          
  *
  *****************************************************************************/
@@ -65,10 +65,27 @@ typedef struct {
     u_int8_t reserved;
 } RREP_ack;
 
+
 #define RREP_ACK_SIZE sizeof(RREP_ack)
+
+typedef struct {
+	u_int8_t  type;
+	u_int32_t dest_addr;
+	u_int32_t orig_addr;
+	u_int32_t ngbr_cnt;
+} HELLO_ack;
+
+#define HELLO_ACK_SIZE sizeof(HELLO_ack);
+
+//int nn[20];
+//int nn_index;
+
+
+
 #endif				/* NS_NO_GLOBALS */
 
 #ifndef NS_NO_DECLARATIONS
+
 RREP *rrep_create(u_int8_t flags,
 		  u_int8_t prefix,
 		  u_int8_t hcnt,
@@ -79,6 +96,43 @@ RREP *rrep_create(u_int8_t flags,
 RREP_ack *rrep_ack_create();
 AODV_ext *rrep_add_ext(RREP * rrep, int type, unsigned int offset,
 		       int len, char *data);
+
+/*==================================================================*/
+
+
+/*=======================================*/
+
+typedef struct {
+	// 当前节点的ip地址
+	char curent[16];
+	// 邻居占用的信道
+	int chan_1;
+	// 邻居节点的ip地址
+	char nb_1[16];
+	// 两跳邻居占用的信道
+	int chan_2;
+	// 两跳邻居的ip地址
+	char nb_2[16];
+}hcnt2info;
+
+hcnt2info h_info[20];
+
+/*=======================================*/
+
+
+
+
+HELLO_ack *hello_ack_create(
+				struct in_addr dest_addr,
+				struct in_addr orig_addr,
+				u_int32_t ngbr_cnt);
+
+void hello_ack_send(HELLO_ack * hello_ack, unsigned int ifindex);
+
+void hello_ack_process(HELLO_ack * hello_ack, unsigned int ifindex);
+
+/*==================================================================*/
+
 void rrep_send(RREP * rrep, rt_table_t * rev_rt, rt_table_t * fwd_rt, int size);
 void rrep_forward(RREP * rrep, int size, rt_table_t * rev_rt,
 		  rt_table_t * fwd_rt, int ttl);

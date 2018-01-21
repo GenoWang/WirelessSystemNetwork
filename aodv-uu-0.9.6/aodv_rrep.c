@@ -16,7 +16,7 @@
  * along with this program; if not, write to the Free Software
  * Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
  *
- * Authors: Erik Nordstr�m, <erik.nordstrom@it.uu.se>
+ * Authors: Erik Nordström, <erik.nordstrom@it.uu.se>
  *          
  *
  *****************************************************************************/
@@ -35,10 +35,66 @@
 #include "defs.h"
 #include "debug.h"
 #include "params.h"
+#include <string.h>
+
+
 
 extern int unidir_hack, optimized_hellos, llfeedback;
 
 #endif
+
+/*========================================================================*/
+
+
+HELLO_ack *NS_CLASS hello_ack_create(
+				struct in_addr dest_addr,
+				struct in_addr orig_addr,
+				u_int32_t ngbr_cnt)
+{
+
+	HELLO_ack* hello_ack;
+	hello_ack = (HELLO_ack *) aodv_socket_new_msg();
+	// 需要在defs.h中添加AODV_HELLO_ACK的宏定义
+	hello_ack->type = AODV_HELLO_ACK;
+	hello_ack->dest_addr = dest_addr.s_addr;
+	hello_ack->orig_addr = orig_addr.s_addr;
+	hello_ack->ngbr_cnt = ngbr_cnt;
+	return hello_ack;
+}
+
+// hello_ack消息的发送
+void NS_CLASS hello_ack_send(HELLO_ack * hello_ack, unsigned int ifindex)
+{
+	struct in_addr hello_dest;
+	hello_dest.s_addr = hello_ack->dest_addr;
+	int size = 32*3 + 8;
+	aodv_socket_send((AODV_msg *) hello_ack, hello_dest, size, 1, &DEV_IFINDEX(ifindex));
+// 这里应该是通过一个结构体指针（struct dev_info *dev）找到信道的编号，作为参数传进来，信道的编号在hello处理时获得
+}
+
+// hello_ack消息的处理
+void NS_CLASS hello_ack_process(HELLO_ack * hello_ack, unsigned int ifindex)
+{
+	int i = 0;
+	struct in_addr dest;
+	struct in_addr orig;
+	dest.s_addr = hello_ack->dest_addr;
+	orig.s_addr = hello_ack->orig_addr;
+	//fprintf(stderr, "------------------- Process Hello_ack message -------------------\n");
+	//fprintf(stderr, "%s to %s, neighbor count:%d\n", ip_to_str(orig), ip_to_str(dest), hello_ack->ngbr_cnt);
+	
+	//nn_index++;
+	nn_index = (nn_index + 1) % 5;
+	nn[nn_index] = hello_ack->ngbr_cnt;
+	//fprintf(stderr, "new nn_index is: %d\n", nn_index);
+	//fprintf(stderr, "nn[0] is %d\n", nn[0]);
+	//fprintf(stderr, "new nn is");
+	//for(i = 1; i <= 5; i++) fprintf(stderr, "[%d]:%d ", i, nn[i]);
+	//fprintf(stderr, "\n");
+	//fprintf(stderr, "-----------------------------------------------------------------\n");
+}
+
+/*========================================================================*/
 
 RREP *NS_CLASS rrep_create(u_int8_t flags,
 			   u_int8_t prefix,
@@ -154,7 +210,6 @@ void NS_CLASS rrep_send(RREP * rrep, rt_table_t * rev_rt,
 	       ignore hellos... */
 	    timer_remove(&neighbor->hello_timer);
 	    neighbor_link_break(neighbor);
-
 	    DEBUG(LOG_DEBUG, 0, "Link to %s is unidirectional!",
 		  ip_to_str(neighbor->dest_addr));
 

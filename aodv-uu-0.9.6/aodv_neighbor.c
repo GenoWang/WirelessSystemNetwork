@@ -54,9 +54,8 @@ void NS_CLASS neighbor_add(AODV_msg * aodv_msg, struct in_addr source,
 	DEBUG(LOG_DEBUG, 0, "%s new NEIGHBOR!", ip_to_str(source));
 	rt = rt_table_insert(source, source, 1, 0,
 			     ACTIVE_ROUTE_TIMEOUT, VALID, 0, ifindex);
-	
-		
 
+	
     } else {
 	/* Don't update anything if this is a uni-directional link... */
 	if (rt->flags & RT_UNIDIR)

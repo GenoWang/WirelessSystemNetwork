@@ -1,1376 +1,428 @@
-!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
-!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
-!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
-!_TAG_PROGRAM_NAME	Exuberant Ctags	//
-!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
-!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
-ACTIVE_ROUTE_TIMEOUT	lnx/kaodv-mod.c	63;"	d	file:
-ACTIVE_ROUTE_TIMEOUT	params.h	31;"	d
-ACTIVE_ROUTE_TIMEOUT_HELLO	params.h	41;"	d
-ACTIVE_ROUTE_TIMEOUT_LLF	params.h	36;"	d
-ADDR_BROADCAST	lnx/kaodv-mod.c	81;"	d	file:
-ADDR_HOST	lnx/kaodv-mod.c	80;"	d	file:
-ALLOWED_HELLO_LOSS	params.h	46;"	d
-ANY_IFACE	ns-2/ns-2.35/common/packet.h	/^		ANY_IFACE= -2   \/* $/;"	e	enum:iface_literal::iface_constant
-AODVDIR	Makefile	/^AODVDIR=$(shell pwd)$/;"	m
-AODVGRP_MAX	lnx/kaodv-netlink.h	41;"	d
-AODVGRP_NOTIFY	lnx/kaodv-netlink.h	/^  AODVGRP_NOTIFY = 1,$/;"	e	enum:__anon9
-AODVGRP_NOTIFY	lnx/kaodv-netlink.h	37;"	d
-AODVUU	ns-2/aodv-uu.cc	/^NS_CLASS AODVUU(nsaddr_t id) : Agent(PT_AODVUU), ifindex(NS_IFINDEX),$/;"	f
-AODVUU	ns-2/aodv-uu.h	/^class AODVUU : public Agent {$/;"	c
-AODVUU	patches/aodv-uu/ns-2/aodv-uu.cc	/^NS_CLASS AODVUU(nsaddr_t id) : Agent(PT_AODVUU), ifindex(NS_IFINDEX), $/;"	f
-AODVUU	patches/aodv-uu/ns-2/aodv-uu.h	/^class AODVUU : public Agent {$/;"	c
-AODVUUHeaderClass	ns-2/aodv-uu.cc	/^    AODVUUHeaderClass(): PacketHeaderClass("PacketHeader\/AODVUU",$/;"	f	class:AODVUUHeaderClass
-AODVUUHeaderClass	ns-2/aodv-uu.cc	/^static class AODVUUHeaderClass: public PacketHeaderClass {$/;"	c	file:
-AODVUUHeaderClass	patches/aodv-uu/ns-2/aodv-uu.cc	/^	AODVUUHeaderClass():PacketHeaderClass("PacketHeader\/AODVUU",$/;"	f	class:AODVUUHeaderClass
-AODVUUHeaderClass	patches/aodv-uu/ns-2/aodv-uu.cc	/^static class AODVUUHeaderClass:public PacketHeaderClass {$/;"	c	file:
-AODVUUclass	ns-2/aodv-uu.cc	/^    AODVUUclass(): TclClass("Agent\/AODVUU") {$/;"	f	class:AODVUUclass
-AODVUUclass	ns-2/aodv-uu.cc	/^static class AODVUUclass: public TclClass {$/;"	c	file:
-AODVUUclass	patches/aodv-uu/ns-2/aodv-uu.cc	/^	AODVUUclass():TclClass("Agent\/AODVUU") {$/;"	f	class:AODVUUclass
-AODVUUclass	patches/aodv-uu/ns-2/aodv-uu.cc	/^static class AODVUUclass:public TclClass {$/;"	c	file:
-AODV_BROADCAST	defs.h	178;"	d
-AODV_EXT_DATA	defs.h	233;"	d
-AODV_EXT_HDR_SIZE	defs.h	232;"	d
-AODV_EXT_NEXT	defs.h	234;"	d
-AODV_EXT_SIZE	defs.h	235;"	d
-AODV_HELLO	defs.h	183;"	d
-AODV_LOG_PATH	defs.h	72;"	d
-AODV_LOG_PATH_PREFIX	defs.h	68;"	d
-AODV_LOG_PATH_SUFFIX	defs.h	70;"	d
-AODV_MSG_MAX_SIZE	aodv_socket.h	38;"	d
-AODV_PORT	defs.h	180;"	d
-AODV_PORT	lnx/kaodv.h	53;"	d
-AODV_RERR	defs.h	186;"	d
-AODV_RREP	defs.h	185;"	d
-AODV_RREP_ACK	defs.h	187;"	d
-AODV_RREQ	defs.h	184;"	d
-AODV_RT_LOG_PATH	defs.h	73;"	d
-AODV_RT_LOG_PATH_SUFFIX	defs.h	69;"	d
-AODV_UU_VERSION	defs.h	63;"	d
-AODV_ext	defs.h	/^} AODV_ext;$/;"	t	typeref:struct:__anon4
-AODV_msg	defs.h	/^struct AODV_msg {$/;"	s
-AODV_msg	defs.h	/^} AODV_msg;$/;"	v	typeref:struct:AODV_msg
-AR	Makefile	/^AR=ar$/;"	m
-ARM_CC	Makefile	/^ARM_CC=arm-linux-gcc$/;"	m
-ARM_CCFLAGS	Makefile	/^ARM_CCFLAGS=-mbig-endian$/;"	m
-ARM_INC	Makefile	/^ARM_INC=$/;"	m
-ARM_LD	Makefile	/^ARM_LD=arm-linux-ld$/;"	m
-ARP_DELAY	ns-2/packet_queue.cc	143;"	d	file:
-ARP_DELAY	patches/aodv-uu/ns-2/packet_queue.cc	143;"	d	file:
-AR_FLAGS	Makefile	/^AR_FLAGS=rc$/;"	m
-ATTR_BUFLEN	nl.c	410;"	d	file:
-BLACKLIST_TIMEOUT	params.h	48;"	d
-BPSK	ns-2/ns-2.35/common/packet.h	/^enum ModulationScheme {BPSK = 0, QPSK = 1, QAM16 = 2, QAM64 = 3};$/;"	e	enum:ModulationScheme
-BUFLEN	nl.c	69;"	d	file:
-CALLBACK_FUNCS	main.c	260;"	d	file:
-CC	Makefile	/^CC=gcc$/;"	m
-CFLAGS	Makefile	/^CFLAGS=$(OPTS) $(DEBUG) $(DEFS) $(XDEFS)$/;"	m
-CMSG_NXTHDR_FIX	aodv_socket.h	58;"	d
-CMUTrace	ns-2/ns-2.35/trace/cmu-trace.cc	/^CMUTrace::CMUTrace(const char *s, char t) : Trace(t)$/;"	f	class:CMUTrace
-CMUTrace	ns-2/ns-2.35/trace/cmu-trace.h	/^class CMUTrace : public Trace {$/;"	c
-CMUTraceClass	ns-2/ns-2.35/trace/cmu-trace.cc	/^	CMUTraceClass() : TclClass("CMUTrace") { }$/;"	f	class:CMUTraceClass
-CMUTraceClass	ns-2/ns-2.35/trace/cmu-trace.cc	/^static class CMUTraceClass : public TclClass {$/;"	c	file:
-CPP	Makefile	/^CPP=g++$/;"	m
-CPP_OPTS	Makefile	/^CPP_OPTS=-Wall$/;"	m
-DATA_PACKET	ns-2/ns-2.35/common/packet.h	444;"	d
-DATApkt	ns-2/ns-2.35/common/packet.h	/^	DATApkt$/;"	e	enum:packetClass
-DEBUG	Makefile	/^DEBUG=-g -DDEBUG$/;"	m
-DEBUG	debug.h	52;"	d
-DEBUG	debug.h	54;"	d
-DEBUG	debug.h	56;"	d
-DEBUG_OUTPUT	aodv_rreq.c	44;"	d	file:
-DEBUG_OUTPUT	debug.h	53;"	d
-DEFS	Makefile	/^DEFS=-DCONFIG_GATEWAY #-DLLFEEDBACK$/;"	m
-DELETE_PERIOD	params.h	33;"	d
-DELETE_PERIOD_HELLO	params.h	43;"	d
-DELETE_PERIOD_LLF	params.h	38;"	d
-DEV_IFINDEX	defs.h	174;"	d
-DEV_NR	defs.h	175;"	d
-DOWN	ns-2/ns-2.35/common/packet.h	/^	enum dir_t { DOWN= -1, NONE= 0, UP= 1 };$/;"	e	enum:hdr_cmn::dir_t
-DRAFT_VERSION	defs.h	64;"	d
-DROP	ns-2/ns-2.35/trace/cmu-trace.h	52;"	d
-DROP_END_OF_SIMULATION	ns-2/ns-2.35/trace/cmu-trace.h	69;"	d
-DROP_IFQ_ARP_FULL	ns-2/ns-2.35/trace/cmu-trace.h	88;"	d
-DROP_IFQ_FILTER	ns-2/ns-2.35/trace/cmu-trace.h	89;"	d
-DROP_IFQ_QFULL	ns-2/ns-2.35/trace/cmu-trace.h	87;"	d
-DROP_MAC_BUSY	ns-2/ns-2.35/trace/cmu-trace.h	75;"	d
-DROP_MAC_COLLISION	ns-2/ns-2.35/trace/cmu-trace.h	70;"	d
-DROP_MAC_DUPLICATE	ns-2/ns-2.35/trace/cmu-trace.h	71;"	d
-DROP_MAC_INVALID_DST	ns-2/ns-2.35/trace/cmu-trace.h	76;"	d
-DROP_MAC_INVALID_STATE	ns-2/ns-2.35/trace/cmu-trace.h	74;"	d
-DROP_MAC_PACKET_ERROR	ns-2/ns-2.35/trace/cmu-trace.h	72;"	d
-DROP_MAC_RETRY_COUNT_EXCEEDED	ns-2/ns-2.35/trace/cmu-trace.h	73;"	d
-DROP_MAC_SLEEP	ns-2/ns-2.35/trace/cmu-trace.h	77;"	d
-DROP_OUTSIDE_SUBNET	ns-2/ns-2.35/trace/cmu-trace.h	91;"	d
-DROP_RTR_MAC_CALLBACK	ns-2/ns-2.35/trace/cmu-trace.h	84;"	d
-DROP_RTR_NO_ROUTE	ns-2/ns-2.35/trace/cmu-trace.h	79;"	d
-DROP_RTR_QFULL	ns-2/ns-2.35/trace/cmu-trace.h	82;"	d
-DROP_RTR_QTIMEOUT	ns-2/ns-2.35/trace/cmu-trace.h	83;"	d
-DROP_RTR_ROUTE_LOOP	ns-2/ns-2.35/trace/cmu-trace.h	80;"	d
-DROP_RTR_SALVAGE	ns-2/ns-2.35/trace/cmu-trace.h	85;"	d
-DROP_RTR_TTL	ns-2/ns-2.35/trace/cmu-trace.h	81;"	d
-EOT	ns-2/ns-2.35/trace/cmu-trace.h	58;"	d
-EXPL_MAX_LEN	lnx/kaodv-expl.c	37;"	d	file:
-EXTRA_NS_DEFS	Makefile	/^EXTRA_NS_DEFS=-DCONFIG_GATEWAY$/;"	m
-FIRST_PREC	routing_table.h	38;"	d
-FWRD	ns-2/ns-2.35/trace/cmu-trace.h	55;"	d
-FailureCallback	ns-2/ns-2.35/common/packet.h	/^typedef void (*FailureCallback)(Packet *,void *);$/;"	t
-GARBAGE_COLLECT	ns-2/packet_queue.cc	25;"	d	file:
-GARBAGE_COLLECT	patches/aodv-uu/ns-2/packet_queue.cc	25;"	d	file:
-GARBAGE_COLLECT_TIME	ns-2/packet_queue.h	29;"	d
-GARBAGE_COLLECT_TIME	patches/aodv-uu/ns-2/packet_queue.h	29;"	d
-HDR_AODVUU	defs.h	212;"	d
-HDR_ARP	ns-2/ns-2.35/common/packet.h	54;"	d
-HDR_CDIFF	ns-2/ns-2.35/common/packet.h	69;"	d
-HDR_CMN	ns-2/ns-2.35/common/packet.h	53;"	d
-HDR_HDLC	ns-2/ns-2.35/common/packet.h	60;"	d
-HDR_IMEP	ns-2/ns-2.35/common/packet.h	68;"	d
-HDR_IP	ns-2/ns-2.35/common/packet.h	61;"	d
-HDR_LL	ns-2/ns-2.35/common/packet.h	59;"	d
-HDR_LMS	ns-2/ns-2.35/common/packet.h	71;"	d
-HDR_MAC	ns-2/ns-2.35/common/packet.h	55;"	d
-HDR_MAC802_11	ns-2/ns-2.35/common/packet.h	56;"	d
-HDR_MAC_TDMA	ns-2/ns-2.35/common/packet.h	57;"	d
-HDR_RTP	ns-2/ns-2.35/common/packet.h	62;"	d
-HDR_SCTP	ns-2/ns-2.35/common/packet.h	64;"	d
-HDR_SMAC	ns-2/ns-2.35/common/packet.h	58;"	d
-HDR_SR	ns-2/ns-2.35/common/packet.h	65;"	d
-HDR_TCP	ns-2/ns-2.35/common/packet.h	63;"	d
-HDR_TFRC	ns-2/ns-2.35/common/packet.h	66;"	d
-HDR_TORA	ns-2/ns-2.35/common/packet.h	67;"	d
-HELLO_DELAY	aodv_hello.c	401;"	d	file:
-HELLO_INTERVAL	params.h	49;"	d
-HOST_ADHOC	locality.h	/^    HOST_ADHOC,$/;"	e	enum:__anon8
-HOST_INET	locality.h	/^    HOST_INET,$/;"	e	enum:__anon8
-HOST_UNKNOWN	locality.h	/^    HOST_UNKNOWN$/;"	e	enum:__anon8
-IFNAMSIZ	defs.h	90;"	d
-IFQ_BUFFER	ns-2/aodv-uu.h	27;"	d
-IFQ_BUFFER	patches/aodv-uu/ns-2/aodv-uu.h	27;"	d
-IFQ_DROP	ns-2/aodv-uu.h	28;"	d
-IFQ_DROP	patches/aodv-uu/ns-2/aodv-uu.h	28;"	d
-IFQ_DROP_BY_DEST	ns-2/aodv-uu.h	29;"	d
-IFQ_DROP_BY_DEST	patches/aodv-uu/ns-2/aodv-uu.h	29;"	d
-INIT_LIST_ELM	list.h	39;"	d
-INIT_LIST_HEAD	list.h	35;"	d
-INVALID	routing_table.h	81;"	d
-IPHDR_SIZE	aodv_socket.h	33;"	d
-IPPROTO_MIPE	lnx/kaodv-ipenc.h	31;"	d
-IP_DATA_MAX_LEN	seek_list.h	31;"	d
-JITTER_INTERVAL	aodv_hello.h	35;"	d
-K	params.h	28;"	d
-KAODVM_ADDROUTE	lnx/kaodv-netlink.h	/^	KAODVM_ADDROUTE,$/;"	e	enum:__anon10
-KAODVM_ADDROUTE	lnx/kaodv-netlink.h	50;"	d
-KAODVM_BASE	lnx/kaodv-netlink.h	/^	KAODVM_BASE = 100,$/;"	e	enum:__anon10
-KAODVM_BASE	lnx/kaodv-netlink.h	48;"	d
-KAODVM_CONFIG	lnx/kaodv-netlink.h	/^	KAODVM_CONFIG,$/;"	e	enum:__anon10
-KAODVM_CONFIG	lnx/kaodv-netlink.h	66;"	d
-KAODVM_DEBUG	lnx/kaodv-netlink.h	/^	KAODVM_DEBUG,$/;"	e	enum:__anon10
-KAODVM_DEBUG	lnx/kaodv-netlink.h	68;"	d
-KAODVM_DELROUTE	lnx/kaodv-netlink.h	/^	KAODVM_DELROUTE,$/;"	e	enum:__anon10
-KAODVM_DELROUTE	lnx/kaodv-netlink.h	52;"	d
-KAODVM_MAX	lnx/kaodv-netlink.h	70;"	d
-KAODVM_NOROUTE_FOUND	lnx/kaodv-netlink.h	/^	KAODVM_NOROUTE_FOUND,$/;"	e	enum:__anon10
-KAODVM_NOROUTE_FOUND	lnx/kaodv-netlink.h	60;"	d
-KAODVM_REPAIR	lnx/kaodv-netlink.h	/^	KAODVM_REPAIR,$/;"	e	enum:__anon10
-KAODVM_REPAIR	lnx/kaodv-netlink.h	58;"	d
-KAODVM_ROUTE_REQ	lnx/kaodv-netlink.h	/^	KAODVM_ROUTE_REQ,$/;"	e	enum:__anon10
-KAODVM_ROUTE_REQ	lnx/kaodv-netlink.h	56;"	d
-KAODVM_ROUTE_UPDATE	lnx/kaodv-netlink.h	/^	KAODVM_ROUTE_UPDATE,$/;"	e	enum:__anon10
-KAODVM_ROUTE_UPDATE	lnx/kaodv-netlink.h	62;"	d
-KAODVM_SEND_RERR	lnx/kaodv-netlink.h	/^	KAODVM_SEND_RERR,$/;"	e	enum:__anon10
-KAODVM_SEND_RERR	lnx/kaodv-netlink.h	64;"	d
-KAODVM_TIMEOUT	lnx/kaodv-netlink.h	/^	KAODVM_TIMEOUT,$/;"	e	enum:__anon10
-KAODVM_TIMEOUT	lnx/kaodv-netlink.h	54;"	d
-KAODV_DEBUG	lnx/kaodv-debug.h	29;"	d
-KAODV_DEBUG	lnx/kaodv-debug.h	31;"	d
-KAODV_QUEUE_DROP	lnx/kaodv-queue.h	25;"	d
-KAODV_QUEUE_PROC_FS_NAME	lnx/kaodv-queue.c	47;"	d	file:
-KAODV_QUEUE_QMAX_DEFAULT	lnx/kaodv-queue.c	46;"	d	file:
-KAODV_QUEUE_SEND	lnx/kaodv-queue.h	26;"	d
-KAODV_RT_GW_ENCAP	lnx/kaodv-netlink.h	112;"	d
-KAODV_RT_REPAIR	lnx/kaodv-netlink.h	113;"	d
-KCC	lnx/Makefile	/^KCC=gcc$/;"	m
-KCFLAGS	lnx/Makefile	/^KCFLAGS=-Wall -Wno-strict-aliasing -O2 $(KDEFS) $(KINC) $(XDEFS)$/;"	m
-KCFLAGS_ARM	lnx/Makefile	/^KCFLAGS_ARM=-Wall -O2 -D__KERNEL__ -DMODULE -nostdinc $(shell $(ARM_CC) -print-search-dirs | sed -ne 's\/install: \\(.*\\)\/-I \\1include\/gp') -I$(KERNEL_INC)$/;"	m
-KCFLAGS_MIPS	lnx/Makefile	/^KCFLAGS_MIPS=-Wall -mips2 -O2 -fno-pic -mno-abicalls -mlong-calls -G0 -msoft-float -D__KERNEL__ -DMODULE -nostdinc $(shell $(MIPS_CC) -print-search-dirs | sed -ne 's\/install: \\(.*\\)\/-I \\1include\/gp') -I$(KERNEL_INC) $(XDEFS)$/;"	m
-KDEFS	lnx/Makefile	/^KDEFS=-D__KERNEL__ -DMODULE$/;"	m
-KERNEL	Makefile	/^KERNEL=$(shell uname -r)$/;"	m
-KERNEL	lnx/Makefile	/^KERNEL=$(shell uname -r)$/;"	m
-KERNEL_DIR	Makefile	/^KERNEL_DIR=\/lib\/modules\/$(KERNEL)\/build$/;"	m
-KERNEL_DIR	lnx/Makefile	/^KERNEL_DIR=\/lib\/modules\/$(KERNEL)\/build$/;"	m
-KERNEL_INC	Makefile	/^KERNEL_INC=$(KERNEL_DIR)\/include$/;"	m
-KERNEL_INC	lnx/Makefile	/^KERNEL_INC=$(KERNEL_DIR)\/include$/;"	m
-KINC	lnx/Makefile	/^KINC=-nostdinc -DMODVERSIONS -include $(KERNEL_INC)\/linux\/modversions.h $(shell $(CC) -print-search-dirs | sed -ne 's\/install: \\(.*\\)\/-I \\1include\/gp') -I$(KERNEL_INC)$/;"	m
-KOBJS	lnx/Makefile	/^KOBJS := kaodv-mod.o kaodv-debug.o kaodv-netlink.o kaodv-queue.o kaodv-ipenc.o kaodv-expl.o$/;"	m
-KOBJS_ARM	lnx/Makefile	/^KOBJS_ARM := $(KOBJS:%.o=%-arm.o)$/;"	m
-KOBJS_MIPS	lnx/Makefile	/^KOBJS_MIPS := $(KOBJS:%.o=%-mips.o)$/;"	m
-LD	Makefile	/^LD=ld$/;"	m
-LD	lnx/Makefile	/^LD=ld$/;"	m
-LD_OPTS	Makefile	/^LD_OPTS:=$(LD_OPTS) -liw$/;"	m
-LD_OPTS	Makefile	/^LD_OPTS=$/;"	m
-LIST	list.h	33;"	d
-LIST_NULL	list.h	30;"	d
-LIST_SUCCESS	list.h	31;"	d
-LOCAL_ADD_TTL	params.h	50;"	d
-MAX_ID_LEN	ns-2/ns-2.35/trace/cmu-trace.h	93;"	d
-MAX_IF	ns-2/aodv-uu.h	98;"	d
-MAX_IFINDEX	defs.h	87;"	d
-MAX_INTERFACES	lnx/kaodv-mod.c	64;"	d	file:
-MAX_NODE	ns-2/ns-2.35/trace/cmu-trace.h	94;"	d
-MAX_NR_INTERFACES	defs.h	86;"	d
-MAX_QUEUE_LENGTH	ns-2/packet_queue.h	27;"	d
-MAX_QUEUE_LENGTH	patches/aodv-uu/ns-2/packet_queue.h	27;"	d
-MAX_QUEUE_TIME	ns-2/packet_queue.h	28;"	d
-MAX_QUEUE_TIME	patches/aodv-uu/ns-2/packet_queue.h	28;"	d
-MAX_REPAIR_TTL	params.h	51;"	d
-MINTTL	defs.h	84;"	d
-MIN_ENC_OVERHEAD	ns-2/aodv-uu.cc	640;"	d	file:
-MIN_ENC_OVERHEAD	patches/aodv-uu/ns-2/aodv-uu.cc	579;"	d	file:
-MIPS_CC	Makefile	/^MIPS_CC=mipsel-linux-gcc$/;"	m
-MIPS_LD	Makefile	/^MIPS_LD=mipsel-linux-ld$/;"	m
-MY_ROUTE_TIMEOUT	params.h	52;"	d
-Max	defs.h	80;"	d
-ModulationScheme	ns-2/ns-2.35/common/packet.h	/^enum ModulationScheme {BPSK = 0, QPSK = 1, QAM16 = 2, QAM64 = 3};$/;"	g
-NETLINK_AODV	lnx/kaodv-netlink.h	33;"	d
-NET_DIAMETER	params.h	53;"	d
-NET_KAODV_QUEUE_QMAX	lnx/kaodv-queue.c	48;"	d	file:
-NET_KAODV_QUEUE_QMAX_NAME	lnx/kaodv-queue.c	49;"	d	file:
-NET_TRAVERSAL_TIME	params.h	54;"	d
-NEXT_HOP_WAIT	params.h	55;"	d
-NF_INET_FORWARD	lnx/kaodv-mod.c	57;"	d	file:
-NF_INET_LOCAL_IN	lnx/kaodv-mod.c	56;"	d	file:
-NF_INET_LOCAL_OUT	lnx/kaodv-mod.c	58;"	d	file:
-NF_INET_NUMHOOKS	lnx/kaodv-mod.c	60;"	d	file:
-NF_INET_POST_ROUTING	lnx/kaodv-mod.c	59;"	d	file:
-NF_INET_PRE_ROUTING	lnx/kaodv-mod.c	55;"	d	file:
-NODE_TRAVERSAL_TIME	params.h	56;"	d
-NONE	ns-2/ns-2.35/common/packet.h	/^	enum dir_t { DOWN= -1, NONE= 0, UP= 1 };$/;"	e	enum:hdr_cmn::dir_t
-NS_AF_ILINK	ns-2/ns-2.35/common/packet.h	/^enum ns_af_enum { NS_AF_NONE, NS_AF_ILINK, NS_AF_INET };$/;"	e	enum:ns_af_enum
-NS_AF_INET	ns-2/ns-2.35/common/packet.h	/^enum ns_af_enum { NS_AF_NONE, NS_AF_ILINK, NS_AF_INET };$/;"	e	enum:ns_af_enum
-NS_AF_NONE	ns-2/ns-2.35/common/packet.h	/^enum ns_af_enum { NS_AF_NONE, NS_AF_ILINK, NS_AF_INET };$/;"	e	enum:ns_af_enum
-NS_CFLAGS	Makefile	/^NS_CFLAGS=$(OPTS) $(CPP_OPTS) $(DEBUG) $(NS_DEFS) $(EXTRA_NS_DEFS)$/;"	m
-NS_CLASS	defs.h	49;"	d
-NS_CLASS	defs.h	57;"	d
-NS_DEFS	Makefile	/^NS_DEFS= # DON'T CHANGE (overridden by NS Makefile)$/;"	m
-NS_DEV_NR	defs.h	54;"	d
-NS_DIR	Makefile	/^NS_DIR=ns-2$/;"	m
-NS_IFINDEX	defs.h	55;"	d
-NS_INC	Makefile	/^NS_INC= # DON'T CHANGE (overridden by NS Makefile)$/;"	m
-NS_INLINE	defs.h	52;"	d
-NS_INLINE	defs.h	60;"	d
-NS_NO_DECLARATIONS	ns-2/aodv-uu.h	171;"	d
-NS_NO_DECLARATIONS	ns-2/aodv-uu.h	66;"	d
-NS_NO_DECLARATIONS	ns-2/aodv-uu.h	83;"	d
-NS_NO_DECLARATIONS	patches/aodv-uu/ns-2/aodv-uu.h	143;"	d
-NS_NO_DECLARATIONS	patches/aodv-uu/ns-2/aodv-uu.h	65;"	d
-NS_NO_DECLARATIONS	patches/aodv-uu/ns-2/aodv-uu.h	82;"	d
-NS_NO_GLOBALS	ns-2/aodv-uu.h	170;"	d
-NS_NO_GLOBALS	ns-2/aodv-uu.h	215;"	d
-NS_NO_GLOBALS	ns-2/aodv-uu.h	65;"	d
-NS_NO_GLOBALS	patches/aodv-uu/ns-2/aodv-uu.h	142;"	d
-NS_NO_GLOBALS	patches/aodv-uu/ns-2/aodv-uu.h	187;"	d
-NS_NO_GLOBALS	patches/aodv-uu/ns-2/aodv-uu.h	64;"	d
-NS_OUTSIDE_CLASS	defs.h	50;"	d
-NS_OUTSIDE_CLASS	defs.h	58;"	d
-NS_STATIC	defs.h	51;"	d
-NS_STATIC	defs.h	59;"	d
-NS_TARGET	Makefile	/^NS_TARGET=libaodv-uu.a$/;"	m
-OBJS	Makefile	/^OBJS =	$(SRC:%.c=%.o)$/;"	m
-OBJS_ARM	Makefile	/^OBJS_ARM = $(SRC:%.c=%-arm.o)$/;"	m
-OBJS_MIPS	Makefile	/^OBJS_MIPS = $(SRC:%.c=%-mips.o)$/;"	m
-OBJS_NS	Makefile	/^OBJS_NS = $(SRC_NS:%.c=%-ns.o)$/;"	m
-OBJS_NS_CPP	Makefile	/^OBJS_NS_CPP = $(SRC_NS_CPP:%.cc=%-ns.o)$/;"	m
-OFFSET	ns-2/ns-2.35/common/packet.h	455;"	d
-OPTS	Makefile	/^OPTS=-Wall -O3$/;"	m
-PATCHLEVEL	lnx/Makefile	/^PATCHLEVEL=$(shell grep ^PATCHLEVEL $(KERNEL_DIR)\/Makefile | cut -d' ' -f 3)$/;"	m
-PATH_DISCOVERY_TIME	params.h	57;"	d
-PKT_DEC	ns-2/packet_input.h	28;"	d
-PKT_DEC	patches/aodv-uu/ns-2/packet_input.h	28;"	d
-PKT_ENC	ns-2/packet_input.h	27;"	d
-PKT_ENC	patches/aodv-uu/ns-2/packet_input.h	27;"	d
-PKT_INBOUND	lnx/kaodv-netlink.h	116;"	d
-PKT_OUTBOUND	lnx/kaodv-netlink.h	117;"	d
-PQ	ns-2/packet_queue.h	/^struct packet_queue PQ;$/;"	v	typeref:struct:packet_queue
-PQ	patches/aodv-uu/ns-2/packet_queue.h	/^struct packet_queue PQ;$/;"	v	typeref:struct:packet_queue
-PQ_DROP	ns-2/packet_queue.h	/^    PQ_DROP = 0,$/;"	e	enum:__anon12
-PQ_DROP	patches/aodv-uu/ns-2/packet_queue.h	/^    PQ_DROP = 0,$/;"	e	enum:__anon13
-PQ_ENC_SEND	ns-2/packet_queue.h	/^    PQ_ENC_SEND = 2$/;"	e	enum:__anon12
-PQ_ENC_SEND	patches/aodv-uu/ns-2/packet_queue.h	/^    PQ_ENC_SEND = 2$/;"	e	enum:__anon13
-PQ_SEND	ns-2/packet_queue.h	/^    PQ_SEND = 1,$/;"	e	enum:__anon12
-PQ_SEND	patches/aodv-uu/ns-2/packet_queue.h	/^    PQ_SEND = 1,$/;"	e	enum:__anon13
-PT_ACCEPT	ns-2/ns-2.35/common/packet.h	/^static const packet_t PT_ACCEPT = 21;$/;"	v
-PT_ACK	ns-2/ns-2.35/common/packet.h	/^static const packet_t PT_ACK = 5;$/;"	v
-PT_AODV	ns-2/ns-2.35/common/packet.h	/^static const packet_t PT_AODV = 38;$/;"	v
-PT_AODVUU	ns-2/ns-2.35/common/packet.h	/^static const packet_t PT_AODVUU = 73;$/;"	v
-PT_AOMDV	ns-2/ns-2.35/common/packet.h	/^static const packet_t PT_AOMDV = 61;$/;"	v
-PT_ARP	ns-2/ns-2.35/common/packet.h	/^static const packet_t PT_ARP = 34;$/;"	v
-PT_ASSERT	ns-2/ns-2.35/common/packet.h	/^static const packet_t PT_ASSERT = 12;$/;"	v
-PT_AUDIO	ns-2/ns-2.35/common/packet.h	/^static const packet_t PT_AUDIO = 3;$/;"	v
-PT_BLTRACE	ns-2/ns-2.35/common/packet.h	/^static const packet_t PT_BLTRACE = 60;$/;"	v
-PT_CBR	ns-2/ns-2.35/common/packet.h	/^static const packet_t PT_CBR = 2;$/;"	v
-PT_CONFIRM	ns-2/ns-2.35/common/packet.h	/^static const packet_t PT_CONFIRM = 22;$/;"	v
-PT_CtrMcast_Decap	ns-2/ns-2.35/common/packet.h	/^static const packet_t PT_CtrMcast_Decap = 18;$/;"	v
-PT_CtrMcast_Encap	ns-2/ns-2.35/common/packet.h	/^static const packet_t PT_CtrMcast_Encap = 17;$/;"	v
-PT_DCCP	ns-2/ns-2.35/common/packet.h	/^static const packet_t PT_DCCP = 63;$/;"	v
-PT_DCCP_ACK	ns-2/ns-2.35/common/packet.h	/^static const packet_t PT_DCCP_ACK = 66;$/;"	v
-PT_DCCP_CLOSE	ns-2/ns-2.35/common/packet.h	/^static const packet_t PT_DCCP_CLOSE  = 69;$/;"	v
-PT_DCCP_CLOSEREQ	ns-2/ns-2.35/common/packet.h	/^static const packet_t PT_DCCP_CLOSEREQ = 70;$/;"	v
-PT_DCCP_DATA	ns-2/ns-2.35/common/packet.h	/^static const packet_t PT_DCCP_DATA = 67;$/;"	v
-PT_DCCP_DATAACK	ns-2/ns-2.35/common/packet.h	/^static const packet_t PT_DCCP_DATAACK = 68;$/;"	v
-PT_DCCP_REQ	ns-2/ns-2.35/common/packet.h	/^static const packet_t PT_DCCP_REQ = 64;$/;"	v
-PT_DCCP_RESET	ns-2/ns-2.35/common/packet.h	/^static const packet_t PT_DCCP_RESET = 71;$/;"	v
-PT_DCCP_RESP	ns-2/ns-2.35/common/packet.h	/^static const packet_t PT_DCCP_RESP = 65;$/;"	v
-PT_DIFF	ns-2/ns-2.35/common/packet.h	/^static const packet_t PT_DIFF = 46;$/;"	v
-PT_DSR	ns-2/ns-2.35/common/packet.h	/^static const packet_t PT_DSR = 37;$/;"	v
-PT_ENCAPSULATED	ns-2/ns-2.35/common/packet.h	/^static const packet_t PT_ENCAPSULATED = 32;$/;"	v
-PT_EXP	ns-2/ns-2.35/common/packet.h	/^static const packet_t PT_EXP = 29;$/;"	v
-PT_FTP	ns-2/ns-2.35/common/packet.h	/^static const packet_t PT_FTP = 27;$/;"	v
-PT_GAF	ns-2/ns-2.35/common/packet.h	/^static const packet_t PT_GAF = 49;$/;"	v
-PT_GRAFT	ns-2/ns-2.35/common/packet.h	/^static const packet_t PT_GRAFT = 9;$/;"	v
-PT_GRAFTACK	ns-2/ns-2.35/common/packet.h	/^static const packet_t PT_GRAFTACK = 10;$/;"	v
-PT_HDLC	ns-2/ns-2.35/common/packet.h	/^static const packet_t PT_HDLC = 59;$/;"	v
-PT_HTTP	ns-2/ns-2.35/common/packet.h	/^static const packet_t PT_HTTP = 31;$/;"	v
-PT_IMEP	ns-2/ns-2.35/common/packet.h	/^static const packet_t PT_IMEP = 39;$/;"	v
-PT_INVAL	ns-2/ns-2.35/common/packet.h	/^static const packet_t PT_INVAL = 30;$/;"	v
-PT_JOIN	ns-2/ns-2.35/common/packet.h	/^static const packet_t PT_JOIN = 11;$/;"	v
-PT_LDP	ns-2/ns-2.35/common/packet.h	/^static const packet_t PT_LDP = 48;$/;"	v
-PT_LIVE	ns-2/ns-2.35/common/packet.h	/^static const packet_t PT_LIVE = 24;   \/\/ packet from live network$/;"	v
-PT_LMS	ns-2/ns-2.35/common/packet.h	/^static const packet_t PT_LMS = 53;$/;"	v
-PT_LMS_SETUP	ns-2/ns-2.35/common/packet.h	/^static const packet_t PT_LMS_SETUP = 54;$/;"	v
-PT_MAC	ns-2/ns-2.35/common/packet.h	/^static const packet_t PT_MAC = 35;$/;"	v
-PT_MDART	ns-2/ns-2.35/common/packet.h	/^static const packet_t PT_MDART = 72;$/;"	v
-PT_MESSAGE	ns-2/ns-2.35/common/packet.h	/^static const packet_t PT_MESSAGE = 13;$/;"	v
-PT_MFTP	ns-2/ns-2.35/common/packet.h	/^static const packet_t PT_MFTP = 33;$/;"	v
-PT_NTYPE	ns-2/ns-2.35/common/packet.h	/^static packet_t       PT_NTYPE = 74; \/\/ This MUST be the LAST one$/;"	v
-PT_PARETO	ns-2/ns-2.35/common/packet.h	/^static const packet_t PT_PARETO = 28;$/;"	v
-PT_PBC	ns-2/ns-2.35/common/packet.h	/^static const packet_t PT_PBC = 45;$/;"	v
-PT_PGM	ns-2/ns-2.35/common/packet.h	/^static const packet_t PT_PGM = 52;$/;"	v
-PT_PING	ns-2/ns-2.35/common/packet.h	/^static const packet_t PT_PING = 44;$/;"	v
-PT_PRUNE	ns-2/ns-2.35/common/packet.h	/^static const packet_t PT_PRUNE = 8;$/;"	v
-PT_PUMA	ns-2/ns-2.35/common/packet.h	/^static const packet_t PT_PUMA = 62;$/;"	v
-PT_PUSHBACK	ns-2/ns-2.35/common/packet.h	/^static const packet_t PT_PUSHBACK = 51;$/;"	v
-PT_RAP_ACK	ns-2/ns-2.35/common/packet.h	/^static const packet_t PT_RAP_ACK = 41;$/;"	v
-PT_RAP_DATA	ns-2/ns-2.35/common/packet.h	/^static const packet_t PT_RAP_DATA = 40;$/;"	v
-PT_REALAUDIO	ns-2/ns-2.35/common/packet.h	/^static const packet_t PT_REALAUDIO = 50;$/;"	v
-PT_REJECT	ns-2/ns-2.35/common/packet.h	/^static const packet_t PT_REJECT = 25;$/;"	v
-PT_REQUEST	ns-2/ns-2.35/common/packet.h	/^static const packet_t PT_REQUEST = 20;$/;"	v
-PT_RTCP	ns-2/ns-2.35/common/packet.h	/^static const packet_t PT_RTCP = 14;$/;"	v
-PT_RTP	ns-2/ns-2.35/common/packet.h	/^static const packet_t PT_RTP = 15;$/;"	v
-PT_RTPROTO_DV	ns-2/ns-2.35/common/packet.h	/^static const packet_t PT_RTPROTO_DV = 16;$/;"	v
-PT_RTPROTO_LS	ns-2/ns-2.35/common/packet.h	/^static const packet_t PT_RTPROTO_LS = 47;$/;"	v
-PT_SCTP	ns-2/ns-2.35/common/packet.h	/^static const packet_t PT_SCTP = 55;$/;"	v
-PT_SCTP_APP1	ns-2/ns-2.35/common/packet.h	/^static const packet_t PT_SCTP_APP1 = 56;$/;"	v
-PT_SMAC	ns-2/ns-2.35/common/packet.h	/^static const packet_t PT_SMAC = 57;$/;"	v
-PT_SRM	ns-2/ns-2.35/common/packet.h	/^static const packet_t PT_SRM = 19;$/;"	v
-PT_START	ns-2/ns-2.35/common/packet.h	/^static const packet_t PT_START = 6;$/;"	v
-PT_STOP	ns-2/ns-2.35/common/packet.h	/^static const packet_t PT_STOP = 7;$/;"	v
-PT_TCP	ns-2/ns-2.35/common/packet.h	/^static const packet_t PT_TCP = 0;$/;"	v
-PT_TEARDOWN	ns-2/ns-2.35/common/packet.h	/^static const packet_t PT_TEARDOWN = 23;$/;"	v
-PT_TELNET	ns-2/ns-2.35/common/packet.h	/^static const packet_t PT_TELNET = 26; \/\/ not needed: telnet use TCP$/;"	v
-PT_TFRC	ns-2/ns-2.35/common/packet.h	/^static const packet_t PT_TFRC = 42;$/;"	v
-PT_TFRC_ACK	ns-2/ns-2.35/common/packet.h	/^static const packet_t PT_TFRC_ACK = 43;$/;"	v
-PT_TORA	ns-2/ns-2.35/common/packet.h	/^static const packet_t PT_TORA = 36;$/;"	v
-PT_UDP	ns-2/ns-2.35/common/packet.h	/^static const packet_t PT_UDP = 1;$/;"	v
-PT_VIDEO	ns-2/ns-2.35/common/packet.h	/^static const packet_t PT_VIDEO = 4;$/;"	v
-PT_XCP	ns-2/ns-2.35/common/packet.h	/^static const packet_t PT_XCP = 58;$/;"	v
-Packet	ns-2/ns-2.35/common/packet.h	/^	Packet() : bits_(0), data_(0), ref_count_(0), next_(0) { }$/;"	f	class:Packet
-Packet	ns-2/ns-2.35/common/packet.h	/^class Packet : public Event {$/;"	c
-PacketClassifier	ns-2/ns-2.35/common/packet.h	/^		PacketClassifier(): next_(0){}$/;"	f	class:PacketClassifier
-PacketClassifier	ns-2/ns-2.35/common/packet.h	/^class PacketClassifier$/;"	c
-PacketData	ns-2/ns-2.35/common/packet.h	/^	PacketData(PacketData& d) : AppData(d) {$/;"	f	class:PacketData
-PacketData	ns-2/ns-2.35/common/packet.h	/^	PacketData(int sz) : AppData(PACKET_DATA) {$/;"	f	class:PacketData
-PacketData	ns-2/ns-2.35/common/packet.h	/^class PacketData : public AppData {$/;"	c
-PacketFilter	ns-2/ns-2.35/queue/priqueue.cc	/^typedef int (*PacketFilter)(Packet *, void *);$/;"	t	file:
-PacketHeaderClass	ns-2/ns-2.35/common/packet.h	/^class PacketHeaderClass : public TclClass {$/;"	c
-PacketTracer	ns-2/ns-2.35/trace/cmu-trace.cc	/^PacketTracer::PacketTracer() : next_(0)$/;"	f	class:PacketTracer
-PacketTracer	ns-2/ns-2.35/trace/cmu-trace.h	/^class PacketTracer$/;"	c
-PktHdr_offset	ns-2/ns-2.35/tcl/lib/ns-packet.tcl	/^proc PktHdr_offset { hdrName {field ""} } {$/;"	p
-PriQueue	ns-2/ns-2.35/queue/priqueue.cc	/^PriQueue::PriQueue() : DropTail()$/;"	f	class:PriQueue
-PriQueueClass	ns-2/ns-2.35/queue/priqueue.cc	/^  PriQueueClass() : TclClass("Queue\/DropTail\/PriQueue") {}$/;"	f	class:PriQueueClass
-PriQueueClass	ns-2/ns-2.35/queue/priqueue.cc	/^static class PriQueueClass : public TclClass {$/;"	c	file:
-QAM16	ns-2/ns-2.35/common/packet.h	/^enum ModulationScheme {BPSK = 0, QPSK = 1, QAM16 = 2, QAM64 = 3};$/;"	e	enum:ModulationScheme
-QAM64	ns-2/ns-2.35/common/packet.h	/^enum ModulationScheme {BPSK = 0, QPSK = 1, QAM16 = 2, QAM64 = 3};$/;"	e	enum:ModulationScheme
-QPSK	ns-2/ns-2.35/common/packet.h	/^enum ModulationScheme {BPSK = 0, QPSK = 1, QAM16 = 2, QAM64 = 3};$/;"	e	enum:ModulationScheme
-RCV_SKB_FAIL	lnx/kaodv-netlink.c	254;"	d	file:
-RECV	ns-2/ns-2.35/trace/cmu-trace.h	53;"	d
-RECV_BUF_SIZE	aodv_socket.h	39;"	d
-RERR	aodv_rerr.h	/^} RERR;$/;"	t	typeref:struct:__anon5
-RERR_CALC_SIZE	aodv_rerr.h	64;"	d
-RERR_NODELETE	aodv_rerr.h	33;"	d
-RERR_RATELIMIT	params.h	58;"	d
-RERR_SIZE	aodv_rerr.h	52;"	d
-RERR_UDEST_FIRST	aodv_rerr.h	65;"	d
-RERR_UDEST_NEXT	aodv_rerr.h	66;"	d
-RERR_UDEST_SIZE	aodv_rerr.h	60;"	d
-RERR_udest	aodv_rerr.h	/^} RERR_udest;$/;"	t	typeref:struct:__anon6
-RING_TRAVERSAL_TIME	params.h	59;"	d
-ROUTE_TIMEOUT_SLACK	aodv_hello.h	34;"	d
-ROUTING	ns-2/ns-2.35/common/packet.h	/^	ROUTING,$/;"	e	enum:packetClass
-RREP	aodv_rrep.h	/^} RREP;$/;"	t	typeref:struct:__anon1
-RREP_ACK	aodv_rrep.h	34;"	d
-RREP_ACK_SIZE	aodv_rrep.h	68;"	d
-RREP_EXT	defs.h	219;"	d
-RREP_HELLO_INTERVAL_EXT	defs.h	220;"	d
-RREP_HELLO_NEIGHBOR_SET_EXT	defs.h	221;"	d
-RREP_INET_DEST_EXT	defs.h	222;"	d
-RREP_REPAIR	aodv_rrep.h	35;"	d
-RREP_SIZE	aodv_rrep.h	61;"	d
-RREP_ack	aodv_rrep.h	/^} RREP_ack;$/;"	t	typeref:struct:__anon2
-RREQ	aodv_rreq.h	/^} RREQ;$/;"	t	typeref:struct:__anon7
-RREQ_DEST_ONLY	aodv_rreq.h	37;"	d
-RREQ_EXT	defs.h	218;"	d
-RREQ_GRATUITOUS	aodv_rreq.h	36;"	d
-RREQ_JOIN	aodv_rreq.h	34;"	d
-RREQ_RATELIMIT	params.h	61;"	d
-RREQ_REPAIR	aodv_rreq.h	35;"	d
-RREQ_RETRIES	params.h	60;"	d
-RREQ_SIZE	aodv_rreq.h	69;"	d
-RT_GATEWAY	routing_table.h	78;"	d
-RT_INET_DEST	routing_table.h	76;"	d
-RT_INV_SEQNO	routing_table.h	75;"	d
-RT_PORT	ns-2/ns-2.35/common/packet.h	51;"	d
-RT_REPAIR	routing_table.h	74;"	d
-RT_TABLEMASK	routing_table.h	86;"	d
-RT_TABLESIZE	routing_table.h	85;"	d
-RT_UNIDIR	routing_table.h	73;"	d
-SEND	ns-2/ns-2.35/trace/cmu-trace.h	54;"	d
-SEND_BUF_SIZE	aodv_socket.h	40;"	d
-SKB_MAC_HDR_RAW	lnx/kaodv.h	29;"	d
-SKB_MAC_HDR_RAW	lnx/kaodv.h	35;"	d
-SKB_NETWORK_HDR_IPH	lnx/kaodv.h	34;"	d
-SKB_NETWORK_HDR_RAW	lnx/kaodv.h	27;"	d
-SKB_NETWORK_HDR_RAW	lnx/kaodv.h	33;"	d
-SKB_NETWORK_HDR_RIPH	lnx/kaodv.h	28;"	d
-SKB_SET_NETWORK_HDR	lnx/kaodv.h	30;"	d
-SKB_SET_NETWORK_HDR	lnx/kaodv.h	36;"	d
-SKB_TAIL_PTR	lnx/kaodv.h	26;"	d
-SKB_TAIL_PTR	lnx/kaodv.h	32;"	d
-SO_RECVBUF_SIZE	aodv_socket.c	46;"	d	file:
-SRC	Makefile	/^SRC =	main.c list.c debug.c timer_queue.c aodv_socket.c aodv_hello.c \\$/;"	m
-SRC	Makefile	/^SRC:=$(SRC) llf.c$/;"	m
-SRC	Makefile	/^SRC:=$(SRC) locality.c$/;"	m
-SRC_NS	Makefile	/^SRC_NS = 	debug.c list.c timer_queue.c aodv_socket.c aodv_hello.c \\$/;"	m
-SRC_NS	Makefile	/^SRC_NS:=$(SRC_NS) locality.c$/;"	m
-SRC_NS_CPP	Makefile	/^SRC_NS_CPP =	$(NS_DIR)\/aodv-uu.cc $(NS_DIR)\/packet_queue.cc $(NS_DIR)\/packet_input.cc$/;"	m
-SUBLEVEL	lnx/Makefile	/^SUBLEVEL=$(shell grep ^SUBLEVEL $(KERNEL_DIR)\/Makefile | cut -d' ' -f 3)$/;"	m
-THIS_DIR	lnx/Makefile	/^THIS_DIR=$(shell pwd)$/;"	m
-TIMEOUT_BUFFER	params.h	62;"	d
-TQ	ns-2/aodv-uu.h	/^	list_t TQ;$/;"	m	class:AODVUU
-TQ	patches/aodv-uu/ns-2/aodv-uu.h	/^	list_t TQ;$/;"	m	class:AODVUU
-TR_AGENT	ns-2/ns-2.35/trace/cmu-trace.h	65;"	d
-TR_IFQ	ns-2/ns-2.35/trace/cmu-trace.h	64;"	d
-TR_MAC	ns-2/ns-2.35/trace/cmu-trace.h	63;"	d
-TR_PHY	ns-2/ns-2.35/trace/cmu-trace.h	67;"	d
-TR_ROUTER	ns-2/ns-2.35/trace/cmu-trace.h	62;"	d
-TTL_INCREMENT	params.h	63;"	d
-TTL_START	params.h	32;"	d
-TTL_START_HELLO	params.h	42;"	d
-TTL_START_LLF	params.h	37;"	d
-TTL_THRESHOLD	params.h	64;"	d
-TTL_VALUE	aodv_rreq.c	428;"	d	file:
-TTL_VALUE	aodv_timeout.c	57;"	d	file:
-Terminate	ns-2/ns-2.35/queue/priqueue.cc	/^PriQueue::Terminate()$/;"	f	class:PriQueue
-TimerQueueTimer	ns-2/aodv-uu.h	/^	TimerQueueTimer(AODVUU *a) : TimerHandler() { agent_ = a; }$/;"	f	class:TimerQueueTimer
-TimerQueueTimer	ns-2/aodv-uu.h	/^class TimerQueueTimer : public TimerHandler {$/;"	c
-TimerQueueTimer	patches/aodv-uu/ns-2/aodv-uu.h	/^	TimerQueueTimer(AODVUU *a) : TimerHandler() { agent_ = a; }$/;"	f	class:TimerQueueTimer
-TimerQueueTimer	patches/aodv-uu/ns-2/aodv-uu.h	/^class TimerQueueTimer : public TimerHandler {$/;"	c
-UNCLASSIFIED	ns-2/ns-2.35/common/packet.h	/^	UNCLASSIFIED,$/;"	e	enum:packetClass
-UNKN_IFACE	ns-2/ns-2.35/common/packet.h	/^		UNKN_IFACE= -1, \/* $/;"	e	enum:iface_literal::iface_constant
-UP	ns-2/ns-2.35/common/packet.h	/^	enum dir_t { DOWN= -1, NONE= 0, UP= 1 };$/;"	e	enum:hdr_cmn::dir_t
-U_INT16_T	ns-2/ns-2.35/trace/cmu-trace.cc	747;"	d	file:
-U_INT16_T	ns-2/ns-2.35/trace/cmu-trace.cc	771;"	d	file:
-VALID	routing_table.h	82;"	d
-VERSION	lnx/Makefile	/^VERSION=$(shell if [ ! -d $(KERNEL_DIR) ]; then echo "No linux source found!!! Check your setup..."; exit; fi; grep ^VERSION $(KERNEL_DIR)\/Makefile | cut -d' ' -f 3)$/;"	m
-XDEFS	Makefile	/^XDEFS=-DDEBUG$/;"	m
-XDEFS	lnx/Makefile	/^XDEFS=$/;"	m
-XMIT_REASON_ACK	ns-2/ns-2.35/common/packet.h	638;"	d
-XMIT_REASON_RTS	ns-2/ns-2.35/common/packet.h	637;"	d
-_AODV_HELLO_H	aodv_hello.h	24;"	d
-_AODV_HELLO_H	ns-2/aodv-uu.h	176;"	d
-_AODV_HELLO_H	patches/aodv-uu/ns-2/aodv-uu.h	148;"	d
-_AODV_NEIGHBOR_H	aodv_neighbor.h	24;"	d
-_AODV_NEIGHBOR_H	ns-2/aodv-uu.h	173;"	d
-_AODV_NEIGHBOR_H	patches/aodv-uu/ns-2/aodv-uu.h	145;"	d
-_AODV_RERR_H	aodv_rerr.h	24;"	d
-_AODV_RERR_H	ns-2/aodv-uu.h	179;"	d
-_AODV_RERR_H	patches/aodv-uu/ns-2/aodv-uu.h	151;"	d
-_AODV_RREP_H	aodv_rrep.h	24;"	d
-_AODV_RREP_H	ns-2/aodv-uu.h	182;"	d
-_AODV_RREP_H	patches/aodv-uu/ns-2/aodv-uu.h	154;"	d
-_AODV_RREQ_H	aodv_rreq.h	24;"	d
-_AODV_RREQ_H	ns-2/aodv-uu.h	185;"	d
-_AODV_RREQ_H	patches/aodv-uu/ns-2/aodv-uu.h	157;"	d
-_AODV_SOCKET_H	aodv_socket.h	24;"	d
-_AODV_SOCKET_H	ns-2/aodv-uu.h	188;"	d
-_AODV_SOCKET_H	patches/aodv-uu/ns-2/aodv-uu.h	160;"	d
-_AODV_TIMEOUT_H	aodv_timeout.h	24;"	d
-_AODV_TIMEOUT_H	ns-2/aodv-uu.h	191;"	d
-_AODV_TIMEOUT_H	patches/aodv-uu/ns-2/aodv-uu.h	163;"	d
-_AODV_UU_H	ns-2/aodv-uu.h	24;"	d
-_AODV_UU_H	patches/aodv-uu/ns-2/aodv-uu.h	24;"	d
-_DEBUG_H	debug.h	23;"	d
-_DEBUG_H	ns-2/aodv-uu.h	194;"	d
-_DEBUG_H	patches/aodv-uu/ns-2/aodv-uu.h	166;"	d
-_DEFS_H	defs.h	23;"	d
-_KAODV_DEBUG_H	lnx/kaodv-debug.h	23;"	d
-_KAODV_EXPL_H	lnx/kaodv-expl.h	23;"	d
-_KAODV_H	lnx/kaodv.h	23;"	d
-_KAODV_IPENC_H	lnx/kaodv-ipenc.h	25;"	d
-_KAODV_MOD_H	lnx/kaodv-mod.h	2;"	d
-_KAODV_NETLINK_H	lnx/kaodv-netlink.h	23;"	d
-_KAODV_QUEUE_H	lnx/kaodv-queue.h	23;"	d
-_LIST_H	list.h	23;"	d
-_LLF_H	llf.h	23;"	d
-_LOCALITY_H	locality.h	23;"	d
-_LOCALITY_H	ns-2/aodv-uu.h	206;"	d
-_LOCALITY_H	patches/aodv-uu/ns-2/aodv-uu.h	178;"	d
-_NL_H	nl.h	23;"	d
-_PACKET_INPUT_H	ns-2/aodv-uu.h	209;"	d
-_PACKET_INPUT_H	ns-2/packet_input.h	23;"	d
-_PACKET_INPUT_H	patches/aodv-uu/ns-2/aodv-uu.h	181;"	d
-_PACKET_INPUT_H	patches/aodv-uu/ns-2/packet_input.h	23;"	d
-_PACKET_QUEUE_H	ns-2/aodv-uu.h	212;"	d
-_PACKET_QUEUE_H	ns-2/packet_queue.h	23;"	d
-_PACKET_QUEUE_H	patches/aodv-uu/ns-2/aodv-uu.h	184;"	d
-_PACKET_QUEUE_H	patches/aodv-uu/ns-2/packet_queue.h	23;"	d
-_PARAMS_H	params.h	24;"	d
-_ROUTING_TABLE_H	ns-2/aodv-uu.h	197;"	d
-_ROUTING_TABLE_H	patches/aodv-uu/ns-2/aodv-uu.h	169;"	d
-_ROUTING_TABLE_H	routing_table.h	24;"	d
-_SEEK_LIST_H	ns-2/aodv-uu.h	200;"	d
-_SEEK_LIST_H	patches/aodv-uu/ns-2/aodv-uu.h	172;"	d
-_SEEK_LIST_H	seek_list.h	24;"	d
-_TIMER_QUEUE_H	ns-2/aodv-uu.h	203;"	d
-_TIMER_QUEUE_H	patches/aodv-uu/ns-2/aodv-uu.h	175;"	d
-_TIMER_QUEUE_H	timer_queue.h	23;"	d
-__AODVGRP_MAX	lnx/kaodv-netlink.h	/^  __AODVGRP_MAX$/;"	e	enum:__anon9
-__KAODV_MAX	lnx/kaodv-netlink.h	/^	__KAODV_MAX,$/;"	e	enum:__anon10
-__PRETTY_FUNCTION__	ns-2/ns-2.35/trace/cmu-trace.h	46;"	d
-__cmsg_nxthdr_fix	aodv_socket.c	/^static struct cmsghdr *__cmsg_nxthdr_fix(void *__ctl, size_t __size,$/;"	f	file:
-__cmu_trace__	ns-2/ns-2.35/trace/cmu-trace.h	40;"	d
-__kaodv_expl_add	lnx/kaodv-expl.c	/^static inline int __kaodv_expl_add(struct expl_entry *e)$/;"	f	file:
-__kaodv_expl_del	lnx/kaodv-expl.c	/^static inline int __kaodv_expl_del(struct expl_entry *e)$/;"	f	file:
-__kaodv_expl_find	lnx/kaodv-expl.c	/^static inline struct expl_entry *__kaodv_expl_find(__u32 daddr)$/;"	f	file:
-__kaodv_expl_flush	lnx/kaodv-expl.c	/^static inline void __kaodv_expl_flush(void)$/;"	f	file:
-__kaodv_expl_set_next_timeout	lnx/kaodv-expl.c	/^static inline void __kaodv_expl_set_next_timeout(void)$/;"	f	file:
-__kaodv_queue_enqueue_entry	lnx/kaodv-queue.c	/^static inline int __kaodv_queue_enqueue_entry(struct kaodv_queue_entry *entry)$/;"	f	file:
-__kaodv_queue_find_dequeue_entry	lnx/kaodv-queue.c	/^*__kaodv_queue_find_dequeue_entry(kaodv_queue_cmpfn cmpfn, unsigned long data)$/;"	f	file:
-__kaodv_queue_find_entry	lnx/kaodv-queue.c	/^*__kaodv_queue_find_entry(kaodv_queue_cmpfn cmpfn, unsigned long data)$/;"	f	file:
-__kaodv_queue_flush	lnx/kaodv-queue.c	/^static inline void __kaodv_queue_flush(void)$/;"	f	file:
-__kaodv_queue_reset	lnx/kaodv-queue.c	/^static inline void __kaodv_queue_reset(void)$/;"	f	file:
-a	aodv_rrep.h	/^    u_int16_t a:1;$/;"	m	struct:__anon1
-access	defs.h	/^    inline static AODV_msg *access(const Packet * p) {$/;"	f	struct:AODV_msg::__anon3
-access	ns-2/ns-2.35/common/packet.h	/^	inline static hdr_cmn* access(const Packet* p) {$/;"	f	struct:hdr_cmn
-access	ns-2/ns-2.35/common/packet.h	/^	inline unsigned char* access(int off) const {$/;"	f	class:Packet
-accessdata	ns-2/ns-2.35/common/packet.h	/^	inline unsigned char* accessdata() const { $/;"	f	class:Packet
-ack_timer	routing_table.h	/^    struct timer ack_timer; \/* RREP_ack timer for this destination *\/$/;"	m	struct:rt_table	typeref:struct:rt_table::timer
-active_route_timeout	lnx/kaodv-mod.c	/^int active_route_timeout = 3000;$/;"	v
-active_route_timeout	lnx/kaodv-netlink.h	/^	int active_route_timeout;$/;"	m	struct:kaodv_conf_msg
-active_route_timeout	main.c	/^int active_route_timeout = ACTIVE_ROUTE_TIMEOUT_HELLO;$/;"	v
-active_route_timeout	ns-2/aodv-uu.h	/^	int active_route_timeout;$/;"	m	class:AODVUU
-active_route_timeout	patches/aodv-uu/ns-2/aodv-uu.h	/^	int active_route_timeout;$/;"	m	class:AODVUU
-add-all-packet-headers	ns-2/ns-2.35/tcl/lib/ns-packet.tcl	/^proc add-all-packet-headers {} {$/;"	p
-add-packet-header	ns-2/ns-2.35/tcl/lib/ns-packet.tcl	/^proc add-packet-header args {$/;"	p
-addPacketClassifier	ns-2/ns-2.35/common/packet.h	/^	static void addPacketClassifier(PacketClassifier *pc)$/;"	f	class:p_info
-addPacketTracer	ns-2/ns-2.35/trace/cmu-trace.cc	/^void CMUTrace::addPacketTracer(PacketTracer *pt)$/;"	f	class:CMUTrace
-addattr	nl.c	/^int addattr(struct nlmsghdr *n, int type, void *data, int alen)$/;"	f
-addr_type	ns-2/ns-2.35/common/packet.h	/^	inline int& addr_type() { return (addr_type_); }$/;"	f	struct:hdr_cmn
-addr_type_	ns-2/ns-2.35/common/packet.h	/^	int      addr_type_;    \/\/ type of next_hop_ addr$/;"	m	struct:hdr_cmn
-agent_	ns-2/aodv-uu.h	/^	AODVUU *agent_;$/;"	m	class:TimerQueueTimer
-agent_	patches/aodv-uu/ns-2/aodv-uu.h	/^	AODVUU *agent_;$/;"	m	class:TimerQueueTimer
-alloc	ns-2/ns-2.35/common/packet.h	/^inline Packet* Packet::alloc()$/;"	f	class:Packet
-alloc	ns-2/ns-2.35/common/packet.h	/^inline Packet* Packet::alloc(int n)$/;"	f	class:Packet
-allocdata	ns-2/ns-2.35/common/packet.h	/^inline void Packet::allocdata(int n)$/;"	f	class:Packet
-alog	debug.c	/^void NS_CLASS alog(int type, int errnum, const char *function, char *format,$/;"	f
-aodv_socket_cleanup	aodv_socket.c	/^void aodv_socket_cleanup(void)$/;"	f
-aodv_socket_init	aodv_socket.c	/^void NS_CLASS aodv_socket_init()$/;"	f
-aodv_socket_new_msg	aodv_socket.c	/^AODV_msg *NS_CLASS aodv_socket_new_msg(void)$/;"	f
-aodv_socket_process_packet	aodv_socket.c	/^void NS_CLASS aodv_socket_process_packet(AODV_msg * aodv_msg, int len,$/;"	f
-aodv_socket_queue_msg	aodv_socket.c	/^AODV_msg *NS_CLASS aodv_socket_queue_msg(AODV_msg * aodv_msg, int size)$/;"	f
-aodv_socket_read	aodv_socket.c	/^static void aodv_socket_read(int fd)$/;"	f	file:
-aodv_socket_send	aodv_socket.c	/^void NS_CLASS aodv_socket_send(AODV_msg * aodv_msg, struct in_addr dst,$/;"	f
-aodvnl	nl.c	/^struct nlsock aodvnl;$/;"	v	typeref:struct:nlsock
-aomdv_salvage_count_	ns-2/ns-2.35/common/packet.h	/^	int aomdv_salvage_count_;$/;"	m	struct:hdr_cmn
-assert	ns-2/ns-2.35/tcl/lib/ns-lib.tcl	/^proc assert args {$/;"	p
-attach_callback_func	main.c	/^int attach_callback_func(int fd, callback_func_t func)$/;"	f
-bc_addr	lnx/kaodv-mod.h	/^	struct in_addr bc_addr;$/;"	m	struct:if_info	typeref:struct:if_info::in_addr
-bcast_time	defs.h	/^    struct timeval bcast_time;  \/* The time of the last broadcast msg sent *\/$/;"	m	struct:host_info	typeref:struct:host_info::timeval
-bigend	endian.c	/^int bigend(void)$/;"	f
-bind_offset	ns-2/ns-2.35/common/packet.h	/^	inline void bind_offset(int* off) { offset_ = off; }$/;"	f	class:PacketHeaderClass
-bits	ns-2/ns-2.35/common/packet.h	/^	inline unsigned char* bits() { return (bits_); }$/;"	f	class:Packet
-bits_	ns-2/ns-2.35/common/packet.h	/^	unsigned char* bits_;	\/\/ header bits$/;"	m	class:Packet
-bl_timer	aodv_rreq.h	/^    struct timer bl_timer;$/;"	m	struct:blacklist	typeref:struct:blacklist::timer
-blacklist	aodv_rreq.h	/^struct blacklist {$/;"	s
-bradius	ns-2/ns-2.35/trace/cmu-trace.cc	/^double CMUTrace::bradius = 0.0;$/;"	m	class:CMUTrace	file:
-bradius	ns-2/ns-2.35/trace/cmu-trace.h	/^        static double  bradius;$/;"	m	class:CMUTrace
-broadcast	defs.h	/^    struct in_addr broadcast;$/;"	m	struct:dev_info	typeref:struct:dev_info::in_addr
-bw_parse	ns-2/ns-2.35/tcl/lib/ns-lib.tcl	/^proc bw_parse { bspec } {$/;"	p
-c_n	aodv_hello.c	/^	char c_n[10];$/;"	m	struct:neighbor_info	file:
-c_n	aodv_hello.h	/^	char c_n[10];$/;"	m	struct:neighbor_info
-calc_1	aodv_hello.c	/^float calc_1(){$/;"	f
-calc_2	aodv_hello.c	/^float calc_2(){$/;"	f
-calculate_broadcast_parameters	ns-2/ns-2.35/trace/cmu-trace.cc	/^void CMUTrace::calculate_broadcast_parameters() {$/;"	f	class:CMUTrace
-callback	main.c	/^static struct callback {$/;"	s	file:
-callback_func_t	defs.h	/^typedef void (*callback_func_t) (int);$/;"	t
-callbacks	main.c	/^} callbacks[CALLBACK_FUNCS];$/;"	v	typeref:struct:callback	file:
-check	lnx/kaodv-ipenc.h	/^    u_int16_t check;$/;"	m	struct:min_ipenc_hdr
-class_PriQueue	ns-2/ns-2.35/queue/priqueue.cc	/^} class_PriQueue;$/;"	v	typeref:class:PriQueueClass	file:
-class_rtProtoAODVUU	ns-2/aodv-uu.cc	/^class_rtProtoAODVUU;$/;"	v	typeref:class:AODVUUclass	file:
-class_rtProtoAODVUU	patches/aodv-uu/ns-2/aodv-uu.cc	/^	class_rtProtoAODVUU;$/;"	v	typeref:class:AODVUUclass	file:
-class_rtProtoAODVUU_hdr	ns-2/aodv-uu.cc	/^} class_rtProtoAODVUU_hdr;$/;"	v	typeref:class:AODVUUHeaderClass	file:
-class_rtProtoAODVUU_hdr	patches/aodv-uu/ns-2/aodv-uu.cc	/^	}} class_rtProtoAODVUU_hdr;$/;"	v	typeref:class:AODVUUHeaderClass	file:
-classify	ns-2/ns-2.35/common/packet.h	/^		packetClass classify(packet_t type) $/;"	f	class:PacketClassifier
-classify	ns-2/ns-2.35/common/packet.h	/^	static packetClass classify(packet_t type) {		$/;"	f	class:p_info
-cleanup	main.c	/^static void cleanup(void)$/;"	f	file:
-cmsg_nxthdr_fix	aodv_socket.c	/^struct cmsghdr *cmsg_nxthdr_fix(struct msghdr *__msg, struct cmsghdr *__cmsg)$/;"	f
-cmutrace_class	ns-2/ns-2.35/trace/cmu-trace.cc	/^} cmutrace_class;$/;"	v	typeref:class:CMUTraceClass	file:
-command	ns-2/aodv-uu.cc	/^int NS_CLASS command(int argc, const char *const *argv)$/;"	f
-command	ns-2/ns-2.35/queue/priqueue.cc	/^PriQueue::command(int argc, const char*const* argv)$/;"	f	class:PriQueue
-command	ns-2/ns-2.35/trace/cmu-trace.cc	/^CMUTrace::command(int argc, const char*const* argv)$/;"	f	class:CMUTrace
-command	patches/aodv-uu/ns-2/aodv-uu.cc	/^int NS_CLASS command(int argc, const char *const *argv)$/;"	f
-copy	ns-2/ns-2.35/common/packet.h	/^	virtual AppData* copy() { return new PacketData(*this); }$/;"	f	class:PacketData
-copy	ns-2/ns-2.35/common/packet.h	/^inline Packet* Packet::copy() const$/;"	f	class:Packet
-create	ns-2/aodv-uu.cc	/^    } TclObject *create(int argc, const char *const *argv) {$/;"	f	class:AODVUUclass
-create	ns-2/ns-2.35/queue/priqueue.cc	/^  TclObject* create(int, const char*const*) {$/;"	f	class:PriQueueClass
-create	ns-2/ns-2.35/trace/cmu-trace.cc	/^	TclObject* create(int, const char*const* argv) {$/;"	f	class:CMUTraceClass
-create	patches/aodv-uu/ns-2/aodv-uu.cc	/^	} TclObject *create(int argc, const char *const *argv) {$/;"	f	class:AODVUUclass
-d	aodv_rreq.h	/^    u_int8_t d:1;		\/* Destination only respond *\/$/;"	m	struct:__anon7
-d	aodv_rreq.h	/^    u_int8_t d:1;$/;"	m	struct:__anon7
-daddr	lnx/kaodv-expl.h	/^	__u32 daddr;$/;"	m	struct:expl_entry
-daddr	lnx/kaodv-ipenc.h	/^    u_int32_t daddr;$/;"	m	struct:min_ipenc_hdr
-daddr	lnx/kaodv-queue.c	/^	__u32 daddr;$/;"	m	struct:kaodv_rt_info	file:
-data	ns-2/ns-2.35/common/packet.h	/^	unsigned char* data() { return data_; }$/;"	f	class:PacketData
-data	seek_list.h	/^    char data[IP_DATA_MAX_LEN];$/;"	m	struct:ip_data
-data	timer_queue.h	/^    void *data;$/;"	m	struct:timer
-data_	ns-2/ns-2.35/common/packet.h	/^	AppData* data_;		\/\/ variable size buffer for 'data'$/;"	m	class:Packet
-data_	ns-2/ns-2.35/common/packet.h	/^	unsigned char* data_;$/;"	m	class:PacketData
-data_packet	ns-2/ns-2.35/common/packet.h	/^	static bool data_packet(packet_t type) {$/;"	f	class:p_info
-datalen	ns-2/ns-2.35/common/packet.h	/^	inline int datalen() const { return data_ ? data_->size() : 0; }$/;"	f	class:Packet
-datalen_	ns-2/ns-2.35/common/packet.h	/^	int datalen_;$/;"	m	class:PacketData
-debug	debug.c	/^int debug = 0;$/;"	v
-debug	ns-2/aodv-uu.h	/^	int debug;$/;"	m	class:AODVUU
-debug	ns-2/ns-2.35/tcl/lib/ns-lib.tcl	/^	proc debug args {$/;"	p
-debug	patches/aodv-uu/ns-2/aodv-uu.h	/^	int debug;$/;"	m	class:AODVUU
-delay_parse	ns-2/ns-2.35/tcl/lib/ns-lib.tcl	/^proc delay_parse { spec } {$/;"	p
-delete_period	main.c	/^int delete_period = DELETE_PERIOD_HELLO;$/;"	v
-delete_period	ns-2/aodv-uu.h	/^	int delete_period;$/;"	m	class:AODVUU
-delete_period	patches/aodv-uu/ns-2/aodv-uu.h	/^	int delete_period;$/;"	m	class:AODVUU
-dest_addr	aodv_rerr.h	/^    u_int32_t dest_addr;$/;"	m	struct:__anon5
-dest_addr	aodv_rerr.h	/^    u_int32_t dest_addr;$/;"	m	struct:__anon6
-dest_addr	aodv_rrep.h	/^    u_int32_t dest_addr;$/;"	m	struct:__anon1
-dest_addr	aodv_rreq.h	/^    struct in_addr dest_addr;$/;"	m	struct:blacklist	typeref:struct:blacklist::in_addr
-dest_addr	aodv_rreq.h	/^    u_int32_t dest_addr;$/;"	m	struct:__anon7
-dest_addr	ns-2/packet_queue.h	/^    struct in_addr  dest_addr;$/;"	m	struct:q_pkt	typeref:struct:q_pkt::in_addr
-dest_addr	patches/aodv-uu/ns-2/packet_queue.h	/^    struct in_addr  dest_addr;$/;"	m	struct:q_pkt	typeref:struct:q_pkt::in_addr
-dest_addr	routing_table.h	/^    struct in_addr dest_addr;   \/* IP address of the destination *\/$/;"	m	struct:rt_table	typeref:struct:rt_table::in_addr
-dest_addr	seek_list.h	/^    struct in_addr dest_addr;$/;"	m	struct:seek_list	typeref:struct:seek_list::in_addr
-dest_cmp	lnx/kaodv-queue.c	/^static inline int dest_cmp(struct kaodv_queue_entry *e, unsigned long daddr)$/;"	f	file:
-dest_count	aodv_rerr.h	/^    u_int8_t dest_count;$/;"	m	struct:__anon5
-dest_seqno	aodv_rerr.h	/^    u_int32_t dest_seqno;$/;"	m	struct:__anon5
-dest_seqno	aodv_rerr.h	/^    u_int32_t dest_seqno;$/;"	m	struct:__anon6
-dest_seqno	aodv_rrep.h	/^    u_int32_t dest_seqno;$/;"	m	struct:__anon1
-dest_seqno	aodv_rreq.h	/^    u_int32_t dest_seqno;$/;"	m	struct:__anon7
-dest_seqno	routing_table.h	/^    u_int32_t dest_seqno;$/;"	m	struct:rt_table
-dest_seqno	seek_list.h	/^    u_int32_t dest_seqno;$/;"	m	struct:seek_list
-dev	lnx/kaodv-mod.h	/^	struct net_device *dev;$/;"	m	struct:if_info	typeref:struct:if_info::net_device
-dev_indices	defs.h	/^unsigned int dev_indices[MAX_NR_INTERFACES];$/;"	v
-dev_indices	ns-2/aodv-uu.h	/^	unsigned int dev_indices[MAX_NR_INTERFACES];$/;"	m	class:AODVUU
-dev_indices	patches/aodv-uu/ns-2/aodv-uu.h	/^	unsigned int dev_indices[MAX_NR_INTERFACES];$/;"	m	class:AODVUU
-dev_info	defs.h	/^struct dev_info {$/;"	s
-devfromsock	defs.h	/^static inline struct dev_info *devfromsock(int sock)$/;"	f
-devs	defs.h	/^    struct dev_info devs[MAX_NR_INTERFACES + 1]; \/* Add +1 for returning as "error" in ifindex2devindex. *\/$/;"	m	struct:host_info	typeref:struct:host_info::dev_info
-devs_ip_to_str	debug.c	/^char *NS_CLASS devs_ip_to_str()$/;"	f
-dir_t	ns-2/ns-2.35/common/packet.h	/^	enum dir_t { DOWN= -1, NONE= 0, UP= 1 };$/;"	g	struct:hdr_cmn
-direction	ns-2/ns-2.35/common/packet.h	/^	inline dir_t& direction() { return (direction_); }$/;"	f	struct:hdr_cmn
-direction_	ns-2/ns-2.35/common/packet.h	/^	dir_t	direction_;	\/\/ direction: 0=none, 1=up, -1=down$/;"	m	struct:hdr_cmn
-dmux_	ns-2/aodv-uu.h	/^	PortClassifier *dmux_;$/;"	m	class:AODVUU
-dst	lnx/kaodv-netlink.h	/^	u_int32_t dst;$/;"	m	struct:kaodv_rt_msg
-dump	llf.c	/^    u_int32_t dump;$/;"	m	struct:rtnl_handle	file:
-dump_header	ns-2/ns-2.35/common/packet.h	/^Packet::dump_header(Packet *p, int offset, int length)$/;"	f	class:Packet
-duration_scaling_factor_	ns-2/ns-2.35/trace/cmu-trace.cc	/^double CMUTrace::duration_scaling_factor_ = 0.0;$/;"	m	class:CMUTrace	file:
-duration_scaling_factor_	ns-2/ns-2.35/trace/cmu-trace.h	/^        static double  duration_scaling_factor_;$/;"	m	class:CMUTrace
-enabled	defs.h	/^    int enabled;        \/* 1 if struct is used, else 0 *\/$/;"	m	struct:dev_info
-errbitcnt	ns-2/ns-2.35/common/packet.h	/^	inline int& errbitcnt() {return errbitcnt_; }$/;"	f	struct:hdr_cmn
-errbitcnt_	ns-2/ns-2.35/common/packet.h	/^	int     errbitcnt_;     \/\/ # of corrupted bits jahn$/;"	m	struct:hdr_cmn
-error	ns-2/ns-2.35/common/packet.h	/^	inline int& error() { return error_; }$/;"	f	struct:hdr_cmn
-error_	ns-2/ns-2.35/common/packet.h	/^	int	error_;		\/\/ error flag$/;"	m	struct:hdr_cmn
-expanding_ring_search	main.c	/^int expanding_ring_search = 1;$/;"	v
-expanding_ring_search	ns-2/aodv-uu.h	/^	int expanding_ring_search;$/;"	m	class:AODVUU
-expanding_ring_search	patches/aodv-uu/ns-2/aodv-uu.h	/^	int expanding_ring_search;$/;"	m	class:AODVUU
-expire	ns-2/aodv-uu.cc	/^void TimerQueueTimer::expire(Event *e)$/;"	f	class:TimerQueueTimer
-expire	patches/aodv-uu/ns-2/aodv-uu.cc	/^void TimerQueueTimer::expire(Event *e)$/;"	f	class:TimerQueueTimer
-expires	lnx/kaodv-expl.h	/^	unsigned long expires;$/;"	m	struct:expl_entry
-expl_entry	lnx/kaodv-expl.h	/^struct expl_entry {$/;"	s
-expl_len	lnx/kaodv-expl.c	/^static unsigned int expl_len;$/;"	v	file:
-expl_lock	lnx/kaodv-expl.c	/^static rwlock_t expl_lock = RW_LOCK_UNLOCKED;$/;"	v	file:
-expl_timer	lnx/kaodv-expl.c	/^static struct timer_list expl_timer;$/;"	v	typeref:struct:timer_list	file:
-fd	llf.c	/^    int fd;$/;"	m	struct:rtnl_handle	file:
-fd	main.c	/^    int fd;$/;"	m	struct:callback	file:
-fecsize	ns-2/ns-2.35/common/packet.h	/^	inline int& fecsize() {return fecsize_; }$/;"	f	struct:hdr_cmn
-fecsize_	ns-2/ns-2.35/common/packet.h	/^	int     fecsize_;$/;"	m	struct:hdr_cmn
-fflag_	ns-2/ns-2.35/common/packet.h	/^	bool fflag_;$/;"	m	class:Packet
-filter	ns-2/ns-2.35/queue/priqueue.cc	/^PriQueue::filter(PacketFilter filter, void * data)$/;"	f	class:PriQueue
-filter	ns-2/ns-2.35/queue/priqueue.cc	/^PriQueue::filter(nsaddr_t id)$/;"	f	class:PriQueue
-find-max	ns-2/ns-2.35/tcl/lib/ns-lib.tcl	/^proc find-max list {$/;"	p
-find_default_gw	main.c	/^int find_default_gw(void)$/;"	f
-find_node	aodv_hello.c	/^int find_node(char* addr){$/;"	f
-finish	mytcl/first.tcl	/^proc finish {} {$/;"	p
-fixed_interface	ns-2/aodv-uu.h	/^	int fixed_interface;$/;"	m	class:AODVUU
-flags	lnx/kaodv-expl.h	/^	unsigned short flags;$/;"	m	struct:expl_entry
-flags	lnx/kaodv-netlink.h	/^	u_int8_t flags;$/;"	m	struct:kaodv_rt_msg
-flags	routing_table.h	/^    u_int16_t flags;        \/* Routing flags *\/$/;"	m	struct:rt_table
-flags	seek_list.h	/^    u_int8_t flags;		\/* The flags we are using for resending the RREQ *\/$/;"	m	struct:seek_list
-format	ns-2/ns-2.35/trace/cmu-trace.cc	/^void CMUTrace::format(Packet* p, const char *why)$/;"	f	class:CMUTrace
-format_aodv	ns-2/ns-2.35/trace/cmu-trace.cc	/^CMUTrace::format_aodv(Packet *p, int offset)$/;"	f	class:CMUTrace
-format_aodvuu	ns-2/ns-2.35/trace/cmu-trace.cc	/^void CMUTrace::format_aodvuu(Packet *p, int offset) {$/;"	f	class:CMUTrace
-format_aomdv	ns-2/ns-2.35/trace/cmu-trace.cc	/^CMUTrace::format_aomdv(Packet *p, int offset)$/;"	f	class:CMUTrace
-format_arp	ns-2/ns-2.35/trace/cmu-trace.cc	/^CMUTrace::format_arp(Packet *p, int offset)$/;"	f	class:CMUTrace
-format_dsr	ns-2/ns-2.35/trace/cmu-trace.cc	/^CMUTrace::format_dsr(Packet *p, int offset)$/;"	f	class:CMUTrace
-format_imep	ns-2/ns-2.35/trace/cmu-trace.cc	/^CMUTrace::format_imep(Packet *p, int offset)$/;"	f	class:CMUTrace
-format_ip	ns-2/ns-2.35/trace/cmu-trace.cc	/^CMUTrace::format_ip(Packet *p, int offset)$/;"	f	class:CMUTrace
-format_mac	ns-2/ns-2.35/trace/cmu-trace.cc	/^CMUTrace::format_mac(Packet *p, int offset)$/;"	f	class:CMUTrace
-format_mac_common	ns-2/ns-2.35/trace/cmu-trace.cc	/^CMUTrace::format_mac_common(Packet *p, const char *why, int offset)$/;"	f	class:CMUTrace
-format_mdart	ns-2/ns-2.35/trace/cmu-trace.cc	/^CMUTrace::format_mdart(Packet *p, int offset)$/;"	f	class:CMUTrace
-format_msg	ns-2/ns-2.35/trace/cmu-trace.cc	/^CMUTrace::format_msg(Packet *, int)$/;"	f	class:CMUTrace
-format_phy	ns-2/ns-2.35/trace/cmu-trace.cc	/^CMUTrace::format_phy(Packet *, int offset)$/;"	f	class:CMUTrace
-format_rtp	ns-2/ns-2.35/trace/cmu-trace.cc	/^CMUTrace::format_rtp(Packet *p, int offset)$/;"	f	class:CMUTrace
-format_sctp	ns-2/ns-2.35/trace/cmu-trace.cc	/^CMUTrace::format_sctp(Packet* p,int offset)$/;"	f	class:CMUTrace
-format_smac	ns-2/ns-2.35/trace/cmu-trace.cc	/^CMUTrace::format_smac(Packet *p, int offset)$/;"	f	class:CMUTrace
-format_tcp	ns-2/ns-2.35/trace/cmu-trace.cc	/^CMUTrace::format_tcp(Packet *p, int offset)$/;"	f	class:CMUTrace
-format_tora	ns-2/ns-2.35/trace/cmu-trace.cc	/^CMUTrace::format_tora(Packet *p, int offset)$/;"	f	class:CMUTrace
-format_unknow	ns-2/ns-2.35/trace/cmu-trace.cc	/^int PacketTracer::format_unknow(Packet *p, int offset, BaseTrace *pt, int newtrace)$/;"	f	class:PacketTracer
-free	ns-2/ns-2.35/common/packet.h	/^inline void Packet::free(Packet* p)$/;"	f	class:Packet
-free_	ns-2/ns-2.35/common/packet.h	/^	static Packet* free_;	\/\/ packet free list$/;"	m	class:Packet
-func	main.c	/^    callback_func_t func;$/;"	m	struct:callback	file:
-fwd_time	defs.h	/^    struct timeval fwd_time;    \/* The time a data packet was last forwarded *\/$/;"	m	struct:host_info	typeref:struct:host_info::timeval
-g	aodv_rreq.h	/^    u_int8_t g:1;		\/* Gratuitous RREP flag *\/$/;"	m	struct:__anon7
-g	aodv_rreq.h	/^    u_int8_t g:1;$/;"	m	struct:__anon7
-garbage_collect_timer	ns-2/packet_queue.h	/^    struct timer garbage_collect_timer;$/;"	m	struct:packet_queue	typeref:struct:packet_queue::timer
-garbage_collect_timer	patches/aodv-uu/ns-2/packet_queue.h	/^    struct timer garbage_collect_timer;$/;"	m	struct:packet_queue	typeref:struct:packet_queue::timer
-getNext	ns-2/ns-2.35/common/packet.h	/^		PacketClassifier *getNext(){return next_;}$/;"	f	class:PacketClassifier
-getNext	ns-2/ns-2.35/trace/cmu-trace.cc	/^PacketTracer *PacketTracer::getNext()$/;"	f	class:PacketTracer
-getType	ns-2/ns-2.35/common/packet.h	/^	static packet_t getType(const char *name)$/;"	f	class:p_info
-get_if_info	main.c	/^struct sockaddr_in *get_if_info(char *ifname, int type)$/;"	f
-gettimeofday	ns-2/aodv-uu.cc	/^int NS_CLASS gettimeofday(struct timeval *tv, struct timezone *tz)$/;"	f
-gettimeofday	patches/aodv-uu/ns-2/aodv-uu.cc	/^int NS_CLASS gettimeofday(struct timeval *tv, struct timezone *tz)$/;"	f
-give_node	aodv_hello.c	/^int give_node(char* addr){$/;"	f
-gw_prefix	main.c	/^int gw_prefix = 1;$/;"	v
-handler	timer_queue.h	/^    timeout_func_t handler;$/;"	m	struct:timer
-has_range	llf.c	/^    int has_range;$/;"	m	struct:wireless_iface	file:
-hash	routing_table.h	/^    hash_value hash;$/;"	m	struct:rt_table
-hash_value	routing_table.h	/^typedef u_int32_t hash_value;   \/* A hash value *\/$/;"	t
-hashing	routing_table.c	/^unsigned int hashing(struct in_addr *addr, hash_value * hash)$/;"	f
-hcnt	aodv_rrep.h	/^    u_int8_t hcnt;$/;"	m	struct:__anon1
-hcnt	aodv_rreq.h	/^    u_int8_t hcnt;$/;"	m	struct:__anon7
-hcnt	routing_table.h	/^    u_int8_t hcnt;      \/* Distance (in hops) to the destination *\/$/;"	m	struct:rt_table
-hdr_aodvuu	defs.h	/^typedef AODV_msg hdr_aodvuu;    \/\/ Name convention for headers$/;"	t	struct:AODV_msg
-hdr_cmn	ns-2/ns-2.35/common/packet.h	/^struct hdr_cmn {$/;"	s
-hdrlen_	ns-2/ns-2.35/common/packet.h	/^	int hdrlen_;		\/\/ # of bytes for this header$/;"	m	class:PacketHeaderClass
-hdrlen_	ns-2/ns-2.35/common/packet.h	/^	static int hdrlen_;$/;"	m	class:Packet
-head	ns-2/packet_queue.h	/^    list_t head;$/;"	m	struct:packet_queue
-head	patches/aodv-uu/ns-2/packet_queue.h	/^    list_t head;$/;"	m	struct:packet_queue
-hello_cnt	routing_table.h	/^    u_int8_t hello_cnt;$/;"	m	struct:rt_table
-hello_jitter	aodv_hello.c	/^long NS_CLASS hello_jitter()$/;"	f
-hello_jittering	main.c	/^int hello_jittering = 1;$/;"	v
-hello_jittering	ns-2/aodv-uu.h	/^	int hello_jittering;$/;"	m	class:AODVUU
-hello_jittering	patches/aodv-uu/ns-2/aodv-uu.h	/^	int hello_jittering;$/;"	m	class:AODVUU
-hello_process	aodv_hello.c	/^void NS_CLASS hello_process(RREP * hello, int rreplen, unsigned int ifindex)$/;"	f
-hello_send	aodv_hello.c	/^void NS_CLASS hello_send(void *arg)$/;"	f
-hello_start	aodv_hello.c	/^void NS_CLASS hello_start()$/;"	f
-hello_stop	aodv_hello.c	/^void NS_CLASS hello_stop()$/;"	f
-hello_timeout	aodv_timeout.c	/^void NS_CLASS hello_timeout(void *arg)$/;"	f
-hello_timer	aodv_hello.c	/^static struct timer hello_timer;$/;"	v	typeref:struct:timer	file:
-hello_timer	ns-2/aodv-uu.h	/^	struct timer hello_timer;$/;"	m	class:AODVUU	typeref:struct:AODVUU::timer
-hello_timer	patches/aodv-uu/ns-2/aodv-uu.h	/^	struct timer hello_timer;$/;"	m	class:AODVUU	typeref:struct:AODVUU::timer
-hello_timer	routing_table.h	/^    struct timer hello_timer;$/;"	m	struct:rt_table	typeref:struct:rt_table::timer
-hello_update_timeout	aodv_hello.c	/^NS_INLINE void NS_CLASS hello_update_timeout(rt_table_t * rt,$/;"	f
-host_info	defs.h	/^struct host_info {$/;"	s
-host_init	main.c	/^void host_init(char *ifname)$/;"	f
-htonl	debug.c	452;"	d	file:
-htonl	ns-2/aodv-uu.h	87;"	d
-htonl	ns-2/aodv-uu.h	92;"	d
-htonl	patches/aodv-uu/ns-2/aodv-uu.h	86;"	d
-htonl	patches/aodv-uu/ns-2/aodv-uu.h	91;"	d
-htons	ns-2/aodv-uu.h	88;"	d
-htons	ns-2/aodv-uu.h	93;"	d
-htons	patches/aodv-uu/ns-2/aodv-uu.h	87;"	d
-htons	patches/aodv-uu/ns-2/aodv-uu.h	92;"	d
-if_addr	lnx/kaodv-mod.h	/^	struct in_addr if_addr;$/;"	m	struct:if_info	typeref:struct:if_info::in_addr
-if_indextoname	ns-2/aodv-uu.cc	/^char *NS_CLASS if_indextoname(int ifindex, char *ifname)$/;"	f
-if_indextoname	patches/aodv-uu/ns-2/aodv-uu.cc	/^char *NS_CLASS if_indextoname(int ifindex, char *ifname)$/;"	f
-if_info	lnx/kaodv-mod.h	/^struct if_info {$/;"	s
-if_info_add	lnx/kaodv-mod.h	/^static inline int if_info_add(struct net_device *dev)$/;"	f
-if_info_from_ifindex	lnx/kaodv-mod.h	/^static inline int if_info_from_ifindex(struct in_addr *ifa, struct in_addr *bc,$/;"	f
-if_info_purge	lnx/kaodv-mod.h	/^static inline void if_info_purge(void)$/;"	f
-iface	ns-2/ns-2.35/common/packet.h	/^	inline int& iface() { return (iface_); }$/;"	f	struct:hdr_cmn
-iface_	ns-2/ns-2.35/common/packet.h	/^	int	iface_;		\/\/ receiving interface (label)$/;"	m	struct:hdr_cmn
-iface_constant	ns-2/ns-2.35/common/packet.h	/^	enum iface_constant { $/;"	g	class:iface_literal
-iface_literal	ns-2/ns-2.35/common/packet.h	/^	iface_literal(const iface_constant i, const char * const n) : $/;"	f	class:iface_literal
-iface_literal	ns-2/ns-2.35/common/packet.h	/^class iface_literal {$/;"	c
-ifilock	lnx/kaodv-mod.h	/^static rwlock_t ifilock = RW_LOCK_UNLOCKED;$/;"	v
-ifindex	defs.h	/^    unsigned int ifindex;$/;"	m	struct:dev_info
-ifindex	llf.c	/^    int ifindex;		\/* Interface index == black magic *\/$/;"	m	struct:wireless_iface	file:
-ifindex	lnx/kaodv-expl.h	/^	int ifindex;$/;"	m	struct:expl_entry
-ifindex	lnx/kaodv-netlink.h	/^	int ifindex;$/;"	m	struct:kaodv_rt_msg
-ifindex	ns-2/aodv-uu.h	/^	unsigned int ifindex; \/* Always use ns interface *\/$/;"	m	class:AODVUU
-ifindex	patches/aodv-uu/ns-2/aodv-uu.h	/^	unsigned int ifindex; \/* Always use ns interface *\/$/;"	m	class:AODVUU
-ifindex	routing_table.h	/^    unsigned int ifindex;   \/* Network interface index... *\/$/;"	m	struct:rt_table
-ifindex2devindex	defs.h	/^static inline unsigned int ifindex2devindex(unsigned int ifindex)$/;"	f
-ifindex2devindex	ns-2/aodv-uu.h	/^inline int NS_CLASS ifindex2devindex(unsigned int ifindex)$/;"	f
-ifindex2devindex	patches/aodv-uu/ns-2/aodv-uu.h	/^inline int NS_CLASS ifindex2devindex(unsigned int ifindex)$/;"	f
-ifname	defs.h	/^    char ifname[IFNAMSIZ];$/;"	m	struct:dev_info
-ifname	llf.c	/^    char ifname[IFNAMSIZ + 1];	\/* Interface name *\/$/;"	m	struct:wireless_iface	file:
-ifname	lnx/kaodv-mod.c	/^static char *ifname[MAX_INTERFACES] = { "eth0" };$/;"	v	file:
-ifqueue	ns-2/aodv-uu.h	/^	PriQueue *ifqueue;$/;"	m	class:AODVUU
-ifqueue	patches/aodv-uu/ns-2/aodv-uu.h	/^	PriQueue *ifqueue;$/;"	m	class:AODVUU
-ifqueue_filter_on_dest	ns-2/aodv-uu.cc	/^int ifqueue_filter_on_dest(Packet *p, void *data)$/;"	f
-ifqueue_filter_on_dest	patches/aodv-uu/ns-2/aodv-uu.cc	/^int ifqueue_filter_on_dest(Packet *p, void *data)$/;"	f
-ifqueuelist	ns-2/aodv-uu.h	/^	PriQueue *ifqueuelist[MAX_IF];$/;"	m	class:AODVUU
-incoming	ns-2/ns-2.35/common/packet.h	/^        u_int8_t        incoming;$/;"	m	class:Packet
-index2name	llf.c	/^static inline int index2name(int skfd, int ifindex, char *name)$/;"	f	file:
-init	ns-2/ns-2.35/common/packet.h	/^inline void Packet::init(Packet* p)$/;"	f	class:Packet
-initName	ns-2/ns-2.35/common/packet.h	/^	static void initName()$/;"	f	class:p_info
-init_or_cleanup	lnx/kaodv-queue.c	/^static int init_or_cleanup(int init)$/;"	f	file:
-initdata	ns-2/ns-2.35/common/packet.h	/^	inline void initdata() { data_  = 0;}$/;"	f	class:Packet
-initialized	ns-2/aodv-uu.h	/^	int initialized;$/;"	m	class:AODVUU
-initialized	ns-2/ns-2.35/trace/cmu-trace.h	/^        int initialized() { return node_ && 1; }$/;"	f	class:CMUTrace
-initialized	patches/aodv-uu/ns-2/aodv-uu.h	/^	int initialized;$/;"	m	class:AODVUU
-interfaceQueue	ns-2/aodv-uu.cc	/^void NS_CLASS interfaceQueue(nsaddr_t addr, int action)$/;"	f
-interfaceQueue	patches/aodv-uu/ns-2/aodv-uu.cc	/^void NS_CLASS interfaceQueue(nsaddr_t addr, int action)$/;"	f
-interface_cache	llf.c	/^struct wireless_iface *interface_cache = NULL;$/;"	v	typeref:struct:wireless_iface
-internet_gw_mode	main.c	/^int internet_gw_mode = 0;$/;"	v
-internet_gw_mode	ns-2/aodv-uu.h	/^	int internet_gw_mode;$/;"	m	class:AODVUU
-internet_gw_mode	patches/aodv-uu/ns-2/aodv-uu.h	/^	int internet_gw_mode;$/;"	m	class:AODVUU
-ip_csum	lnx/kaodv-ipenc.c	/^static u_int16_t ip_csum(unsigned short *buf, int nshorts)$/;"	f	file:
-ip_data	seek_list.h	/^struct ip_data {$/;"	s
-ip_pkt_decapsulate	lnx/kaodv-ipenc.c	/^struct sk_buff *ip_pkt_decapsulate(struct sk_buff *skb)$/;"	f
-ip_pkt_encapsulate	lnx/kaodv-ipenc.c	/^struct sk_buff *ip_pkt_encapsulate(struct sk_buff *skb, __u32 dest)$/;"	f
-ip_to_str	debug.c	/^char *NS_CLASS ip_to_str(struct in_addr addr)$/;"	f
-ipaddr	defs.h	/^    struct in_addr ipaddr;  \/* The local IP address *\/$/;"	m	struct:dev_info	typeref:struct:dev_info::in_addr
-ipd	seek_list.h	/^    struct ip_data *ipd;$/;"	m	struct:seek_list	typeref:struct:seek_list::ip_data
-is_gateway	lnx/kaodv-mod.c	/^int is_gateway = 1;$/;"	v
-is_gateway	lnx/kaodv-netlink.h	/^	int is_gateway;$/;"	m	struct:kaodv_conf_msg
-iw_get_interface_data	llf.c	/^static struct wireless_iface *iw_get_interface_data(int ifindex)$/;"	f	file:
-j	aodv_rreq.h	/^    u_int8_t j:1;		\/* Join flag (multicast) *\/$/;"	m	struct:__anon7
-j	aodv_rreq.h	/^    u_int8_t j:1;$/;"	m	struct:__anon7
-kaodv-objs	lnx/Makefile	/^kaodv-objs := kaodv-mod.o kaodv-debug.o kaodv-netlink.o kaodv-queue.o kaodv-ipenc.o kaodv-expl.o $/;"	m
-kaodv_conf_msg	lnx/kaodv-netlink.h	/^typedef struct kaodv_conf_msg {$/;"	s
-kaodv_conf_msg_t	lnx/kaodv-netlink.h	/^} kaodv_conf_msg_t;$/;"	t	typeref:struct:kaodv_conf_msg
-kaodv_exit	lnx/kaodv-mod.c	/^module_exit(kaodv_exit);$/;"	v
-kaodv_exit	lnx/kaodv-mod.c	/^static void __exit kaodv_exit(void)$/;"	f	file:
-kaodv_expl_add	lnx/kaodv-expl.c	/^int kaodv_expl_add(__u32 daddr, __u32 nhop, unsigned long time,$/;"	f
-kaodv_expl_del	lnx/kaodv-expl.c	/^int kaodv_expl_del(__u32 daddr)$/;"	f
-kaodv_expl_fini	lnx/kaodv-expl.c	/^void kaodv_expl_fini(void)$/;"	f
-kaodv_expl_flush	lnx/kaodv-expl.c	/^void kaodv_expl_flush(void)$/;"	f
-kaodv_expl_get	lnx/kaodv-expl.c	/^int kaodv_expl_get(__u32 daddr, struct expl_entry *e_in)$/;"	f
-kaodv_expl_init	lnx/kaodv-expl.c	/^void kaodv_expl_init(void)$/;"	f
-kaodv_expl_print	lnx/kaodv-expl.c	/^static int kaodv_expl_print(char *buf)$/;"	f	file:
-kaodv_expl_proc_info	lnx/kaodv-expl.c	/^kaodv_expl_proc_info(char *buffer, char **start, off_t offset, int length)$/;"	f	file:
-kaodv_expl_proc_info	lnx/kaodv-expl.c	/^static int kaodv_expl_proc_info(char *page, char **start, off_t off, int count,$/;"	f	file:
-kaodv_expl_timeout	lnx/kaodv-expl.c	/^static void kaodv_expl_timeout(unsigned long data)$/;"	f	file:
-kaodv_expl_update	lnx/kaodv-expl.c	/^int kaodv_expl_update(__u32 daddr, __u32 nhop, unsigned long time,$/;"	f
-kaodv_hook	lnx/kaodv-mod.c	/^static unsigned int kaodv_hook(unsigned int hooknum,$/;"	f	file:
-kaodv_init	lnx/kaodv-mod.c	/^module_init(kaodv_init);$/;"	v
-kaodv_init	lnx/kaodv-mod.c	/^static int __init kaodv_init(void)$/;"	f	file:
-kaodv_msg_type_to_str	lnx/kaodv-netlink.h	/^static inline char *kaodv_msg_type_to_str(int type)$/;"	f
-kaodv_netlink_build_msg	lnx/kaodv-netlink.c	/^static struct sk_buff *kaodv_netlink_build_msg(int type, void *data, int len)$/;"	f	file:
-kaodv_netlink_fini	lnx/kaodv-netlink.c	/^void kaodv_netlink_fini(void)$/;"	f
-kaodv_netlink_init	lnx/kaodv-netlink.c	/^int kaodv_netlink_init(void)$/;"	f
-kaodv_netlink_rcv_nl_event	lnx/kaodv-netlink.c	/^static int kaodv_netlink_rcv_nl_event(struct notifier_block *this,$/;"	f	file:
-kaodv_netlink_rcv_skb	lnx/kaodv-netlink.c	/^static inline void kaodv_netlink_rcv_skb(struct sk_buff *skb)$/;"	f	file:
-kaodv_netlink_receive_peer	lnx/kaodv-netlink.c	/^static int kaodv_netlink_receive_peer(unsigned char type, void *msg,$/;"	f	file:
-kaodv_netlink_send_debug_msg	lnx/kaodv-netlink.c	/^void kaodv_netlink_send_debug_msg(char *buf, int len)$/;"	f
-kaodv_netlink_send_rerr_msg	lnx/kaodv-netlink.c	/^void kaodv_netlink_send_rerr_msg(int type, __u32 src, __u32 dest, int ifindex)$/;"	f
-kaodv_netlink_send_rt_msg	lnx/kaodv-netlink.c	/^void kaodv_netlink_send_rt_msg(int type, __u32 src, __u32 dest)$/;"	f
-kaodv_netlink_send_rt_update_msg	lnx/kaodv-netlink.c	/^void kaodv_netlink_send_rt_update_msg(int type, __u32 src, __u32 dest,$/;"	f
-kaodv_nl_notifier	lnx/kaodv-netlink.c	/^static struct notifier_block kaodv_nl_notifier = {$/;"	v	typeref:struct:notifier_block	file:
-kaodv_ops	lnx/kaodv-mod.c	/^static struct nf_hook_ops kaodv_ops[] = {$/;"	v	typeref:struct:nf_hook_ops	file:
-kaodv_proc_info	lnx/kaodv-mod.c	/^int kaodv_proc_info(char *buffer, char **start, off_t offset, int length)$/;"	f
-kaodv_queue_cmpfn	lnx/kaodv-queue.c	/^typedef int (*kaodv_queue_cmpfn) (struct kaodv_queue_entry *, unsigned long);$/;"	t	file:
-kaodv_queue_enqueue_packet	lnx/kaodv-queue.c	/^kaodv_queue_enqueue_packet(struct sk_buff *skb, int (*okfn) (struct sk_buff *))$/;"	f
-kaodv_queue_entry	lnx/kaodv-queue.c	/^struct kaodv_queue_entry {$/;"	s	file:
-kaodv_queue_find	lnx/kaodv-queue.c	/^int kaodv_queue_find(__u32 daddr)$/;"	f
-kaodv_queue_find_dequeue_entry	lnx/kaodv-queue.c	/^*kaodv_queue_find_dequeue_entry(kaodv_queue_cmpfn cmpfn, unsigned long data)$/;"	f	file:
-kaodv_queue_fini	lnx/kaodv-queue.c	/^void kaodv_queue_fini(void)$/;"	f
-kaodv_queue_flush	lnx/kaodv-queue.c	/^void kaodv_queue_flush(void)$/;"	f
-kaodv_queue_get_info	lnx/kaodv-queue.c	/^static int kaodv_queue_get_info(char *buffer, char **start, off_t offset, int length)$/;"	f	file:
-kaodv_queue_get_info	lnx/kaodv-queue.c	/^static int kaodv_queue_get_info(char *page, char **start, off_t off, int count,$/;"	f	file:
-kaodv_queue_init	lnx/kaodv-queue.c	/^int kaodv_queue_init(void)$/;"	f
-kaodv_queue_set_verdict	lnx/kaodv-queue.c	/^int kaodv_queue_set_verdict(int verdict, __u32 daddr)$/;"	f
-kaodv_read_proc	lnx/kaodv-mod.c	/^static int kaodv_read_proc(char *page, char **start, off_t off, int count,$/;"	f	file:
-kaodv_rt_info	lnx/kaodv-queue.c	/^struct kaodv_rt_info {$/;"	s	file:
-kaodv_rt_msg	lnx/kaodv-netlink.h	/^typedef struct kaodv_rt_msg { $/;"	s
-kaodv_rt_msg_t	lnx/kaodv-netlink.h	/^} kaodv_rt_msg_t;$/;"	t	typeref:struct:kaodv_rt_msg
-kaodv_update_route_timeouts	lnx/kaodv-mod.c	/^void kaodv_update_route_timeouts(int hooknum, const struct net_device *dev,$/;"	f
-kaodvnl	lnx/kaodv-netlink.c	/^static struct sock *kaodvnl;$/;"	v	typeref:struct:sock	file:
-l	aodv_rreq.h	/^    list_t l;$/;"	m	struct:blacklist
-l	aodv_rreq.h	/^    list_t l;$/;"	m	struct:rreq_record
-l	lnx/kaodv-expl.h	/^	struct list_head l;$/;"	m	struct:expl_entry	typeref:struct:expl_entry::list_head
-l	lnx/kaodv-mod.h	/^	struct list_head l;$/;"	m	struct:if_info	typeref:struct:if_info::list_head
-l	ns-2/packet_queue.h	/^    list_t l;$/;"	m	struct:q_pkt
-l	patches/aodv-uu/ns-2/packet_queue.h	/^    list_t l;$/;"	m	struct:q_pkt
-l	routing_table.h	/^    list_t l;$/;"	m	struct:precursor
-l	routing_table.h	/^    list_t l;$/;"	m	struct:rt_table
-l	seek_list.h	/^    list_t l;$/;"	m	struct:seek_list
-l	timer_queue.h	/^    list_t l;$/;"	m	struct:timer
-last_hello_time	routing_table.h	/^    struct timeval last_hello_time;$/;"	m	struct:rt_table	typeref:struct:rt_table::timeval
-last_hop_	ns-2/ns-2.35/common/packet.h	/^	nsaddr_t last_hop_;     \/\/ for tracing on multi-user channels$/;"	m	struct:hdr_cmn
-len	ns-2/packet_queue.h	/^    unsigned int len;$/;"	m	struct:packet_queue
-len	patches/aodv-uu/ns-2/packet_queue.h	/^    unsigned int len;$/;"	m	struct:packet_queue
-len	seek_list.h	/^    int len;$/;"	m	struct:ip_data
-length	defs.h	/^    u_int8_t length;$/;"	m	struct:__anon4
-lifetime	aodv_rrep.h	/^    u_int32_t lifetime;$/;"	m	struct:__anon1
-link_layer_callback	ns-2/aodv-uu.cc	/^static void link_layer_callback(Packet *p, void *arg)$/;"	f	file:
-link_layer_callback	patches/aodv-uu/ns-2/aodv-uu.cc	/^static void link_layer_callback(Packet *p, void *arg)$/;"	f	file:
-list	lnx/kaodv-queue.c	/^	struct list_head list;$/;"	m	struct:kaodv_queue_entry	typeref:struct:kaodv_queue_entry::list_head	file:
-list_add	list.c	/^int list_add(list_t * head, list_t * le)$/;"	f
-list_add_tail	list.c	/^int list_add_tail(list_t * head, list_t * le)$/;"	f
-list_detach	list.c	/^int list_detach(list_t * le)$/;"	f
-list_empty	list.h	54;"	d
-list_first	list.h	56;"	d
-list_foreach	list.h	47;"	d
-list_foreach_safe	list.h	50;"	d
-list_is_first	lnx/kaodv-expl.c	43;"	d	file:
-list_t	list.h	/^typedef struct list_t {$/;"	s
-list_t	list.h	/^} list_t;$/;"	t	typeref:struct:list_t
-list_unattached	list.h	58;"	d
-listelm_add	list.c	/^static inline int listelm_add(list_t * le, list_t * prev, list_t * next)$/;"	f	file:
-listelm_detach	list.c	/^static inline int listelm_detach(list_t * prev, list_t * next)$/;"	f	file:
-litend	endian.c	/^int litend(void)$/;"	f
-ll	ns-2/aodv-uu.h	/^	NsObject *ll; \/* Pointer to link layer *\/$/;"	m	class:AODVUU
-ll	patches/aodv-uu/ns-2/aodv-uu.h	/^	NsObject *ll; \/* Pointer to link layer *\/$/;"	m	class:AODVUU
-llf_callback	llf.c	/^static void llf_callback(int fd)$/;"	f	file:
-llf_cleanup	llf.c	/^void llf_cleanup()$/;"	f
-llf_handle_netlink_events	llf.c	/^static inline void llf_handle_netlink_events(struct rtnl_handle *rth)$/;"	f	file:
-llf_init	llf.c	/^void llf_init()$/;"	f
-llf_print_event	llf.c	/^static inline int llf_print_event(struct iw_event *event,$/;"	f	file:
-llf_rtnl_open	llf.c	/^static inline int llf_rtnl_open(struct rtnl_handle *rth, unsigned subscriptions)$/;"	f	file:
-llfeedback	main.c	/^int llfeedback = 0;$/;"	v
-llfeedback	ns-2/aodv-uu.h	/^	int llfeedback;$/;"	m	class:AODVUU
-llfeedback	patches/aodv-uu/ns-2/aodv-uu.h	/^	int llfeedback;$/;"	m	class:AODVUU
-lllist	ns-2/aodv-uu.h	/^	NsObject *lllist[MAX_IF];$/;"	m	class:AODVUU
-load_modules	main.c	/^void load_modules(char *ifname)$/;"	f
-local	llf.c	/^    struct sockaddr_nl local;$/;"	m	struct:rtnl_handle	typeref:struct:rtnl_handle::sockaddr_nl	file:
-local	nl.c	/^	struct sockaddr_nl local;$/;"	m	struct:nlsock	typeref:struct:nlsock::sockaddr_nl	file:
-local_repair	main.c	/^int local_repair = 0;$/;"	v
-local_repair	ns-2/aodv-uu.h	/^	int local_repair;$/;"	m	class:AODVUU
-local_repair	patches/aodv-uu/ns-2/aodv-uu.h	/^	int local_repair;$/;"	m	class:AODVUU
-local_repair_timeout	aodv_timeout.c	/^void NS_CLASS local_repair_timeout(void *arg)$/;"	f
-locality	locality.c	/^int NS_CLASS locality(struct in_addr dest, unsigned int ifindex)$/;"	f
-log_cleanup	debug.c	/^void NS_CLASS log_cleanup()$/;"	f
-log_file_fd	debug.c	/^int log_file_fd = -1;$/;"	v
-log_file_fd	ns-2/aodv-uu.h	/^	int log_file_fd;$/;"	m	class:AODVUU
-log_file_fd	patches/aodv-uu/ns-2/aodv-uu.h	/^	int log_file_fd;$/;"	m	class:AODVUU
-log_init	debug.c	/^void NS_CLASS log_init()$/;"	f
-log_nmsgs	debug.c	/^int log_nmsgs = 0;$/;"	v
-log_nmsgs	ns-2/aodv-uu.h	/^	int log_nmsgs;$/;"	m	class:AODVUU
-log_nmsgs	patches/aodv-uu/ns-2/aodv-uu.h	/^	int log_nmsgs;$/;"	m	class:AODVUU
-log_pkt_fields	debug.c	/^void NS_CLASS log_pkt_fields(AODV_msg * msg)$/;"	f
-log_rt_fd	debug.c	/^int log_rt_fd = -1;$/;"	v
-log_rt_fd	ns-2/aodv-uu.h	/^	int log_rt_fd;$/;"	m	class:AODVUU
-log_rt_fd	patches/aodv-uu/ns-2/aodv-uu.h	/^	int log_rt_fd;$/;"	m	class:AODVUU
-log_rt_table_init	debug.c	/^void NS_CLASS log_rt_table_init()$/;"	f
-log_to_file	main.c	/^int log_to_file = 0;$/;"	v
-log_to_file	ns-2/aodv-uu.h	/^	int log_to_file;$/;"	m	class:AODVUU
-log_to_file	patches/aodv-uu/ns-2/aodv-uu.h	/^	int log_to_file;$/;"	m	class:AODVUU
-longopts	main.c	/^struct option longopts[] = {$/;"	v	typeref:struct:option
-mac_to_ip	llf.c	/^int mac_to_ip(struct sockaddr *hwaddr, struct in_addr *ip_addr, char *ifname)$/;"	f
-main	endian.c	/^int main(int argc, char **argv)$/;"	f
-main	main.c	/^int main(int argc, char **argv)$/;"	f
-min_ipenc_hdr	lnx/kaodv-ipenc.h	/^struct min_ipenc_hdr {$/;"	s
-mod_scheme	ns-2/ns-2.35/common/packet.h	/^	inline ModulationScheme& mod_scheme() { return (mod_scheme_); }$/;"	f	struct:hdr_cmn
-mod_scheme_	ns-2/ns-2.35/common/packet.h	/^	ModulationScheme mod_scheme_;$/;"	m	struct:hdr_cmn
-n	aodv_rerr.h	/^    u_int8_t n:1;$/;"	m	struct:__anon5
-nIfaces	ns-2/aodv-uu.h	/^	int nIfaces;$/;"	m	class:AODVUU
-nPkt_	ns-2/ns-2.35/common/packet.h	/^	static unsigned int nPkt_;$/;"	m	class:p_info
-n_info	aodv_hello.c	/^neighbor_infomation n_info[10];$/;"	v
-n_info	aodv_hello.h	/^neighbor_infomation n_info[10];$/;"	v
-nam_format	ns-2/ns-2.35/trace/cmu-trace.cc	/^CMUTrace::nam_format(Packet *p, int offset)$/;"	f	class:CMUTrace
-name	lnx/kaodv-netlink.h	/^	char *name;	       $/;"	m	struct:__anon11
-name	ns-2/ns-2.35/common/packet.h	/^	const char* name(packet_t p) const { $/;"	f	class:p_info
-name	ns-2/ns-2.35/common/packet.h	/^	inline const char * name() const { return name_; }$/;"	f	class:iface_literal
-name2index	defs.h	/^static inline int name2index(char *name)$/;"	f
-name_	ns-2/ns-2.35/common/packet.h	/^	const char * const name_; $/;"	m	class:iface_literal
-name_	ns-2/ns-2.35/common/packet.h	/^	static char** name_;$/;"	m	class:p_info
-neighbor	routing_table.h	/^    struct in_addr neighbor;$/;"	m	struct:precursor	typeref:struct:precursor::in_addr
-neighbor_add	aodv_neighbor.c	/^void NS_CLASS neighbor_add(AODV_msg * aodv_msg, struct in_addr source,$/;"	f
-neighbor_info	aodv_hello.c	/^typedef struct neighbor_info{$/;"	s	file:
-neighbor_info	aodv_hello.h	/^typedef struct neighbor_info{$/;"	s
-neighbor_infomation	aodv_hello.c	/^}neighbor_infomation;$/;"	t	typeref:struct:neighbor_info	file:
-neighbor_infomation	aodv_hello.h	/^}neighbor_infomation;$/;"	t	typeref:struct:neighbor_info
-neighbor_link_break	aodv_neighbor.c	/^void NS_CLASS neighbor_link_break(rt_table_t * rt)$/;"	f
-netmask	defs.h	/^    struct in_addr netmask; \/* The netmask we use *\/$/;"	m	struct:dev_info	typeref:struct:dev_info::in_addr
-newtrace_	ns-2/ns-2.35/trace/cmu-trace.h	/^	int     newtrace_;$/;"	m	class:CMUTrace
-next	list.h	/^    struct list_t *prev, *next;$/;"	m	struct:list_t	typeref:struct:list_t::
-next	llf.c	/^    struct wireless_iface *next;$/;"	m	struct:wireless_iface	typeref:struct:wireless_iface::wireless_iface	file:
-next_	ns-2/ns-2.35/common/packet.h	/^		PacketClassifier *next_;$/;"	m	class:PacketClassifier
-next_	ns-2/ns-2.35/common/packet.h	/^	Packet* next_;		\/\/ for queues and the free list$/;"	m	class:Packet
-next_	ns-2/ns-2.35/trace/cmu-trace.h	/^		PacketTracer *next_;$/;"	m	class:PacketTracer
-next_hop	ns-2/ns-2.35/common/packet.h	/^	inline nsaddr_t& next_hop() { return (next_hop_); }$/;"	f	struct:hdr_cmn
-next_hop	routing_table.h	/^    struct in_addr next_hop;    \/* IP address of the next hop to the dest *\/$/;"	m	struct:rt_table	typeref:struct:rt_table::in_addr
-next_hop_	ns-2/ns-2.35/common/packet.h	/^	nsaddr_t next_hop_;	\/\/ next hop for this packet$/;"	m	struct:hdr_cmn
-nhop	lnx/kaodv-expl.h	/^	__u32 nhop;$/;"	m	struct:expl_entry
-nhop	lnx/kaodv-netlink.h	/^	u_int32_t nhop;$/;"	m	struct:kaodv_rt_msg
-ni_1	aodv_hello.c	/^	char ni_1[10][10];$/;"	m	struct:neighbor_info	file:
-ni_1	aodv_hello.h	/^	char ni_1[10][10];$/;"	m	struct:neighbor_info
-ni_2	aodv_hello.c	/^	char ni_2[10][10];$/;"	m	struct:neighbor_info	file:
-ni_2	aodv_hello.h	/^	char ni_2[10][10];$/;"	m	struct:neighbor_info
-nif	defs.h	/^    int nif;            \/* Number of interfaces to broadcast on *\/$/;"	m	struct:host_info
-nl_cleanup	nl.c	/^void nl_cleanup(void)$/;"	f
-nl_init	nl.c	/^void nl_init(void)$/;"	f
-nl_kaodv_callback	nl.c	/^static void nl_kaodv_callback(int sock)$/;"	f	file:
-nl_kern_route	nl.c	/^int nl_kern_route(int action, int flags, int family,$/;"	f
-nl_rt_callback	nl.c	/^static void nl_rt_callback(int sock)$/;"	f	file:
-nl_send	nl.c	/^int nl_send(struct nlsock *nl, struct nlmsghdr *n)$/;"	f
-nl_send_add_route_msg	nl.c	/^int nl_send_add_route_msg(struct in_addr dest, struct in_addr next_hop,$/;"	f
-nl_send_conf_msg	nl.c	/^int nl_send_conf_msg(void)$/;"	f
-nl_send_del_route_msg	nl.c	/^int nl_send_del_route_msg(struct in_addr dest, struct in_addr next_hop, int metric)$/;"	f
-nl_send_no_route_found_msg	nl.c	/^int nl_send_no_route_found_msg(struct in_addr dest)$/;"	f
-nlsock	nl.c	/^struct nlsock {$/;"	s	file:
-nodeColor	ns-2/ns-2.35/trace/cmu-trace.h	/^	int	nodeColor[MAX_NODE];$/;"	m	class:CMUTrace
-node_	ns-2/aodv-uu.h	/^	MobileNode *node_;$/;"	m	class:AODVUU
-node_	ns-2/ns-2.35/trace/cmu-trace.h	/^        MobileNode *node_;$/;"	m	class:CMUTrace
-node_	patches/aodv-uu/ns-2/aodv-uu.h	/^	MobileNode *node_;$/;"	m	class:AODVUU
-node_energy	ns-2/ns-2.35/trace/cmu-trace.cc	/^int CMUTrace::node_energy()$/;"	f	class:CMUTrace
-node_id	ns-2/aodv-uu.h	/^	int  node_id;$/;"	m	class:AODVUU
-node_id	patches/aodv-uu/ns-2/aodv-uu.h	/^	int  node_id;$/;"	m	class:AODVUU
-nprec	routing_table.h	/^    int nprec;          \/* Number of precursors *\/$/;"	m	struct:rt_table
-nr_callbacks	main.c	/^static int nr_callbacks = 0;$/;"	v	file:
-ns_af_enum	ns-2/ns-2.35/common/packet.h	/^enum ns_af_enum { NS_AF_NONE, NS_AF_ILINK, NS_AF_INET };$/;"	g
-ns_packet_h	ns-2/ns-2.35/common/packet.h	38;"	d
-ntohl	ns-2/aodv-uu.h	86;"	d
-ntohl	ns-2/aodv-uu.h	91;"	d
-ntohl	patches/aodv-uu/ns-2/aodv-uu.h	85;"	d
-ntohl	patches/aodv-uu/ns-2/aodv-uu.h	90;"	d
-ntohs	ns-2/aodv-uu.h	89;"	d
-ntohs	ns-2/aodv-uu.h	94;"	d
-ntohs	patches/aodv-uu/ns-2/aodv-uu.h	88;"	d
-ntohs	patches/aodv-uu/ns-2/aodv-uu.h	93;"	d
-num_active	routing_table.h	/^    unsigned int num_active;$/;"	m	struct:routing_table
-num_entries	routing_table.h	/^    unsigned int num_entries;$/;"	m	struct:routing_table
-num_forwards	ns-2/ns-2.35/common/packet.h	/^	inline int& num_forwards() { return (num_forwards_); }$/;"	f	struct:hdr_cmn
-num_forwards_	ns-2/ns-2.35/common/packet.h	/^        int num_forwards_;	\/\/ how many times this pkt was forwarded$/;"	m	struct:hdr_cmn
-num_parms	lnx/kaodv-mod.c	/^static int num_parms = 0;$/;"	v	file:
-num_rerr	aodv_socket.h	/^int num_rerr;$/;"	v
-num_rreq	aodv_socket.h	/^int num_rreq;$/;"	v
-offset	defs.h	/^    inline static int &offset() {$/;"	f	struct:AODV_msg::__anon3
-offset	ns-2/ns-2.35/common/packet.h	/^	inline static int& offset() { return offset_; }$/;"	f	struct:hdr_cmn
-offset	ns-2/ns-2.35/common/packet.h	/^	inline void offset(int* off) {offset_= off;}$/;"	f	class:PacketHeaderClass
-offset_	defs.h	/^    static int offset_;     \/\/ Required by PacketHeaderManager$/;"	m	struct:AODV_msg::__anon3
-offset_	ns-2/aodv-uu.cc	/^int hdr_aodvuu::offset_;$/;"	m	class:hdr_aodvuu	file:
-offset_	ns-2/ns-2.35/common/packet.h	/^	int* offset_;		\/\/ offset for this header$/;"	m	class:PacketHeaderClass
-offset_	ns-2/ns-2.35/common/packet.h	/^	static int offset_;	\/\/ offset for this header$/;"	m	struct:hdr_cmn
-offset_	patches/aodv-uu/ns-2/aodv-uu.cc	/^int hdr_aodvuu::offset_;$/;"	m	class:hdr_aodvuu	file:
-okfn	lnx/kaodv-queue.c	/^	int (*okfn) (struct sk_buff *);$/;"	m	struct:kaodv_queue_entry	file:
-opt_num_forwards	ns-2/ns-2.35/common/packet.h	/^	inline int& opt_num_forwards() { return (opt_num_forwards_); }$/;"	f	struct:hdr_cmn
-opt_num_forwards_	ns-2/ns-2.35/common/packet.h	/^        int opt_num_forwards_;   \/\/ optimal #forwards$/;"	m	struct:hdr_cmn
-optimized_hellos	main.c	/^int optimized_hellos = 0;$/;"	v
-optimized_hellos	ns-2/aodv-uu.h	/^	int optimized_hellos;$/;"	m	class:AODVUU
-optimized_hellos	patches/aodv-uu/ns-2/aodv-uu.h	/^	int optimized_hellos;$/;"	m	class:AODVUU
-orig_addr	aodv_rrep.h	/^    u_int32_t orig_addr;$/;"	m	struct:__anon1
-orig_addr	aodv_rreq.h	/^    struct in_addr orig_addr;	\/* Source of the RREQ *\/$/;"	m	struct:rreq_record	typeref:struct:rreq_record::in_addr
-orig_addr	aodv_rreq.h	/^    u_int32_t orig_addr;$/;"	m	struct:__anon7
-orig_seqno	aodv_rreq.h	/^    u_int32_t orig_seqno;$/;"	m	struct:__anon7
-p	ns-2/packet_queue.h	/^    Packet *p;$/;"	m	struct:q_pkt
-p	patches/aodv-uu/ns-2/packet_queue.h	/^    Packet *p;$/;"	m	struct:q_pkt
-p_info	ns-2/ns-2.35/common/packet.h	/^	p_info()$/;"	f	class:p_info
-p_info	ns-2/ns-2.35/common/packet.h	/^class p_info {$/;"	c
-packetClass	ns-2/ns-2.35/common/packet.h	/^enum packetClass$/;"	g
-packetFailed	ns-2/aodv-uu.cc	/^void NS_CLASS packetFailed(Packet *p)$/;"	f
-packetFailed	patches/aodv-uu/ns-2/aodv-uu.cc	/^void NS_CLASS packetFailed(Packet *p)$/;"	f
-packet_queue	ns-2/packet_queue.h	/^struct packet_queue {$/;"	s
-packet_queue	patches/aodv-uu/ns-2/packet_queue.h	/^struct packet_queue {$/;"	s
-packet_queue_add	ns-2/packet_queue.cc	/^void NS_CLASS packet_queue_add(Packet * p, struct in_addr dest_addr)$/;"	f
-packet_queue_add	patches/aodv-uu/ns-2/packet_queue.cc	/^void NS_CLASS packet_queue_add(Packet * p, struct in_addr dest_addr)$/;"	f
-packet_queue_destroy	ns-2/packet_queue.cc	/^void NS_CLASS packet_queue_destroy(void)$/;"	f
-packet_queue_destroy	patches/aodv-uu/ns-2/packet_queue.cc	/^void NS_CLASS packet_queue_destroy(void)$/;"	f
-packet_queue_garbage_collect	ns-2/packet_queue.cc	/^int NS_CLASS packet_queue_garbage_collect(void)$/;"	f
-packet_queue_garbage_collect	patches/aodv-uu/ns-2/packet_queue.cc	/^int NS_CLASS packet_queue_garbage_collect(void)$/;"	f
-packet_queue_init	ns-2/packet_queue.cc	/^void NS_CLASS packet_queue_init(void)$/;"	f
-packet_queue_init	patches/aodv-uu/ns-2/packet_queue.cc	/^void NS_CLASS packet_queue_init(void)$/;"	f
-packet_queue_set_verdict	ns-2/packet_queue.cc	/^int NS_CLASS packet_queue_set_verdict(struct in_addr dest_addr, int verdict)$/;"	f
-packet_queue_set_verdict	patches/aodv-uu/ns-2/packet_queue.cc	/^int NS_CLASS packet_queue_set_verdict(struct in_addr dest_addr, int verdict)$/;"	f
-packet_queue_timeout	aodv_timeout.c	/^void NS_CLASS packet_queue_timeout(void *arg)$/;"	f
-packet_t	ns-2/ns-2.35/common/packet.h	/^typedef unsigned int packet_t;$/;"	t
-packet_type	debug.c	/^char *packet_type(u_int type)$/;"	f
-past	aodv_hello.c	/^	int past;$/;"	m	struct:neighbor_info	file:
-past	aodv_hello.h	/^	int past;$/;"	m	struct:neighbor_info
-pc_	ns-2/ns-2.35/common/packet.h	/^	static PacketClassifier *pc_;$/;"	m	class:p_info
-peer	llf.c	/^    struct sockaddr_nl peer;$/;"	m	struct:rtnl_handle	typeref:struct:rtnl_handle::sockaddr_nl	file:
-peer	nl.c	/^struct sockaddr_nl peer = { AF_NETLINK, 0, 0, 0 };$/;"	v	typeref:struct:sockaddr_nl
-peer_pid	lnx/kaodv-netlink.c	/^static int peer_pid;$/;"	v	file:
-pktTrc_	ns-2/ns-2.35/trace/cmu-trace.cc	/^PacketTracer *CMUTrace::pktTrc_ = 0;$/;"	m	class:CMUTrace	file:
-pktTrc_	ns-2/ns-2.35/trace/cmu-trace.h	/^	static PacketTracer *pktTrc_;$/;"	m	class:CMUTrace
-pkt_decapsulate	ns-2/aodv-uu.cc	/^Packet *NS_CLASS pkt_decapsulate(Packet *p) {$/;"	f
-pkt_decapsulate	patches/aodv-uu/ns-2/aodv-uu.cc	/^Packet *NS_CLASS pkt_decapsulate(Packet *p) {$/;"	f
-pkt_encapsulate	ns-2/aodv-uu.cc	/^Packet *NS_CLASS pkt_encapsulate(Packet *p, struct in_addr gw_addr) {$/;"	f
-pkt_encapsulate	patches/aodv-uu/ns-2/aodv-uu.cc	/^Packet *NS_CLASS pkt_encapsulate(Packet *p, struct in_addr gw_addr) {$/;"	f
-pkts_dropped	lnx/kaodv-mod.c	/^static unsigned long pkts_dropped = 0;$/;"	v	file:
-port_dmux_	ns-2/aodv-uu.h	/^	NsObject *port_dmux_;$/;"	m	class:AODVUU
-port_dmux_	patches/aodv-uu/ns-2/aodv-uu.h	/^	NsObject *port_dmux_;$/;"	m	class:AODVUU
-precursor	routing_table.h	/^typedef struct precursor {$/;"	s
-precursor_add	routing_table.c	/^void NS_CLASS precursor_add(rt_table_t * rt, struct in_addr addr)$/;"	f
-precursor_list_destroy	routing_table.c	/^void precursor_list_destroy(rt_table_t * rt)$/;"	f
-precursor_remove	routing_table.c	/^void NS_CLASS precursor_remove(rt_table_t * rt, struct in_addr addr)$/;"	f
-precursor_t	routing_table.h	/^} precursor_t;$/;"	t	typeref:struct:precursor
-precursors	routing_table.h	/^    list_t precursors;      \/* List of neighbors using the route *\/$/;"	m	struct:rt_table
-prefix	aodv_rrep.h	/^    u_int16_t prefix:5;$/;"	m	struct:__anon1
-prefix_length	nl.c	/^int prefix_length(int family, void *nm)$/;"	f
-prev	list.h	/^    struct list_t *prev, *next;$/;"	m	struct:list_t	typeref:struct:list_t::list_t
-prev_hop_	ns-2/ns-2.35/common/packet.h	/^	nsaddr_t prev_hop_;     \/\/ IP addr of forwarding hop$/;"	m	struct:hdr_cmn
-prhead	ns-2/ns-2.35/queue/priqueue.cc	/^PriQueue_List PriQueue::prhead = { 0 };$/;"	m	class:PriQueue	file:
-printTQ	timer_queue.c	/^void NS_CLASS printTQ(list_t * l)$/;"	f
-print_eth	lnx/kaodv-debug.h	/^static inline char *print_eth(char *addr)$/;"	f
-print_ip	lnx/kaodv-debug.h	/^static inline char *print_ip(__u32 addr)$/;"	f
-print_rt_table	debug.c	/^void NS_CLASS print_rt_table(void *arg)$/;"	f
-processPacket	ns-2/packet_input.cc	/^void NS_CLASS processPacket(Packet * p)$/;"	f
-processPacket	patches/aodv-uu/ns-2/packet_input.cc	/^void NS_CLASS processPacket(Packet * p)$/;"	f
-progname	main.c	/^char *progname;$/;"	v
-progname	ns-2/aodv-uu.h	/^	char *progname;$/;"	m	class:AODVUU
-progname	patches/aodv-uu/ns-2/aodv-uu.h	/^	char *progname;$/;"	m	class:AODVUU
-protocol	lnx/kaodv-ipenc.h	/^    u_int8_t protocol;$/;"	m	struct:min_ipenc_hdr
-psock	defs.h	/^    int psock;          \/* Socket to send buffered data packets. *\/$/;"	m	struct:dev_info
-ptype	ns-2/ns-2.35/common/packet.h	/^	inline packet_t& ptype() { return (ptype_); }$/;"	f	struct:hdr_cmn
-ptype_	ns-2/ns-2.35/common/packet.h	/^	packet_t ptype_;	\/\/ packet type (see above)$/;"	m	struct:hdr_cmn
-q_pkt	ns-2/packet_queue.h	/^struct q_pkt {$/;"	s
-q_pkt	patches/aodv-uu/ns-2/packet_queue.h	/^struct q_pkt {$/;"	s
-q_time	ns-2/packet_queue.h	/^    struct timeval q_time;$/;"	m	struct:q_pkt	typeref:struct:q_pkt::timeval
-q_time	patches/aodv-uu/ns-2/packet_queue.h	/^    struct timeval q_time;$/;"	m	struct:q_pkt	typeref:struct:q_pkt::timeval
-qual	lnx/kaodv-mod.c	/^static int qual = 0;$/;"	v	file:
-qual_th	lnx/kaodv-mod.c	/^int qual_th = 0;$/;"	v
-qual_th	lnx/kaodv-netlink.h	/^	int qual_th;$/;"	m	struct:kaodv_conf_msg
-qual_threshold	main.c	/^int qual_threshold = 0;$/;"	v
-queue_lock	lnx/kaodv-queue.c	/^static rwlock_t queue_lock = RW_LOCK_UNLOCKED;$/;"	v	file:
-queue_maxlen	lnx/kaodv-queue.c	/^static unsigned int queue_maxlen = KAODV_QUEUE_QMAX_DEFAULT;$/;"	v	file:
-queue_total	lnx/kaodv-queue.c	/^static unsigned int queue_total;$/;"	v	file:
-r	aodv_rrep.h	/^    u_int16_t r:1;$/;"	m	struct:__anon1
-r	aodv_rreq.h	/^    u_int8_t r:1;		\/* Repair flag *\/$/;"	m	struct:__anon7
-r	aodv_rreq.h	/^    u_int8_t r:1;$/;"	m	struct:__anon7
-radius_scaling_factor_	ns-2/ns-2.35/trace/cmu-trace.cc	/^double CMUTrace::radius_scaling_factor_ = 0.0;$/;"	m	class:CMUTrace	file:
-radius_scaling_factor_	ns-2/ns-2.35/trace/cmu-trace.h	/^        static double  radius_scaling_factor_;$/;"	m	class:CMUTrace
-range	llf.c	/^    struct iw_range range;	\/* Wireless static data *\/$/;"	m	struct:wireless_iface	typeref:struct:wireless_iface::iw_range	file:
-ratelimit	main.c	/^int ratelimit = 1;		\/* Option for rate limiting RREQs and RERRs. *\/$/;"	v
-ratelimit	ns-2/aodv-uu.h	/^	int ratelimit;$/;"	m	class:AODVUU
-ratelimit	patches/aodv-uu/ns-2/aodv-uu.h	/^	int ratelimit;$/;"	m	class:AODVUU
-rec_timer	aodv_rreq.h	/^    struct timer rec_timer;$/;"	m	struct:rreq_record	typeref:struct:rreq_record::timer
-receive_n_hellos	main.c	/^int receive_n_hellos = 0;$/;"	v
-receive_n_hellos	ns-2/aodv-uu.h	/^	int receive_n_hellos;$/;"	m	class:AODVUU
-receive_n_hellos	patches/aodv-uu/ns-2/aodv-uu.h	/^	int receive_n_hellos;$/;"	m	class:AODVUU
-recv	ns-2/aodv-uu.cc	/^void NS_CLASS recv(Packet *p, Handler *)$/;"	f
-recv	ns-2/ns-2.35/queue/priqueue.cc	/^PriQueue::recv(Packet *p, Handler *h)$/;"	f	class:PriQueue
-recv	ns-2/ns-2.35/trace/cmu-trace.cc	/^CMUTrace::recv(Packet *p, Handler *h)$/;"	f	class:CMUTrace
-recv	ns-2/ns-2.35/trace/cmu-trace.cc	/^CMUTrace::recv(Packet *p, const char* why)$/;"	f	class:CMUTrace
-recv	patches/aodv-uu/ns-2/aodv-uu.cc	/^void NS_CLASS recv(Packet *p, Handler *)$/;"	f
-recvAODVUUPacket	aodv_socket.c	/^void NS_CLASS recvAODVUUPacket(Packet * p)$/;"	f
-recvHighPriority	ns-2/ns-2.35/queue/priqueue.cc	/^PriQueue::recvHighPriority(Packet *p, Handler *)$/;"	f	class:PriQueue
-recv_buf	aodv_socket.c	/^static char recv_buf[RECV_BUF_SIZE];$/;"	v	file:
-recv_buf	ns-2/aodv-uu.h	/^	char recv_buf[RECV_BUF_SIZE];$/;"	m	class:AODVUU
-recv_buf	patches/aodv-uu/ns-2/aodv-uu.h	/^	char recv_buf[RECV_BUF_SIZE];$/;"	m	class:AODVUU
-ref_count	ns-2/ns-2.35/common/packet.h	/^	inline int& ref_count() { return (ref_count_); }$/;"	f	class:Packet
-ref_count_	ns-2/ns-2.35/common/packet.h	/^	int	ref_count_;	\/\/ free the pkt until count to 0$/;"	m	class:Packet
-refcopy	ns-2/ns-2.35/common/packet.h	/^	inline Packet* refcopy() { ++ref_count_; return this; }$/;"	f	class:Packet
-remove-all-packet-headers	ns-2/ns-2.35/tcl/lib/ns-packet.tcl	/^proc remove-all-packet-headers {} {$/;"	p
-remove-packet-header	ns-2/ns-2.35/tcl/lib/ns-packet.tcl	/^proc remove-packet-header args {$/;"	p
-remove_modules	main.c	/^void remove_modules(void)$/;"	f
-reqs	seek_list.h	/^    int reqs;$/;"	m	struct:seek_list
-rerr_add_udest	aodv_rerr.c	/^void NS_CLASS rerr_add_udest(RERR * rerr, struct in_addr udest,$/;"	f
-rerr_create	aodv_rerr.c	/^RERR *NS_CLASS rerr_create(u_int8_t flags, struct in_addr dest_addr,$/;"	f
-rerr_process	aodv_rerr.c	/^void NS_CLASS rerr_process(RERR * rerr, int rerrlen, struct in_addr ip_src,$/;"	f
-rerr_ratel	aodv_socket.h	/^struct timeval rreq_ratel[RREQ_RATELIMIT - 1], rerr_ratel[RERR_RATELIMIT - 1];$/;"	v	typeref:struct:
-res	lnx/kaodv-ipenc.h	/^    u_int8_t res:7;$/;"	m	struct:min_ipenc_hdr
-res1	aodv_rerr.h	/^    u_int8_t res1:7;$/;"	m	struct:__anon5
-res1	aodv_rrep.h	/^    u_int16_t res1:6;$/;"	m	struct:__anon1
-res1	aodv_rreq.h	/^    u_int8_t res1:4;$/;"	m	struct:__anon7
-res2	aodv_rerr.h	/^    u_int8_t res2;$/;"	m	struct:__anon5
-res2	aodv_rrep.h	/^    u_int16_t res2:3;$/;"	m	struct:__anon1
-res2	aodv_rreq.h	/^    u_int8_t res2;$/;"	m	struct:__anon7
-reserved	aodv_rrep.h	/^    u_int8_t reserved;$/;"	m	struct:__anon2
-route_delete_timeout	aodv_timeout.c	/^void NS_CLASS route_delete_timeout(void *arg)$/;"	f
-route_discovery_timeout	aodv_timeout.c	/^void NS_CLASS route_discovery_timeout(void *arg)$/;"	f
-route_expire_timeout	aodv_timeout.c	/^void NS_CLASS route_expire_timeout(void *arg)$/;"	f
-routing_table	routing_table.h	/^struct routing_table {$/;"	s
-rrep_ack_create	aodv_rrep.c	/^RREP_ack *NS_CLASS rrep_ack_create()$/;"	f
-rrep_ack_process	aodv_rrep.c	/^void NS_CLASS rrep_ack_process(RREP_ack * rrep_ack, int rrep_acklen,$/;"	f
-rrep_ack_timeout	aodv_timeout.c	/^void NS_CLASS rrep_ack_timeout(void *arg)$/;"	f
-rrep_add_ext	aodv_rrep.c	/^AODV_ext *NS_CLASS rrep_add_ext(RREP * rrep, int type, unsigned int offset,$/;"	f
-rrep_add_hello_ext	aodv_rrep.c	/^int rrep_add_hello_ext(RREP * rrep, int offset, u_int32_t interval)$/;"	f
-rrep_create	aodv_rrep.c	/^RREP *NS_CLASS rrep_create(u_int8_t flags,$/;"	f
-rrep_flags_to_str	debug.c	/^char *NS_CLASS rrep_flags_to_str(RREP * rrep)$/;"	f
-rrep_forward	aodv_rrep.c	/^void NS_CLASS rrep_forward(RREP * rrep, int size, rt_table_t * rev_rt,$/;"	f
-rrep_process	aodv_rrep.c	/^void NS_CLASS rrep_process(RREP * rrep, int rreplen, struct in_addr ip_src,$/;"	f
-rrep_send	aodv_rrep.c	/^void NS_CLASS rrep_send(RREP * rrep, rt_table_t * rev_rt,$/;"	f
-rreq_add_ext	aodv_rreq.c	/^AODV_ext *rreq_add_ext(RREQ * rreq, int type, unsigned int offset,$/;"	f
-rreq_blacklist	ns-2/aodv-uu.h	/^	list_t rreq_blacklist;$/;"	m	class:AODVUU
-rreq_blacklist	patches/aodv-uu/ns-2/aodv-uu.h	/^	list_t rreq_blacklist;$/;"	m	class:AODVUU
-rreq_blacklist_find	aodv_rreq.c	/^struct blacklist *NS_CLASS rreq_blacklist_find(struct in_addr dest_addr)$/;"	f
-rreq_blacklist_insert	aodv_rreq.c	/^struct blacklist *NS_CLASS rreq_blacklist_insert(struct in_addr dest_addr)$/;"	f
-rreq_blacklist_timeout	aodv_rreq.c	/^void NS_CLASS rreq_blacklist_timeout(void *arg)$/;"	f
-rreq_create	aodv_rreq.c	/^RREQ *NS_CLASS rreq_create(u_int8_t flags, struct in_addr dest_addr,$/;"	f
-rreq_flags_to_str	debug.c	/^char *NS_CLASS rreq_flags_to_str(RREQ * rreq)$/;"	f
-rreq_forward	aodv_rreq.c	/^void NS_CLASS rreq_forward(RREQ * rreq, int size, int ttl)$/;"	f
-rreq_gratuitous	main.c	/^int rreq_gratuitous = 0;$/;"	v
-rreq_gratuitous	ns-2/aodv-uu.h	/^	int rreq_gratuitous;$/;"	m	class:AODVUU
-rreq_gratuitous	patches/aodv-uu/ns-2/aodv-uu.h	/^	int rreq_gratuitous;$/;"	m	class:AODVUU
-rreq_id	aodv_rreq.h	/^    u_int32_t rreq_id;		\/* RREQ's broadcast ID *\/$/;"	m	struct:rreq_record
-rreq_id	aodv_rreq.h	/^    u_int32_t rreq_id;$/;"	m	struct:__anon7
-rreq_id	defs.h	/^    u_int32_t rreq_id;      \/* RREQ id *\/$/;"	m	struct:host_info
-rreq_local_repair	aodv_rreq.c	/^void NS_CLASS rreq_local_repair(rt_table_t * rt, struct in_addr src_addr,$/;"	f
-rreq_process	aodv_rreq.c	/^void NS_CLASS rreq_process(RREQ * rreq, int rreqlen, struct in_addr ip_src,$/;"	f
-rreq_ratel	aodv_socket.h	/^struct timeval rreq_ratel[RREQ_RATELIMIT - 1], rerr_ratel[RERR_RATELIMIT - 1];$/;"	v	typeref:struct:timeval
-rreq_record	aodv_rreq.h	/^struct rreq_record {$/;"	s
-rreq_record_find	aodv_rreq.c	/^NS_STATIC struct rreq_record *NS_CLASS rreq_record_find(struct in_addr$/;"	f
-rreq_record_insert	aodv_rreq.c	/^NS_STATIC struct rreq_record *NS_CLASS rreq_record_insert(struct in_addr$/;"	f
-rreq_record_timeout	aodv_rreq.c	/^void NS_CLASS rreq_record_timeout(void *arg)$/;"	f
-rreq_records	ns-2/aodv-uu.h	/^	list_t rreq_records;$/;"	m	class:AODVUU
-rreq_records	patches/aodv-uu/ns-2/aodv-uu.h	/^	list_t rreq_records;$/;"	m	class:AODVUU
-rreq_route_discovery	aodv_rreq.c	/^void NS_CLASS rreq_route_discovery(struct in_addr dest_addr, u_int8_t flags,$/;"	f
-rreq_send	aodv_rreq.c	/^void NS_CLASS rreq_send(struct in_addr dest_addr, u_int32_t dest_seqno,$/;"	f
-rt_calc_neighbor	routing_table.c	/^void NS_CLASS rt_calc_neighbor(int index)$/;"	f
-rt_flags_to_str	debug.c	/^char *NS_CLASS rt_flags_to_str(u_int16_t flags)$/;"	f
-rt_info	lnx/kaodv-queue.c	/^	struct kaodv_rt_info rt_info;$/;"	m	struct:kaodv_queue_entry	typeref:struct:kaodv_queue_entry::kaodv_rt_info	file:
-rt_log_interval	main.c	/^int rt_log_interval = 0;	\/* msecs between routing table logging 0=off *\/$/;"	v
-rt_log_interval	ns-2/aodv-uu.h	/^	int rt_log_interval;$/;"	m	class:AODVUU
-rt_log_interval	patches/aodv-uu/ns-2/aodv-uu.h	/^	int rt_log_interval;$/;"	m	class:AODVUU
-rt_log_timer	debug.c	/^struct timer rt_log_timer;$/;"	v	typeref:struct:timer
-rt_log_timer	ns-2/aodv-uu.h	/^	struct timer rt_log_timer;$/;"	m	class:AODVUU	typeref:struct:AODVUU::timer
-rt_log_timer	patches/aodv-uu/ns-2/aodv-uu.h	/^	struct timer rt_log_timer;$/;"	m	class:AODVUU	typeref:struct:AODVUU::timer
-rt_table	routing_table.h	/^struct rt_table {$/;"	s
-rt_table_delete	routing_table.c	/^void NS_CLASS rt_table_delete(rt_table_t * rt)$/;"	f
-rt_table_destroy	routing_table.c	/^void NS_CLASS rt_table_destroy()$/;"	f
-rt_table_find	routing_table.c	/^rt_table_t *NS_CLASS rt_table_find(struct in_addr dest_addr)$/;"	f
-rt_table_find_gateway	routing_table.c	/^rt_table_t *NS_CLASS rt_table_find_gateway()$/;"	f
-rt_table_init	routing_table.c	/^void NS_CLASS rt_table_init()$/;"	f
-rt_table_insert	routing_table.c	/^rt_table_t *NS_CLASS rt_table_insert(struct in_addr dest_addr,$/;"	f
-rt_table_invalidate	routing_table.c	/^int NS_CLASS rt_table_invalidate(rt_table_t * rt)$/;"	f
-rt_table_t	routing_table.h	/^typedef struct rt_table rt_table_t;$/;"	t	typeref:struct:rt_table
-rt_table_update	routing_table.c	/^rt_table_t *NS_CLASS rt_table_update(rt_table_t * rt, struct in_addr next,$/;"	f
-rt_table_update_inet_rt	routing_table.c	/^int NS_CLASS rt_table_update_inet_rt(rt_table_t * gw, u_int32_t life)$/;"	f
-rt_table_update_route_timeouts	routing_table.c	/^void NS_CLASS rt_table_update_route_timeouts(rt_table_t * fwd_rt,$/;"	f
-rt_table_update_timeout	routing_table.c	/^NS_INLINE rt_table_t *NS_CLASS rt_table_update_timeout(rt_table_t * rt,$/;"	f
-rt_tbl	routing_table.h	/^struct routing_table rt_tbl;$/;"	v	typeref:struct:routing_table
-rt_timer	routing_table.h	/^    struct timer rt_timer;  \/* The timer associated with this entry *\/$/;"	m	struct:rt_table	typeref:struct:rt_table::timer
-rth	llf.c	/^static struct rtnl_handle rth;$/;"	v	typeref:struct:rtnl_handle	file:
-rtnl	nl.c	/^struct nlsock rtnl;$/;"	v	typeref:struct:nlsock
-rtnl_handle	llf.c	/^struct rtnl_handle {$/;"	s	file:
-s	lnx/kaodv-ipenc.h	/^    u_int8_t s:1;$/;"	m	struct:min_ipenc_hdr
-saddr	lnx/kaodv-queue.c	/^	__u32 saddr;$/;"	m	struct:kaodv_rt_info	file:
-scheduleNextEvent	ns-2/aodv-uu.cc	/^void NS_CLASS scheduleNextEvent()$/;"	f
-scheduleNextEvent	patches/aodv-uu/ns-2/aodv-uu.cc	/^void NS_CLASS scheduleNextEvent()$/;"	f
-seek_list	seek_list.h	/^typedef struct seek_list {$/;"	s
-seek_list_find	seek_list.c	/^seek_list_t *NS_CLASS seek_list_find(struct in_addr dest_addr)$/;"	f
-seek_list_insert	seek_list.c	/^seek_list_t *NS_CLASS seek_list_insert(struct in_addr dest_addr,$/;"	f
-seek_list_print	seek_list.c	/^void NS_CLASS seek_list_print()$/;"	f
-seek_list_remove	seek_list.c	/^int NS_CLASS seek_list_remove(seek_list_t * entry)$/;"	f
-seek_list_t	seek_list.h	/^} seek_list_t;$/;"	t	typeref:struct:seek_list
-seek_timer	seek_list.h	/^    struct timer seek_timer;$/;"	m	struct:seek_list	typeref:struct:seek_list::timer
-seekhead	ns-2/aodv-uu.h	/^	list_t seekhead;$/;"	m	class:AODVUU
-seekhead	patches/aodv-uu/ns-2/aodv-uu.h	/^	list_t seekhead;$/;"	m	class:AODVUU
-sendPacket	ns-2/aodv-uu.cc	/^void NS_CLASS sendPacket(Packet *p, struct in_addr next_hop, double delay)$/;"	f
-sendPacket	patches/aodv-uu/ns-2/aodv-uu.cc	/^void NS_CLASS sendPacket(Packet *p, struct in_addr next_hop, double delay)$/;"	f
-send_buf	aodv_socket.c	/^static char send_buf[SEND_BUF_SIZE];$/;"	v	file:
-send_buf	ns-2/aodv-uu.h	/^	char send_buf[SEND_BUF_SIZE];$/;"	m	class:AODVUU
-send_buf	patches/aodv-uu/ns-2/aodv-uu.h	/^	char send_buf[SEND_BUF_SIZE];$/;"	m	class:AODVUU
-seq	llf.c	/^    u_int32_t seq;$/;"	m	struct:rtnl_handle	file:
-seq	nl.c	/^	int seq;$/;"	m	struct:nlsock	file:
-seqno	defs.h	/^    u_int32_t seqno;        \/* Sequence number *\/$/;"	m	struct:host_info
-seqno_incr	routing_table.h	40;"	d
-setNext	ns-2/ns-2.35/common/packet.h	/^		void setNext(PacketClassifier *next){next_ = next;}$/;"	f	class:PacketClassifier
-setNext	ns-2/ns-2.35/trace/cmu-trace.cc	/^void PacketTracer::setNext(PacketTracer *next)$/;"	f	class:PacketTracer
-set_kernel_options	main.c	/^int set_kernel_options()$/;"	f
-setdata	ns-2/ns-2.35/common/packet.h	/^	inline void setdata(AppData* d) { $/;"	f	class:Packet
-signal_handler	main.c	/^void signal_handler(int type)$/;"	f
-size	ns-2/aodv-uu.cc	/^int AODV_msg::size()$/;"	f	class:AODV_msg
-size	ns-2/ns-2.35/common/packet.h	/^	inline int& size() { return (size_); }$/;"	f	struct:hdr_cmn
-size	ns-2/ns-2.35/common/packet.h	/^	virtual int size() const { return datalen_; }$/;"	f	class:PacketData
-size	patches/aodv-uu/ns-2/aodv-uu.cc	/^int AODV_msg::size()$/;"	f	class:AODV_msg
-size_	ns-2/ns-2.35/common/packet.h	/^	int	size_;		\/\/ simulated packet size$/;"	m	struct:hdr_cmn
-sk_receive_queue	lnx/kaodv-netlink.c	49;"	d	file:
-sk_socket	lnx/kaodv-netlink.c	50;"	d	file:
-skb	lnx/kaodv-queue.c	/^	struct sk_buff *skb;$/;"	m	struct:kaodv_queue_entry	typeref:struct:kaodv_queue_entry::sk_buff	file:
-skb_dst	lnx/kaodv.h	/^static inline struct dst_entry *skb_dst(const struct sk_buff *skb)$/;"	f
-skb_dst_set	lnx/kaodv.h	/^static inline void skb_dst_set(struct sk_buff *skb, struct dst_entry *dst)$/;"	f
-sock	defs.h	/^    int sock;           \/* AODV socket associated with this device *\/$/;"	m	struct:dev_info
-sock	nl.c	/^	int sock;$/;"	m	struct:nlsock	file:
-src	lnx/kaodv-netlink.h	/^	u_int32_t src;$/;"	m	struct:kaodv_rt_msg
-src_rt_valid	ns-2/ns-2.35/common/packet.h	/^        char src_rt_valid;$/;"	m	struct:hdr_cmn
-startAODVUUAgent	ns-2/aodv-uu.cc	/^int NS_CLASS startAODVUUAgent()$/;"	f
-startAODVUUAgent	patches/aodv-uu/ns-2/aodv-uu.cc	/^int NS_CLASS startAODVUUAgent()$/;"	f
-state	routing_table.h	/^    u_int8_t state;     \/* The state of this entry *\/$/;"	m	struct:rt_table
-state_to_str	debug.c	/^char *NS_CLASS state_to_str(u_int8_t state)$/;"	f
-switchable_interface	ns-2/aodv-uu.h	/^	int switchable_interface;$/;"	m	class:AODVUU
-tbl	routing_table.h	/^    list_t tbl[RT_TABLESIZE];$/;"	m	struct:routing_table
-this_host	defs.h	/^struct host_info this_host;$/;"	v	typeref:struct:host_info
-this_host	ns-2/aodv-uu.h	/^	struct host_info this_host;$/;"	m	class:AODVUU	typeref:struct:AODVUU::host_info
-this_host	patches/aodv-uu/ns-2/aodv-uu.h	/^	struct host_info this_host;$/;"	m	class:AODVUU	typeref:struct:AODVUU::host_info
-time	lnx/kaodv-netlink.h	/^	long time;$/;"	m	struct:kaodv_rt_msg
-time_parse	ns-2/ns-2.35/tcl/lib/ns-lib.tcl	/^proc time_parse { spec } {$/;"	p
-timeout	timer_queue.h	/^    struct timeval timeout;$/;"	m	struct:timer	typeref:struct:timer::timeval
-timeout_func_t	timer_queue.h	/^typedef void (*timeout_func_t) (void *);$/;"	t
-timeout_func_t	timer_queue.h	/^typedef void (AODVUU::*timeout_func_t) (void *);$/;"	t
-timer	timer_queue.h	/^struct timer {$/;"	s
-timer_add	timer_queue.c	/^NS_STATIC void NS_CLASS timer_add(struct timer *t)$/;"	f
-timer_age_queue	timer_queue.c	/^struct timeval *NS_CLASS timer_age_queue()$/;"	f
-timer_init	timer_queue.c	/^int NS_CLASS timer_init(struct timer *t, timeout_func_t f, void *data)$/;"	f
-timer_left	timer_queue.c	/^long timer_left(struct timer *t)$/;"	f
-timer_remove	timer_queue.c	/^int NS_CLASS timer_remove(struct timer *t)$/;"	f
-timer_set_timeout	timer_queue.c	/^void NS_CLASS timer_set_timeout(struct timer *t, long msec)$/;"	f
-timer_timeout	timer_queue.c	/^void NS_CLASS timer_timeout(struct timeval *now)$/;"	f
-timer_timeout_now	timer_queue.c	/^int NS_CLASS timer_timeout_now(struct timer *t)$/;"	f
-timestamp	ns-2/ns-2.35/common/packet.h	/^	inline double& timestamp() { return (ts_); }$/;"	f	struct:hdr_cmn
-timeval_add_msec	timer_queue.h	/^static inline int timeval_add_msec(struct timeval *t, unsigned long msec)$/;"	f
-timeval_diff	timer_queue.h	/^static inline long timeval_diff(struct timeval *t1, struct timeval *t2)$/;"	f
-tos	lnx/kaodv-queue.c	/^	__u8 tos;$/;"	m	struct:kaodv_rt_info	file:
-tqtimer	ns-2/aodv-uu.h	/^	TimerQueueTimer tqtimer;$/;"	m	class:AODVUU
-tqtimer	patches/aodv-uu/ns-2/aodv-uu.h	/^	TimerQueueTimer tqtimer;$/;"	m	class:AODVUU
-trace	lnx/kaodv-debug.c	/^int trace(const char *fmt, ...)$/;"	f
-tracename	ns-2/ns-2.35/trace/cmu-trace.h	/^	char	tracename[MAX_ID_LEN + 1];$/;"	m	class:CMUTrace
-tracetype	ns-2/ns-2.35/trace/cmu-trace.h	/^        int     tracetype;$/;"	m	class:CMUTrace
-ts_	ns-2/ns-2.35/common/packet.h	/^	double	ts_;		\/\/ timestamp: for q-delay measurement$/;"	m	struct:hdr_cmn
-ts_arr_	ns-2/ns-2.35/common/packet.h	/^	double ts_arr_; \/\/ Required by Marker of JOBS $/;"	m	struct:hdr_cmn
-ttl	seek_list.h	/^    int ttl;$/;"	m	struct:seek_list
-ttl_start	main.c	/^int ttl_start = TTL_START_HELLO;$/;"	v
-ttl_start	ns-2/aodv-uu.h	/^	int ttl_start;$/;"	m	class:AODVUU
-ttl_start	patches/aodv-uu/ns-2/aodv-uu.h	/^	int ttl_start;$/;"	m	class:AODVUU
-txinfo_	ns-2/ns-2.35/common/packet.h	/^        PacketStamp	txinfo_;  $/;"	m	class:Packet
-txtime	ns-2/ns-2.35/common/packet.h	/^	inline double& txtime() { return(txtime_); }$/;"	f	struct:hdr_cmn
-txtime_	ns-2/ns-2.35/common/packet.h	/^	double txtime_;$/;"	m	struct:hdr_cmn
-type	aodv_rerr.h	/^    u_int8_t type;$/;"	m	struct:__anon5
-type	aodv_rrep.h	/^    u_int8_t type;$/;"	m	struct:__anon1
-type	aodv_rrep.h	/^    u_int8_t type;$/;"	m	struct:__anon2
-type	aodv_rreq.h	/^    u_int8_t type;$/;"	m	struct:__anon7
-type	defs.h	/^    u_int8_t type;$/;"	m	struct:AODV_msg::__anon3
-type	defs.h	/^    u_int8_t type;$/;"	m	struct:__anon4
-type	lnx/kaodv-netlink.h	/^	int type;$/;"	m	struct:__anon11
-type	lnx/kaodv-netlink.h	/^	u_int8_t type;$/;"	m	struct:kaodv_rt_msg
-typenames	lnx/kaodv-netlink.h	/^} typenames[KAODVM_MAX] = { $/;"	v	typeref:struct:__anon11
-uid	ns-2/ns-2.35/common/packet.h	/^	inline int& uid() { return (uid_); }$/;"	f	struct:hdr_cmn
-uid_	ns-2/ns-2.35/common/packet.h	/^	int	uid_;		\/\/ unique id$/;"	m	struct:hdr_cmn
-unidir_hack	main.c	/^int unidir_hack = 0;$/;"	v
-unidir_hack	ns-2/aodv-uu.h	/^	int unidir_hack;$/;"	m	class:AODVUU
-unidir_hack	patches/aodv-uu/ns-2/aodv-uu.h	/^	int unidir_hack;$/;"	m	class:AODVUU
-usage	main.c	/^void usage(int status)$/;"	f
-used	timer_queue.h	/^    int used;$/;"	m	struct:timer
-userdata	ns-2/ns-2.35/common/packet.h	/^	inline AppData* userdata() const {$/;"	f	class:Packet
-value	ns-2/ns-2.35/common/packet.h	/^	inline int value() const { return value_; }$/;"	f	class:iface_literal
-value_	ns-2/ns-2.35/common/packet.h	/^	const iface_constant value_;$/;"	m	class:iface_literal
-wait_on_reboot	main.c	/^int wait_on_reboot = 1;$/;"	v
-wait_on_reboot	ns-2/aodv-uu.h	/^	int wait_on_reboot;$/;"	m	class:AODVUU
-wait_on_reboot	patches/aodv-uu/ns-2/aodv-uu.h	/^	int wait_on_reboot;$/;"	m	class:AODVUU
-wait_on_reboot_timeout	aodv_timeout.c	/^void NS_CLASS wait_on_reboot_timeout(void *arg)$/;"	f
-warn	ns-2/ns-2.35/tcl/lib/ns-lib.tcl	/^proc warn {msg} {$/;"	p
-wired_target_	ns-2/aodv-uu.h	/^	NsObject *wired_target_;$/;"	m	class:AODVUU
-wired_target_	patches/aodv-uu/ns-2/aodv-uu.h	/^	NsObject *wired_target_;$/;"	m	class:AODVUU
-wireless_iface	llf.c	/^typedef struct wireless_iface {$/;"	s	file:
-wireless_iface	llf.c	/^} wireless_iface;$/;"	t	typeref:struct:wireless_iface	file:
-worb_timer	main.c	/^struct timer worb_timer;	\/* Wait on reboot timer *\/$/;"	v	typeref:struct:timer
-worb_timer	ns-2/aodv-uu.h	/^	struct timer worb_timer;$/;"	m	class:AODVUU	typeref:struct:AODVUU::timer
-worb_timer	patches/aodv-uu/ns-2/aodv-uu.h	/^	struct timer worb_timer;$/;"	m	class:AODVUU	typeref:struct:AODVUU::timer
-write_to_log_file	debug.c	/^void NS_CLASS write_to_log_file(char *msg, int len)$/;"	f
-xmit_failure_	ns-2/ns-2.35/common/packet.h	/^        FailureCallback xmit_failure_; $/;"	m	struct:hdr_cmn
-xmit_failure_data_	ns-2/ns-2.35/common/packet.h	/^        void *xmit_failure_data_;$/;"	m	struct:hdr_cmn
-xmit_reason_	ns-2/ns-2.35/common/packet.h	/^        int     xmit_reason_;$/;"	m	struct:hdr_cmn
-~AODVUU	ns-2/aodv-uu.cc	/^NS_CLASS ~ AODVUU()$/;"	f
-~AODVUU	patches/aodv-uu/ns-2/aodv-uu.cc	/^NS_CLASS ~ AODVUU()$/;"	f
-~PacketClassifier	ns-2/ns-2.35/common/packet.h	/^		virtual ~PacketClassifier() {}$/;"	f	class:PacketClassifier
-~PacketData	ns-2/ns-2.35/common/packet.h	/^	virtual ~PacketData() { $/;"	f	class:PacketData
-~PacketTracer	ns-2/ns-2.35/trace/cmu-trace.cc	/^PacketTracer::~PacketTracer()$/;"	f	class:PacketTracer
+
+aodv_hello.c,303
+static struct timer hello_timer;40,1387
+long NS_CLASS hello_jitter(47,1457
+void NS_CLASS hello_start(60,1742
+void NS_CLASS hello_stop(73,1991
+void NS_CLASS hello_send(80,2140
+void NS_CLASS hello_process(168,4481
+#define HELLO_DELAY 289,7526
+NS_INLINE void NS_CLASS hello_update_timeout(293,7670
+
+aodv_neighbor.c,79
+void NS_CLASS neighbor_add(40,1342
+void NS_CLASS neighbor_link_break(73,2152
+
+aodv_rerr.c,110
+RERR *NS_CLASS rerr_create(38,1244
+void NS_CLASS rerr_add_udest(58,1747
+void NS_CLASS rerr_process(70,2032
+
+aodv_rrep.c,304
+RREP *NS_CLASS rrep_create(43,1375
+RREP_ack *NS_CLASS rrep_ack_create(79,2226
+void NS_CLASS rrep_ack_process(91,2450
+AODV_ext *NS_CLASS rrep_add_ext(109,2905
+void NS_CLASS rrep_send(127,3237
+void NS_CLASS rrep_forward(182,4887
+void NS_CLASS rrep_process(235,6458
+int rrep_add_hello_ext(417,12226
+
+aodv_rreq.c,670
+#define DEBUG_OUTPUT44,1390
+RREQ *NS_CLASS rreq_create(61,1842
+AODV_ext *rreq_add_ext(98,2808
+void NS_CLASS rreq_send(116,3136
+void NS_CLASS rreq_forward(138,3724
+void NS_CLASS rreq_process(164,4462
+void NS_CLASS rreq_route_discovery(419,12416
+#define TTL_VALUE 427,12635
+void NS_CLASS rreq_local_repair(479,13997
+NS_STATIC struct rreq_record *NS_CLASS rreq_record_insert(541,15670
+NS_STATIC struct rreq_record *NS_CLASS rreq_record_find(573,16538
+void NS_CLASS rreq_record_timeout(588,16892
+struct blacklist *NS_CLASS rreq_blacklist_insert(596,17042
+struct blacklist *NS_CLASS rreq_blacklist_find(622,17705
+void NS_CLASS rreq_blacklist_timeout(635,17979
+
+aodv_socket.c,534
+#define SO_RECVBUF_SIZE 46,1428
+static char recv_buf[48,1462
+static char send_buf[49,1499
+static struct cmsghdr *__cmsg_nxthdr_fix(58,1758
+struct cmsghdr *cmsg_nxthdr_fix(71,2093
+void NS_CLASS aodv_socket_init(79,2283
+void NS_CLASS aodv_socket_process_packet(211,5663
+void NS_CLASS recvAODVUUPacket(254,6909
+static void aodv_socket_read(291,7911
+void NS_CLASS aodv_socket_send(362,9645
+AODV_msg *NS_CLASS aodv_socket_new_msg(537,14391
+AODV_msg *NS_CLASS aodv_socket_queue_msg(544,14575
+void aodv_socket_cleanup(550,14733
+
+aodv_timeout.c,380
+void NS_CLASS route_discovery_timeout(50,1540
+#define TTL_VALUE 57,1703
+void NS_CLASS local_repair_timeout(126,3551
+void NS_CLASS route_expire_timeout(184,4895
+void NS_CLASS route_delete_timeout(209,5321
+void NS_CLASS hello_timeout(226,5667
+void NS_CLASS rrep_ack_timeout(260,6459
+void NS_CLASS wait_on_reboot_timeout(278,6864
+void NS_CLASS packet_queue_timeout(286,7001
+
+debug.c,652
+int log_file_fd 49,1482
+int log_rt_fd 50,1504
+int log_nmsgs 51,1524
+int debug 52,1543
+struct timer rt_log_timer;53,1558
+void NS_CLASS log_init(56,1593
+void NS_CLASS log_rt_table_init(94,2592
+void NS_CLASS log_cleanup(100,2749
+void NS_CLASS write_to_log_file(108,2928
+char *packet_type(122,3221
+void NS_CLASS alog(139,3507
+char *NS_CLASS rreq_flags_to_str(219,5321
+char *NS_CLASS rrep_flags_to_str(240,5627
+void NS_CLASS log_pkt_fields(257,5861
+char *NS_CLASS rt_flags_to_str(297,7104
+char *NS_CLASS state_to_str(317,7455
+char *NS_CLASS devs_ip_to_str(327,7611
+void NS_CLASS print_rt_table(342,7928
+char *NS_CLASS ip_to_str(443,10832
+
+endian.c,58
+int litend(36,1304
+int bigend(43,1390
+int main(48,1434
+
+list.c,155
+static inline int listelm_detach(26,1036
+static inline int listelm_add(34,1176
+int list_add(44,1364
+int list_add_tail(55,1518
+int list_detach(66,1677
+
+llf.c,573
+struct rtnl_handle rtnl_handle44,1623
+static struct rtnl_handle rth;56,1916
+static void llf_callback(58,1948
+void llf_init(64,2024
+void llf_cleanup(78,2302
+static inline int llf_rtnl_open(85,2347
+typedef struct wireless_iface wireless_iface127,3452
+} wireless_iface;wireless_iface138,3781
+struct wireless_iface *interface_cache 143,3906
+static inline int index2name(148,4014
+static struct wireless_iface *iw_get_interface_data(165,4342
+int mac_to_ip(220,5684
+static inline int llf_print_event(261,6569
+static inline void llf_handle_netlink_events(297,7350
+
+locality.c,31
+int NS_CLASS locality(36,1171
+
+main.c,1043
+int log_to_file 49,1505
+int rt_log_interval 50,1526
+int unidir_hack 51,1599
+int rreq_gratuitous 52,1620
+int expanding_ring_search 53,1645
+int internet_gw_mode 54,1676
+int local_repair 55,1702
+int receive_n_hellos 56,1724
+int hello_jittering 57,1750
+int optimized_hellos 58,1775
+int ratelimit 59,1801
+char *progname;60,1869
+int wait_on_reboot 61,1885
+int qual_threshold 62,1909
+int llfeedback 63,1933
+int gw_prefix 64,1953
+struct timer worb_timer;65,1972
+int active_route_timeout 68,2060
+int ttl_start 69,2115
+int delete_period 70,2148
+struct option longopts[74,2214
+void usage(96,3074
+int set_kernel_options(130,4744
+int find_default_gw(198,6409
+struct sockaddr_in *get_if_info(231,7001
+#define CALLBACK_FUNCS 255,7607
+static struct callback callback256,7632
+} callbacks[259,7695
+static int nr_callbacks 261,7725
+int attach_callback_func(263,7755
+void load_modules(279,8202
+void remove_modules(321,9182
+void host_init(332,9354
+void signal_handler(455,12621
+int main(470,12902
+static void cleanup(665,17264
+
+nl.c,549
+struct nlsock nlsock51,1678
+struct sockaddr_nl peer 57,1746
+struct nlsock aodvnl;59,1798
+struct nlsock rtnl;60,1820
+#define BUFLEN 69,2053
+void nl_init(73,2102
+void nl_cleanup(155,4084
+static void nl_kaodv_callback(162,4152
+static void nl_rt_callback(309,7624
+int prefix_length(371,8956
+int addattr(394,9355
+#define ATTR_BUFLEN 409,9691
+int nl_send(411,9716
+int nl_kern_route(440,10357
+int nl_send_add_route_msg(488,11523
+int nl_send_no_route_found_msg(529,12556
+int nl_send_del_route_msg(550,12998
+int nl_send_conf_msg(582,13773
+
+routing_table.c,671
+void NS_CLASS rt_table_init(46,1454
+void NS_CLASS rt_table_destroy(59,1691
+unsigned int hashing(74,1990
+rt_table_t *NS_CLASS rt_table_insert(82,2165
+rt_table_t *NS_CLASS rt_table_update(191,4767
+NS_INLINE rt_table_t *NS_CLASS rt_table_update_timeout(271,6763
+void NS_CLASS rt_table_update_route_timeouts(294,7400
+rt_table_t *NS_CLASS rt_table_find(346,9172
+rt_table_t *NS_CLASS rt_table_find_gateway(373,9653
+int NS_CLASS rt_table_update_inet_rt(393,10019
+int NS_CLASS rt_table_invalidate(418,10516
+void NS_CLASS rt_table_delete(526,13117
+void NS_CLASS precursor_add(559,13726
+void NS_CLASS precursor_remove(598,14560
+void precursor_list_destroy(624,15119
+
+seek_list.c,173
+seek_list_t *NS_CLASS seek_list_insert(49,1456
+int NS_CLASS seek_list_remove(77,2128
+seek_list_t *NS_CLASS seek_list_find(94,2394
+void NS_CLASS seek_list_print(108,2674
+
+timer_queue.c,341
+int NS_CLASS timer_init(43,1324
+void NS_CLASS timer_timeout(59,1619
+NS_STATIC void NS_CLASS timer_add(97,2501
+int NS_CLASS timer_remove(141,3283
+int NS_CLASS timer_timeout_now(160,3483
+void NS_CLASS timer_set_timeout(175,3679
+long timer_left(193,4060
+struct timeval *NS_CLASS timer_age_queue(204,4222
+void NS_CLASS printTQ(238,4900
+
+aodv_hello.h,100
+#define _AODV_HELLO_H24,1029
+#define ROUTE_TIMEOUT_SLACK 34,1201
+#define JITTER_INTERVAL 35,1233
+
+aodv_neighbor.h,33
+#define _AODV_NEIGHBOR_H24,1032
+
+aodv_rerr.h,321
+#define _AODV_RERR_H24,1028
+#define RERR_NODELETE 33,1157
+} RERR;RERR50,1508
+#define RERR_SIZE 52,1517
+} RERR_udest;RERR_udest58,1657
+#define RERR_UDEST_SIZE 60,1672
+#define RERR_CALC_SIZE(RERR_CALC_SIZE64,1808
+#define RERR_UDEST_FIRST(RERR_UDEST_FIRST65,1888
+#define RERR_UDEST_NEXT(RERR_UDEST_NEXT66,1952
+
+aodv_rrep.h,192
+#define _AODV_RREP_H24,1028
+#define RREP_ACK 34,1158
+#define RREP_REPAIR 35,1185
+} RREP;RREP59,1695
+#define RREP_SIZE 61,1704
+} RREP_ack;RREP_ack66,1795
+#define RREP_ACK_SIZE 68,1808
+
+aodv_rreq.h,274
+#define _AODV_RREQ_H24,1030
+#define RREQ_JOIN 34,1182
+#define RREQ_REPAIR 35,1213
+#define RREQ_GRATUITOUS 36,1244
+#define RREQ_DEST_ONLY 37,1275
+} RREQ;RREQ63,1915
+#define RREQ_SIZE 65,1924
+struct rreq_record rreq_record68,2023
+struct blacklist blacklist75,2195
+
+aodv_socket.h,351
+#define _AODV_SOCKET_H24,1030
+#define IPHDR_SIZE 33,1163
+#define AODV_MSG_MAX_SIZE 38,1384
+#define RECV_BUF_SIZE 39,1444
+#define SEND_BUF_SIZE 40,1484
+struct timeval rreq_ratel[45,1579
+struct timeval rreq_ratel[RREQ_RATELIMIT - 1], rerr_ratel[45,1579
+int num_rreq;46,1658
+int num_rerr;47,1672
+#define CMSG_NXTHDR_FIX(CMSG_NXTHDR_FIX58,2100
+
+aodv_timeout.h,32
+#define _AODV_TIMEOUT_H24,1031
+
+debug.h,112
+#define _DEBUG_H23,1011
+#define DEBUG_OUTPUT53,1708
+#define DEBUG(DEBUG54,1729
+#define DEBUG(DEBUG56,1798
+
+defs.h,1932
+#define _DEFS_H23,1010
+#define NS_CLASS 49,1417
+#define NS_OUTSIDE_CLASS 50,1443
+#define NS_STATIC51,1471
+#define NS_INLINE52,1489
+#define NS_DEV_NR 54,1570
+#define NS_IFINDEX 55,1590
+#define NS_CLASS57,1625
+#define NS_OUTSIDE_CLASS58,1642
+#define NS_STATIC 59,1667
+#define NS_INLINE 60,1692
+#define AODV_UU_VERSION 63,1725
+#define DRAFT_VERSION 64,1755
+#define AODV_LOG_PATH_PREFIX 68,1861
+#define AODV_RT_LOG_PATH_SUFFIX 69,1901
+#define AODV_LOG_PATH_SUFFIX 70,1942
+#define AODV_LOG_PATH 72,1984
+#define AODV_RT_LOG_PATH 73,2027
+#define max(max76,2100
+#define MINTTL 78,2141
+#define MAX_NR_INTERFACES 80,2202
+#define MAX_IFINDEX 81,2231
+#define IFNAMSIZ 84,2299
+struct dev_info dev_info88,2359
+struct host_info host_info101,2775
+struct host_info this_host;122,3560
+unsigned int dev_indices[125,3622
+static inline int ifindex2devindex(130,3802
+static inline struct dev_info *devfromsock(141,3979
+static inline int name2index(152,4183
+#define DEV_IFINDEX(DEV_IFINDEX168,4527
+#define DEV_NR(DEV_NR169,4600
+#define AODV_BROADCAST 172,4701
+#define AODV_PORT 174,4750
+#define AODV_HELLO 177,4798
+#define AODV_RREQ 178,4869
+#define AODV_RREP 179,4893
+#define AODV_RERR 180,4917
+#define AODV_RREP_ACK 181,4941
+struct AODV_msg AODV_msg185,5026
+    inline static int &offset(offset195,5230
+    inline static AODV_msg *access(access198,5287
+typedef AODV_msg hdr_aodvuu;hdr_aodvuu205,5410
+#define HDR_AODVUU(HDR_AODVUU206,5470
+} AODV_msg;208,5537
+#define RREQ_EXT 212,5584
+#define RREP_EXT 213,5603
+#define RREP_HELLO_INTERVAL_EXT 214,5622
+#define RREP_HELLO_NEIGHBOR_SET_EXT 215,5656
+#define RREP_INET_DEST_EXT 216,5694
+} AODV_ext;AODV_ext223,5863
+#define AODV_EXT_HDR_SIZE 226,5918
+#define AODV_EXT_DATA(AODV_EXT_DATA227,5961
+#define AODV_EXT_NEXT(AODV_EXT_NEXT228,6032
+#define AODV_EXT_SIZE(AODV_EXT_SIZE229,6121
+typedef void (*callback_func_t)callback_func_t233,6227
+
+list.h,486
+#define _LIST_H23,1012
+typedef struct list_t list_t26,1105
+} list_t;list_t28,1161
+#define LIST_NULL 30,1172
+#define LIST_SUCCESS 31,1193
+#define LIST(LIST33,1217
+#define INIT_LIST_HEAD(INIT_LIST_HEAD35,1272
+#define INIT_LIST_ELM(INIT_LIST_ELM39,1355
+#define list_foreach(list_foreach47,1562
+#define list_foreach_safe(list_foreach_safe50,1667
+#define list_empty(list_empty54,1823
+#define list_first(list_first56,1874
+#define list_unattached(list_unattached58,1915
+
+llf.h,23
+#define _LLF_H23,1010
+
+locality.h,100
+#define _LOCALITY_H23,1015
+    HOST_ADHOC,28,1066
+    HOST_INET,29,1082
+    HOST_UNKNOWN30,1097
+
+nl.h,22
+#define _NL_H23,1011
+
+params.h,959
+#define _PARAMS_H24,1025
+#define K 28,1063
+#define ACTIVE_ROUTE_TIMEOUT 31,1174
+#define TTL_START 32,1224
+#define DELETE_PERIOD 33,1252
+#define ACTIVE_ROUTE_TIMEOUT_LLF 36,1328
+#define TTL_START_LLF 37,1370
+#define DELETE_PERIOD_LLF 38,1408
+#define ACTIVE_ROUTE_TIMEOUT_HELLO 41,1504
+#define TTL_START_HELLO 42,1545
+#define DELETE_PERIOD_HELLO 43,1583
+#define ALLOWED_HELLO_LOSS 46,1731
+#define BLACKLIST_TIMEOUT 48,1835
+#define HELLO_INTERVAL 49,1964
+#define LOCAL_ADD_TTL 50,2001
+#define MAX_REPAIR_TTL 51,2035
+#define MY_ROUTE_TIMEOUT 52,2089
+#define NET_DIAMETER 53,2146
+#define NET_TRAVERSAL_TIME 54,2181
+#define NEXT_HOP_WAIT 55,2252
+#define NODE_TRAVERSAL_TIME 56,2309
+#define PATH_DISCOVERY_TIME 57,2344
+#define RERR_RATELIMIT 58,2399
+#define RING_TRAVERSAL_TIME 59,2434
+#define RREQ_RETRIES 60,2521
+#define RREQ_RATELIMIT 61,2555
+#define TIMEOUT_BUFFER 62,2590
+#define TTL_INCREMENT 63,2624
+#define TTL_THRESHOLD 64,2658
+
+routing_table.h,659
+#define _ROUTING_TABLE_H24,1032
+typedef struct rt_table rt_table_t;rt_table_t30,1117
+typedef struct precursor precursor33,1209
+} precursor_t;precursor_t36,1279
+#define FIRST_PREC(FIRST_PREC38,1295
+#define seqno_incr(seqno_incr40,1346
+typedef u_int32_t hash_value;hash_value42,1420
+struct rt_table rt_table45,1496
+#define RT_UNIDIR 66,2298
+#define RT_REPAIR 67,2327
+#define RT_INV_SEQNO 68,2356
+#define RT_INET_DEST 69,2385
+#define RT_GATEWAY 71,2501
+#define INVALID 74,2557
+#define VALID 75,2577
+#define RT_TABLESIZE 78,2599
+#define RT_TABLEMASK 79,2651
+struct routing_table routing_table81,2692
+struct routing_table rt_tbl;92,2913
+
+seek_list.h,173
+#define _SEEK_LIST_H24,1028
+#define IP_DATA_MAX_LEN 31,1134
+struct ip_data ip_data33,1204
+typedef struct seek_list seek_list39,1339
+} seek_list_t;seek_list_t48,1590
+
+timer_queue.h,260
+#define _TIMER_QUEUE_H23,1017
+typedef void (AODVUU::*timeout_func_t)timeout_func_t32,1138
+typedef void (*timeout_func_t)timeout_func_t34,1193
+struct timer timer37,1242
+static inline long timeval_diff(45,1361
+static inline int timeval_add_msec(59,1681
