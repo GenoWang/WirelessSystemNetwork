@@ -15,9 +15,9 @@
 * test.tcl是仿真时使用的tcl脚本，具体的拓扑环境为：
 
 
-![pic](.\pic.png)
+![pic](./pic.png)
 
-
+* ns-default.tcl需要替换掉原来的tcl/lib/下的同名文件，否则hello消息无法发送。
 
 
 
