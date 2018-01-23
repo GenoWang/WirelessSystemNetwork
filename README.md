@@ -17,7 +17,8 @@
 
 ![pic](./pic.png)
 
-* ns-default.tcl需要替换掉原来的tcl/lib/下的同名文件，否则hello消息无法发送。
+* ns-default.tcl需要替换掉原来的tcl/lib/下的同名文件，否则hello消息无法发送；
+* ns-2.35-final.zip是四个扩展模块合成之后的最终成果。
 
 
 
