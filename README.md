@@ -25,4 +25,4 @@
 
 如有问题请联系：
 
-email: guannanwang@foxmail.com
+email: wgnbuaa@gmail.com
